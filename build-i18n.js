@@ -18,7 +18,7 @@ const path = require('path');
 // Configuration
 // ─────────────────────────────────────────────
 
-const SITE_URL = 'https://pdfslick.com';
+const SITE_URL = 'https://pdf-slick.com';
 const LANGS = ['en', 'zh', 'ja', 'ko', 'es', 'pt', 'fr', 'de'];
 const ROOT = path.resolve(__dirname);
 
@@ -344,7 +344,7 @@ function updateOgTags(html, pagePath, lang, translations) {
 function updateSchemaOrg(html, pagePath, lang) {
   if (lang === 'en') return html;
 
-  // Find all JSON-LD script blocks and update pdfslick.com URLs
+  // Find all JSON-LD script blocks and update pdf-slick.com URLs
   return html.replace(
     /(<script\s+type="application\/ld\+json">)([\s\S]*?)(<\/script>)/g,
     (match, openTag, jsonContent, closeTag) => {

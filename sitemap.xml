@@ -4,240 +4,240 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://pdfslick.com/</loc>
+    <loc>https://pdf-slick.com/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/"/>
   </url>
 
   <!-- Merge PDF -->
   <url>
-    <loc>https://pdfslick.com/merge-pdf/</loc>
+    <loc>https://pdf-slick.com/merge-pdf/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/merge-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/merge-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/merge-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/merge-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/merge-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/merge-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/merge-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/merge-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/merge-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/merge-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/merge-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/merge-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/merge-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/merge-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/merge-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/merge-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/merge-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/merge-pdf/"/>
   </url>
 
   <!-- Compress PDF -->
   <url>
-    <loc>https://pdfslick.com/compress-pdf/</loc>
+    <loc>https://pdf-slick.com/compress-pdf/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/compress-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/compress-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/compress-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/compress-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/compress-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/compress-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/compress-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/compress-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/compress-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/compress-pdf/"/>
   </url>
 
   <!-- Split PDF -->
   <url>
-    <loc>https://pdfslick.com/split-pdf/</loc>
+    <loc>https://pdf-slick.com/split-pdf/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/split-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/split-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/split-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/split-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/split-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/split-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/split-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/split-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/split-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/split-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/split-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/split-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/split-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/split-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/split-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/split-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/split-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/split-pdf/"/>
   </url>
 
   <!-- Rotate PDF -->
   <url>
-    <loc>https://pdfslick.com/rotate-pdf/</loc>
+    <loc>https://pdf-slick.com/rotate-pdf/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/rotate-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/rotate-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/rotate-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/rotate-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/rotate-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/rotate-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/rotate-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/rotate-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/rotate-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/rotate-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/rotate-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/rotate-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/rotate-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/rotate-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/rotate-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/rotate-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/rotate-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/rotate-pdf/"/>
   </url>
 
   <!-- PDF to JPG -->
   <url>
-    <loc>https://pdfslick.com/pdf-to-jpg/</loc>
+    <loc>https://pdf-slick.com/pdf-to-jpg/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/pdf-to-jpg/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/pdf-to-jpg/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/pdf-to-jpg/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/pdf-to-jpg/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/pdf-to-jpg/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/pdf-to-jpg/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/pdf-to-jpg/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/pdf-to-jpg/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/pdf-to-jpg/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/pdf-to-jpg/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/pdf-to-jpg/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/pdf-to-jpg/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/pdf-to-jpg/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/pdf-to-jpg/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/pdf-to-jpg/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/pdf-to-jpg/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/pdf-to-jpg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/pdf-to-jpg/"/>
   </url>
 
   <!-- PDF to PNG -->
   <url>
-    <loc>https://pdfslick.com/pdf-to-png/</loc>
+    <loc>https://pdf-slick.com/pdf-to-png/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/pdf-to-png/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/pdf-to-png/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/pdf-to-png/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/pdf-to-png/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/pdf-to-png/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/pdf-to-png/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/pdf-to-png/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/pdf-to-png/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/pdf-to-png/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/pdf-to-png/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/pdf-to-png/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/pdf-to-png/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/pdf-to-png/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/pdf-to-png/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/pdf-to-png/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/pdf-to-png/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/pdf-to-png/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/pdf-to-png/"/>
   </url>
 
   <!-- JPG to PDF -->
   <url>
-    <loc>https://pdfslick.com/jpg-to-pdf/</loc>
+    <loc>https://pdf-slick.com/jpg-to-pdf/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/jpg-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/jpg-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/jpg-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/jpg-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/jpg-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/jpg-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/jpg-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/jpg-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/jpg-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/jpg-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/jpg-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/jpg-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/jpg-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/jpg-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/jpg-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/jpg-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/jpg-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/jpg-to-pdf/"/>
   </url>
 
   <!-- PDF to Word -->
   <url>
-    <loc>https://pdfslick.com/pdf-to-word/</loc>
+    <loc>https://pdf-slick.com/pdf-to-word/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/pdf-to-word/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/pdf-to-word/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/pdf-to-word/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/pdf-to-word/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/pdf-to-word/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/pdf-to-word/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/pdf-to-word/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/pdf-to-word/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/pdf-to-word/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/pdf-to-word/"/>
   </url>
 
   <!-- Word to PDF -->
   <url>
-    <loc>https://pdfslick.com/word-to-pdf/</loc>
+    <loc>https://pdf-slick.com/word-to-pdf/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/word-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/word-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/word-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/word-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/word-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/word-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/word-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/word-to-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/word-to-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/word-to-pdf/"/>
   </url>
 
   <!-- Add Watermark -->
   <url>
-    <loc>https://pdfslick.com/add-watermark/</loc>
+    <loc>https://pdf-slick.com/add-watermark/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/add-watermark/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/add-watermark/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/add-watermark/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/add-watermark/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/add-watermark/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/add-watermark/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/add-watermark/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/add-watermark/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/add-watermark/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/add-watermark/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/add-watermark/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/add-watermark/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/add-watermark/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/add-watermark/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/add-watermark/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/add-watermark/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/add-watermark/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/add-watermark/"/>
   </url>
 
   <!-- Unlock PDF -->
   <url>
-    <loc>https://pdfslick.com/unlock-pdf/</loc>
+    <loc>https://pdf-slick.com/unlock-pdf/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/unlock-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/unlock-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/unlock-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/unlock-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/unlock-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/unlock-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/unlock-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/unlock-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/unlock-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/unlock-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/unlock-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/unlock-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/unlock-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/unlock-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/unlock-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/unlock-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/unlock-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/unlock-pdf/"/>
   </url>
 
   <!-- Protect PDF -->
   <url>
-    <loc>https://pdfslick.com/protect-pdf/</loc>
+    <loc>https://pdf-slick.com/protect-pdf/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/protect-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/protect-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/protect-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/protect-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/protect-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/protect-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/protect-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/protect-pdf/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/protect-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/protect-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/protect-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/protect-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/protect-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/protect-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/protect-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/protect-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/protect-pdf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/protect-pdf/"/>
   </url>
 
   <!-- Privacy Policy -->
   <url>
-    <loc>https://pdfslick.com/privacy.html</loc>
+    <loc>https://pdf-slick.com/privacy.html</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdfslick.com/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdfslick.com/es/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdfslick.com/de/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdfslick.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pdf-slick.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/privacy.html"/>
   </url>
 
 </urlset>
