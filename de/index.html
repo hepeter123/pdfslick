@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kostenlose Online-PDF-Werkzeuge | PDFSlick</title>
+  <meta name="description" content="Verarbeiten Sie Ihre PDF-Dateien direkt im Browser. Schnell, sicher und völlig kostenlos.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kostenlose Online-PDF-Werkzeuge | PDFSlick">
+  <meta property="og:description" content="Verarbeiten Sie Ihre PDF-Dateien direkt im Browser. Schnell, sicher und völlig kostenlos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pdfslick.com/de/">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kostenlose Online-PDF-Werkzeuge | PDFSlick">
+  <meta name="twitter:description" content="Verarbeiten Sie Ihre PDF-Dateien direkt im Browser. Schnell, sicher und völlig kostenlos.">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PDFSlick",
+    "url": "https://pdfslick.com/de/",
+    "description": "Free online PDF tools that work entirely in your browser"
+}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="https://pdfslick.com/de/">
+  <link rel="alternate" hreflang="en" href="https://pdfslick.com/">
+  <link rel="alternate" hreflang="zh" href="https://pdfslick.com/zh/">
+  <link rel="alternate" hreflang="ja" href="https://pdfslick.com/ja/">
+  <link rel="alternate" hreflang="ko" href="https://pdfslick.com/ko/">
+  <link rel="alternate" hreflang="es" href="https://pdfslick.com/es/">
+  <link rel="alternate" hreflang="pt" href="https://pdfslick.com/pt/">
+  <link rel="alternate" hreflang="fr" href="https://pdfslick.com/fr/">
+  <link rel="alternate" hreflang="de" href="https://pdfslick.com/de/">
+  <link rel="alternate" hreflang="x-default" href="https://pdfslick.com/">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="/de/" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="8" fill="#E8573F"/>
+          <path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/>
+          <path d="M8 20h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">PDFSlick</span>
+      </a>
+      <div class="nav-links">
+        <a href="/de/" class="nav-link active" data-i18n="nav.home">Startseite</a>
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            <span id="currentLang">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/" class="lang-option" data-lang="en">🇺🇸 English</a>
+            <a href="/zh/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+            <a href="/ja/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+            <a href="/ko/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+            <a href="/es/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+            <a href="/pt/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+            <a href="/fr/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+            <a href="/de/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+          </div>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/de/" class="mobile-menu-link active" data-i18n="nav.home">Startseite</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="/de/merge-pdf/" class="mobile-menu-link">Merge PDF</a>
+    <a href="/de/compress-pdf/" class="mobile-menu-link">Compress PDF</a>
+    <a href="/de/split-pdf/" class="mobile-menu-link">Split PDF</a>
+    <a href="/de/rotate-pdf/" class="mobile-menu-link">Rotate PDF</a>
+    <a href="/de/pdf-to-jpg/" class="mobile-menu-link">PDF to JPG</a>
+    <a href="/de/pdf-to-png/" class="mobile-menu-link">PDF to PNG</a>
+    <a href="/de/jpg-to-pdf/" class="mobile-menu-link">JPG to PDF</a>
+    <a href="/de/pdf-to-word/" class="mobile-menu-link">PDF to Word</a>
+    <a href="/de/word-to-pdf/" class="mobile-menu-link">Word to PDF</a>
+    <a href="/de/add-watermark/" class="mobile-menu-link">Add Watermark</a>
+    <a href="/de/unlock-pdf/" class="mobile-menu-link">Unlock PDF</a>
+    <a href="/de/protect-pdf/" class="mobile-menu-link">Protect PDF</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-langs">
+      <a href="/" class="lang-option" data-lang="en">🇺🇸 English</a>
+      <a href="/zh/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+      <a href="/ja/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+      <a href="/ko/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+      <a href="/es/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+      <a href="/pt/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+      <a href="/fr/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+      <a href="/de/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Free &amp; Open Source</div>
+        <h1 class="hero-title" data-i18n="hero.title">Kostenlose Online-PDF-Werkzeuge</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Kein Upload, keine Anmeldung, 100% privat</p>
+        <p class="hero-desc" data-i18n="hero.description">Verarbeiten Sie Ihre PDF-Dateien direkt im Browser. Schnell, sicher und völlig kostenlos.</p>
+        <a href="#tools" class="btn btn-primary btn-lg" data-i18n="hero.ctaButton">Werkzeug auswählen</a>
+      </div>
+      <div class="hero-visual">
+        <!-- SVG illustration of PDF processing -->
+        <svg width="420" height="300" viewBox="0 0 420 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="60" y="40" width="130" height="170" rx="12" fill="#E8573F" opacity="0.1" stroke="#E8573F" stroke-width="2"/>
+          <rect x="70" y="55" width="80" height="8" rx="4" fill="#E8573F" opacity="0.4"/>
+          <rect x="70" y="73" width="100" height="6" rx="3" fill="#2D3748" opacity="0.2"/>
+          <rect x="70" y="89" width="90" height="6" rx="3" fill="#2D3748" opacity="0.2"/>
+          <rect x="70" y="105" width="95" height="6" rx="3" fill="#2D3748" opacity="0.2"/>
+          <rect x="70" y="121" width="85" height="6" rx="3" fill="#2D3748" opacity="0.2"/>
+          <rect x="230" y="40" width="130" height="170" rx="12" fill="#E8573F" opacity="0.1" stroke="#E8573F" stroke-width="2"/>
+          <rect x="240" y="55" width="80" height="8" rx="4" fill="#E8573F" opacity="0.4"/>
+          <rect x="240" y="73" width="100" height="6" rx="3" fill="#2D3748" opacity="0.2"/>
+          <rect x="240" y="89" width="90" height="6" rx="3" fill="#2D3748" opacity="0.2"/>
+          <circle cx="210" cy="125" r="24" fill="#E8573F"/>
+          <path d="M200 125l8 8 14-16" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M155 125h24M241 125h-24" stroke="#E8573F" stroke-width="2" stroke-dasharray="4 4"/>
+          <rect x="100" y="230" width="220" height="40" rx="20" fill="#E8573F"/>
+          <text x="210" y="255" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="600" fill="white">Merge, Compress &amp; Convert</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Grid -->
+  <section class="tools-section" id="tools">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="tools.sectionTitle">PDF Tools</h2>
+        <p class="section-subtitle" data-i18n="tools.sectionSubtitle">Everything you need to work with PDF files</p>
+      </div>
+      <div class="tools-grid">
+        <!-- Merge PDF -->
+        <a href="/de/merge-pdf/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--merge">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 6H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-3"/>
+              <polyline points="15 3 12 6 9 3"/>
+            </svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.mergePdf.name">PDF zusammenführen</h3>
+          <p class="tool-desc" data-i18n="tools.mergePdf.description">Mehrere PDF-Dateien zu einer zusammenführen</p>
+          <span class="tool-arrow" aria-hidden="true">→</span>
+        </a>
+        <!-- Compress PDF -->
+        <a href="/de/compress-pdf/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--compress">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/>
+              <line x1="14" y1="10" x2="21" y2="3"/><line x1="3" y1="21" x2="10" y2="14"/>
+            </svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.compressPdf.name">PDF komprimieren</h3>
+          <p class="tool-desc" data-i18n="tools.compressPdf.description">PDF-Dateigröße reduzieren bei gleichbleibender Qualität</p>
+          <span class="tool-arrow" aria-hidden="true">→</span>
+        </a>
+        <!-- PDF to JPG -->
+        <a href="/de/pdf-to-jpg/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--convert">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.pdfToJpg.name">PDF zu JPG</h3>
+          <p class="tool-desc" data-i18n="tools.pdfToJpg.description">PDF-Seiten in JPG-Bilder umwandeln</p>
+          <span class="tool-arrow" aria-hidden="true">→</span>
+        </a>
+        <!-- JPG to PDF -->
+        <a href="/de/jpg-to-pdf/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--jpg">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.5 2z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.jpgToPdf.name">JPG zu PDF</h3>
+          <p class="tool-desc" data-i18n="tools.jpgToPdf.description">Bilder in ein PDF-Dokument umwandeln</p>
+          <span class="tool-arrow" aria-hidden="true">→</span>
+        </a>
+        <!-- Split PDF -->
+        <a href="/de/split-pdf/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--split">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l5.1 5.1M4 4l5 5"/>
+            </svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.splitPdf.name">PDF aufteilen</h3>
+          <p class="tool-desc" data-i18n="tools.splitPdf.description">PDF in mehrere Dateien aufteilen</p>
+          <span class="tool-arrow" aria-hidden="true">→</span>
+        </a>
+        <!-- Rotate PDF -->
+        <a href="/de/rotate-pdf/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--rotate">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"/>
+              <path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/>
+            </svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.rotatePdf.name">PDF drehen</h3>
+          <p class="tool-desc" data-i18n="tools.rotatePdf.description">PDF-Seiten einfach drehen</p>
+          <span class="tool-arrow" aria-hidden="true">→</span>
+        </a>
+        <!-- PDF to Word -->
+        <a href="/de/pdf-to-word/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--word">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.5 2z"/>
+              <polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.pdfToWord.name">PDF zu Word</h3>
+          <p class="tool-desc" data-i18n="tools.pdfToWord.description">PDF in bearbeitbares Word-Dokument umwandeln</p>
+          <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <!-- Word to PDF (Coming Soon) -->
+        <div class="tool-card tool-card--coming-soon" data-badge="Coming Soon" data-aos>
+          <div class="tool-icon tool-icon--word">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.wordToPdf.name">Word zu PDF</h3>
+          <p class="tool-desc" data-i18n="tools.wordToPdf.description">Word-Dokumente in PDF umwandeln</p>
+          <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+        </div>
+        <!-- PDF to PNG -->
+        <a href="/de/pdf-to-png/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--convert">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.pdfToPng.name">PDF zu PNG</h3>
+          <p class="tool-desc" data-i18n="tools.pdfToPng.description">PDF-Seiten in PNG-Bilder umwandeln</p>
+          <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <!-- Add Watermark -->
+        <a href="/de/add-watermark/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--watermark">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.addWatermark.name">Wasserzeichen hinzufügen</h3>
+          <p class="tool-desc" data-i18n="tools.addWatermark.description">Text- oder Bildwasserzeichen zu PDF hinzufügen</p>
+          <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <!-- Unlock PDF -->
+        <a href="/de/unlock-pdf/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--unlock">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 019.9-1"/></svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.unlockPdf.name">PDF entsperren</h3>
+          <p class="tool-desc" data-i18n="tools.unlockPdf.description">PDF-Passwortschutz entfernen</p>
+          <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <!-- Protect PDF -->
+        <a href="/de/protect-pdf/" class="tool-card" data-aos>
+          <div class="tool-icon tool-icon--protect">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h3 class="tool-name" data-i18n="tools.protectPdf.name">PDF schützen</h3>
+          <p class="tool-desc" data-i18n="tools.protectPdf.description">Passwortschutz zu PDF hinzufügen</p>
+          <span class="tool-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad placeholder -->
+  <div class="container">
+    <div class="ad-placeholder ad-leaderboard"><span>Advertisement</span></div>
+  </div>
+
+  <!-- Trust Section -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="trust.sectionTitle">Why Choose PDFSlick?</h2>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 data-i18n="trust.privacy.title">100% Privat</h3>
+          <p data-i18n="trust.privacy.description">Dateien verlassen niemals Ihren Browser. Die gesamte Verarbeitung erfolgt lokal auf Ihrem Gerät.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 data-i18n="trust.free.title">Immer kostenlos</h3>
+          <p data-i18n="trust.free.description">Keine versteckten Gebühren, kein Abonnement erforderlich. Alle Werkzeuge völlig kostenlos nutzen.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3 data-i18n="trust.noSignup.title">Keine Anmeldung</h3>
+          <p data-i18n="trust.noSignup.description">Beginnen Sie sofort mit jedem Werkzeug. Kein Konto, keine E-Mail-Adresse erforderlich.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3 data-i18n="trust.fast.title">Lightning Fast</h3>
+          <p data-i18n="trust.fast.description">No server round-trips. Processing happens instantly on your own hardware.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="faq.title">Häufig gestellte Fragen</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" data-i18n="faq.q1">Sind meine Dateien sicher?</button>
+          <div class="faq-answer" role="region">
+            <p data-i18n="faq.a1">Ja, zu 100%. Die gesamte PDF-Verarbeitung erfolgt direkt in Ihrem Browser mit JavaScript. Ihre Dateien werden niemals auf einen Server hochgeladen. Wir können Ihre Dateien buchstäblich nicht sehen.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" data-i18n="faq.q2">Ist das wirklich kostenlos?</button>
+          <div class="faq-answer" role="region">
+            <p data-i18n="faq.a2">Ja, alle Werkzeuge sind völlig kostenlos. Es gibt keine versteckten Gebühren, keine Abonnementpläne und keine Nutzungsbeschränkungen.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" data-i18n="faq.q3">Was ist die maximale Dateigröße?</button>
+          <div class="faq-answer" role="region">
+            <p data-i18n="faq.a3">Die maximale Dateigröße hängt von Ihrem Browser und dem Gerätespeicher ab. Die meisten modernen Browser können problemlos mit Dateien bis zu 500 MB umgehen.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" data-i18n="faq.q4">Muss ich etwas installieren?</button>
+          <div class="faq-answer" role="region">
+            <p data-i18n="faq.a4">Keine Installation erforderlich. Alles funktioniert direkt in Ihrem Webbrowser auf jedem Gerät.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" data-i18n="faq.q5">Welche Browser werden unterstützt?</button>
+          <div class="faq-answer" role="region">
+            <p data-i18n="faq.a5">Alle modernen Browser werden unterstützt: Chrome, Firefox, Safari, Edge und Opera.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" data-i18n="faq.q6">Werden weitere Werkzeuge hinzugefügt?</button>
+          <div class="faq-answer" role="region">
+            <p data-i18n="faq.a6">Alle 12 Werkzeuge sind jetzt verfügbar! Zusammenführen, komprimieren, aufteilen, drehen, zwischen PDF und JPG/PNG/Word konvertieren, Wasserzeichen hinzufügen sowie PDFs schützen oder entsperren — alles ist einsatzbereit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/de/" class="logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#E8573F"/>
+            <path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/>
+          </svg>
+          <span class="logo-text">PDFSlick</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer.tagline">Kostenlose PDF-Werkzeuge, die Ihre Privatsphäre respektieren.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-i18n="footer.tools">Werkzeuge</h4>
+          <a href="/de/merge-pdf/" data-i18n="tools.mergePdf.name">PDF zusammenführen</a>
+          <a href="/de/compress-pdf/" data-i18n="tools.compressPdf.name">PDF komprimieren</a>
+          <a href="/de/split-pdf/" data-i18n="tools.splitPdf.name">PDF aufteilen</a>
+          <a href="/de/rotate-pdf/" data-i18n="tools.rotatePdf.name">PDF drehen</a>
+          <a href="/de/add-watermark/" data-i18n="tools.addWatermark.name">Wasserzeichen hinzufügen</a>
+          <a href="/de/unlock-pdf/" data-i18n="tools.unlockPdf.name">PDF entsperren</a>
+        </div>
+        <div class="footer-col">
+          <h4>Convert</h4>
+          <a href="/de/pdf-to-jpg/" data-i18n="tools.pdfToJpg.name">PDF zu JPG</a>
+          <a href="/de/pdf-to-png/" data-i18n="tools.pdfToPng.name">PDF zu PNG</a>
+          <a href="/de/pdf-to-word/" data-i18n="tools.pdfToWord.name">PDF zu Word</a>
+          <a href="/de/jpg-to-pdf/" data-i18n="tools.jpgToPdf.name">JPG zu PDF</a>
+          <a href="/de/word-to-pdf/" data-i18n="tools.wordToPdf.name">Word zu PDF</a>
+          <a href="/de/protect-pdf/" data-i18n="tools.protectPdf.name">PDF schützen</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legal">Rechtliches</h4>
+          <a href="/de/privacy.html" data-i18n="footer.privacy">Datenschutzerklärung</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="footer.copyright">© 2024 PDFSlick. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

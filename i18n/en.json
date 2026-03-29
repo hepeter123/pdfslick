@@ -1,0 +1,288 @@
+{
+  "nav": {
+    "home": "Home",
+    "allTools": "All Tools",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Free Online PDF Tools",
+    "subtitle": "No Upload, No Signup, 100% Private",
+    "description": "Process your PDF files directly in the browser. Fast, secure, and completely free.",
+    "ctaButton": "Choose a Tool"
+  },
+  "tools": {
+    "mergePdf": {
+      "name": "Merge PDF",
+      "description": "Combine multiple PDF files into one"
+    },
+    "compressPdf": {
+      "name": "Compress PDF",
+      "description": "Reduce PDF file size while maintaining quality"
+    },
+    "pdfToJpg": {
+      "name": "PDF to JPG",
+      "description": "Convert PDF pages to JPG images"
+    },
+    "jpgToPdf": {
+      "name": "JPG to PDF",
+      "description": "Convert images to a PDF document"
+    },
+    "splitPdf": {
+      "name": "Split PDF",
+      "description": "Split PDF into multiple files"
+    },
+    "rotatePdf": {
+      "name": "Rotate PDF",
+      "description": "Rotate PDF pages easily"
+    },
+    "pdfToWord": {
+      "name": "PDF to Word",
+      "description": "Convert PDF to editable Word document"
+    },
+    "wordToPdf": {
+      "name": "Word to PDF",
+      "description": "Convert Word documents to PDF"
+    },
+    "pdfToPng": {
+      "name": "PDF to PNG",
+      "description": "Convert PDF pages to PNG images"
+    },
+    "addWatermark": {
+      "name": "Add Watermark",
+      "description": "Add text or image watermark to PDF"
+    },
+    "unlockPdf": {
+      "name": "Unlock PDF",
+      "description": "Remove PDF password protection"
+    },
+    "protectPdf": {
+      "name": "Protect PDF",
+      "description": "Add password protection to PDF"
+    }
+  },
+  "trust": {
+    "privacy": {
+      "title": "100% Private",
+      "description": "Files never leave your browser. All processing happens locally on your device."
+    },
+    "free": {
+      "title": "Always Free",
+      "description": "No hidden fees, no subscription required. Use all tools completely free."
+    },
+    "noSignup": {
+      "title": "No Signup Needed",
+      "description": "Start using any tool instantly. No account, no email required."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "Are my files safe?",
+    "a1": "Yes, 100%. All PDF processing happens directly in your browser using JavaScript. Your files never get uploaded to any server. We literally cannot see your files.",
+    "q2": "Is this really free?",
+    "a2": "Yes, all tools are completely free. There are no hidden fees, no subscription plans, and no usage limits.",
+    "q3": "What's the maximum file size?",
+    "a3": "The maximum file size depends on your browser and device memory. Most modern browsers can handle files up to 500MB without issues.",
+    "q4": "Do I need to install anything?",
+    "a4": "No installation required. Everything works directly in your web browser on any device.",
+    "q5": "Which browsers are supported?",
+    "a5": "All modern browsers are supported: Chrome, Firefox, Safari, Edge, and Opera.",
+    "q6": "Will you add more tools?",
+    "a6": "Yes! We are actively working on more tools including PDF to Word, Word to PDF, and more. Stay tuned."
+  },
+  "footer": {
+    "tools": "Tools",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2024 PDFSlick. All rights reserved.",
+    "tagline": "Free PDF tools that respect your privacy."
+  },
+  "upload": {
+    "dragDrop": "Drag & drop your PDF here",
+    "or": "or",
+    "browse": "Browse Files",
+    "supports": "Supports PDF files up to 500MB"
+  },
+  "common": {
+    "download": "Download",
+    "downloadAll": "Download All",
+    "processing": "Processing...",
+    "done": "Done!",
+    "reset": "Process Another File",
+    "fileSize": "File size",
+    "pages": "Pages",
+    "comingSoon": "Coming Soon"
+  },
+  "steps": {
+    "step1": "Upload",
+    "step2": "Process",
+    "step3": "Download",
+    "step1Desc": "Select or drag your PDF file",
+    "step2Desc": "We process it in your browser",
+    "step3Desc": "Download your result instantly"
+  },
+  "merge": {
+    "title": "Merge PDF Files",
+    "subtitle": "Combine multiple PDF files into one document online for free",
+    "uploadMultiple": "Drag & drop PDF files here",
+    "supportsMultiple": "Add multiple PDF files to merge",
+    "mergeButton": "Merge PDFs",
+    "filesAdded": "files added",
+    "dragToReorder": "Drag to reorder",
+    "addMore": "Add More Files",
+    "resultTitle": "Your merged PDF is ready!",
+    "resultDesc": "All files have been merged successfully"
+  },
+  "compress": {
+    "title": "Compress PDF",
+    "subtitle": "Reduce your PDF file size while maintaining quality",
+    "compressButton": "Compress PDF",
+    "quality": "Compression Level",
+    "low": "Low (Best Quality)",
+    "medium": "Medium (Balanced)",
+    "high": "High (Smallest Size)",
+    "resultTitle": "PDF Compressed!",
+    "originalSize": "Original size",
+    "compressedSize": "Compressed size",
+    "savedPercent": "saved"
+  },
+  "pdfToJpg": {
+    "title": "PDF to JPG",
+    "subtitle": "Convert PDF pages to high-quality JPG images",
+    "convertButton": "Convert to JPG",
+    "quality": "Image Quality",
+    "resultTitle": "Conversion Complete!",
+    "pageCount": "pages converted",
+    "downloadAll": "Download All Images"
+  },
+  "jpgToPdf": {
+    "title": "JPG to PDF",
+    "subtitle": "Convert JPG images to a PDF document",
+    "uploadImages": "Drag & drop images here",
+    "supportsImages": "Supports JPG, PNG, GIF, WebP",
+    "convertButton": "Convert to PDF",
+    "resultTitle": "PDF Created!",
+    "imagesAdded": "images added"
+  },
+  "split": {
+    "title": "Split PDF",
+    "subtitle": "Split your PDF into multiple files by page ranges",
+    "splitButton": "Split PDF",
+    "splitMode": "Split Mode",
+    "byRange": "By Page Range",
+    "everyPage": "Every Single Page",
+    "pageRange": "Page Range (e.g. 1-3, 5, 7-9)",
+    "resultTitle": "PDF Split Complete!",
+    "filesCreated": "files created",
+    "preparing": "Preparing…",
+    "loading": "Loading PDF…",
+    "extracting": "Extracting pages…",
+    "saving": "Saving…",
+    "done": "Done!",
+    "enterRange": "Please enter a page range (e.g. 1-3, 5, 7-9).",
+    "rangeError": "Invalid page range",
+    "emptyRange": "No valid pages found in that range.",
+    "processingPage": "Processing page {current} of {total}…",
+    "zipping": "Creating ZIP…",
+    "resultRange": "Created PDF with {pages} page(s).",
+    "resultAll": "Created ZIP with {total} PDF file(s)."
+  },
+  "rotate": {
+    "title": "Rotate PDF",
+    "subtitle": "Rotate PDF pages to the correct orientation",
+    "rotateButton": "Rotate PDF",
+    "rotation": "Rotation",
+    "rotate90": "90° Clockwise",
+    "rotate180": "180°",
+    "rotate270": "90° Counter-clockwise",
+    "allPages": "All Pages",
+    "resultTitle": "PDF Rotated!",
+    "preparing": "Preparing…",
+    "loading": "Loading PDF…",
+    "rotating": "Rotating pages…",
+    "rotatingPage": "Rotating page {current} of {total}…",
+    "saving": "Saving…",
+    "done": "Done!",
+    "noPages": "Please select at least one page to rotate.",
+    "pagesSelected": "page(s)",
+    "angle90cw": "90° Clockwise",
+    "angle180": "180°",
+    "angle90ccw": "90° Counter-Clockwise"
+  },
+  "pdfToPng": {
+    "title": "PDF to PNG Converter",
+    "subtitle": "Convert PDF pages to lossless PNG images with transparency support",
+    "convertBtn": "Convert to PNG",
+    "scale": "Render Scale",
+    "scale1x": "1× Standard",
+    "scale2x": "2× Recommended",
+    "scale3x": "3× High-res",
+    "successTitle": "Conversion Complete!",
+    "downloadAll": "Download All as ZIP",
+    "downloadAllPages": "Download All Pages as ZIP"
+  },
+  "watermark": {
+    "title": "Add Watermark to PDF",
+    "subtitle": "Add custom text watermark to every page of your PDF",
+    "watermarkText": "Watermark Text",
+    "fontSize": "Font Size",
+    "opacity": "Opacity",
+    "color": "Color",
+    "position": "Position",
+    "diagonal": "Diagonal",
+    "center": "Center",
+    "top": "Top",
+    "bottom": "Bottom",
+    "watermarkBtn": "Add Watermark",
+    "successTitle": "Watermark Added!"
+  },
+  "unlock": {
+    "title": "Unlock PDF",
+    "subtitle": "Remove password protection from your PDF files",
+    "enterPassword": "Enter PDF Password",
+    "passwordPlaceholder": "Enter the PDF password",
+    "unlockBtn": "Unlock PDF",
+    "notEncrypted": "This PDF is not password-protected.",
+    "wrongPassword": "Incorrect password. Please try again.",
+    "successTitle": "PDF Unlocked!"
+  },
+  "protect": {
+    "title": "Protect PDF with Password",
+    "subtitle": "Add password protection to your PDF files",
+    "setPassword": "Set Password",
+    "confirmPassword": "Confirm Password",
+    "passwordsMatch": "Passwords match",
+    "passwordsNoMatch": "Passwords do not match",
+    "protectBtn": "Protect PDF",
+    "successTitle": "PDF Protected!",
+    "note": "The PDF will be re-rendered with password protection. Text content will be rasterized for security."
+  },
+  "pdfToWord": {
+    "title": "PDF to Word Converter",
+    "subtitle": "Extract text from PDF and convert to an editable Word document",
+    "convertBtn": "Convert to Word",
+    "successTitle": "Conversion Complete!",
+    "note": "This tool extracts text content from your PDF. Complex layouts, images, and formatting may not be fully preserved.",
+    "noText": "No text content was found in this PDF. It may be a scanned or image-based document."
+  },
+  "wordToPdf": {
+    "title": "Word to PDF Converter",
+    "subtitle": "Convert Word documents to PDF format instantly",
+    "convertBtn": "Convert to PDF",
+    "pageSize": "Page Size",
+    "margins": "Margins",
+    "normal": "Normal",
+    "narrow": "Narrow",
+    "wide": "Wide",
+    "successTitle": "PDF Created!",
+    "docWarning": "The .doc format has limited support. If conversion fails, please save as .docx first.",
+    "docNotSupported": "The old .doc format is not supported. Please save it as .docx in Microsoft Word (File → Save As → .docx) and try again.",
+    "reading": "Reading document...",
+    "parsing": "Parsing Word document...",
+    "rendering": "Rendering PDF...",
+    "generating": "Generating PDF...",
+    "finishing": "Finishing up...",
+    "invalidFile": "Please select a Word document (.docx or .doc).",
+    "parseError": "Failed to parse Word document",
+    "pdfError": "Failed to generate PDF"
+  }
+}

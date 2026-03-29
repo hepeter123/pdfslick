@@ -1,0 +1,256 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "allTools": "Todas las herramientas",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Herramientas PDF gratuitas en línea",
+    "subtitle": "Sin subidas, sin registro, 100% privado",
+    "description": "Procesa tus archivos PDF directamente en el navegador. Rápido, seguro y completamente gratis.",
+    "ctaButton": "Elegir una herramienta"
+  },
+  "tools": {
+    "mergePdf": {
+      "name": "Unir PDF",
+      "description": "Combina varios archivos PDF en uno solo"
+    },
+    "compressPdf": {
+      "name": "Comprimir PDF",
+      "description": "Reduce el tamaño del archivo PDF manteniendo la calidad"
+    },
+    "pdfToJpg": {
+      "name": "PDF a JPG",
+      "description": "Convierte páginas PDF en imágenes JPG"
+    },
+    "jpgToPdf": {
+      "name": "JPG a PDF",
+      "description": "Convierte imágenes en un documento PDF"
+    },
+    "splitPdf": {
+      "name": "Dividir PDF",
+      "description": "Divide un PDF en varios archivos"
+    },
+    "rotatePdf": {
+      "name": "Rotar PDF",
+      "description": "Rota las páginas del PDF fácilmente"
+    },
+    "pdfToWord": {
+      "name": "PDF a Word",
+      "description": "Convierte PDF en un documento Word editable"
+    },
+    "wordToPdf": {
+      "name": "Word a PDF",
+      "description": "Convierte documentos Word a PDF"
+    },
+    "pdfToPng": {
+      "name": "PDF a PNG",
+      "description": "Convierte páginas PDF en imágenes PNG"
+    },
+    "addWatermark": {
+      "name": "Añadir marca de agua",
+      "description": "Añade una marca de agua de texto o imagen al PDF"
+    },
+    "unlockPdf": {
+      "name": "Desbloquear PDF",
+      "description": "Elimina la protección con contraseña del PDF"
+    },
+    "protectPdf": {
+      "name": "Proteger PDF",
+      "description": "Añade protección con contraseña al PDF"
+    }
+  },
+  "trust": {
+    "privacy": {
+      "title": "100% Privado",
+      "description": "Los archivos nunca salen de tu navegador. Todo el procesamiento ocurre localmente en tu dispositivo."
+    },
+    "free": {
+      "title": "Siempre gratis",
+      "description": "Sin cargos ocultos, sin suscripción requerida. Usa todas las herramientas completamente gratis."
+    },
+    "noSignup": {
+      "title": "Sin registro",
+      "description": "Empieza a usar cualquier herramienta al instante. Sin cuenta ni correo electrónico requerido."
+    }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Mis archivos están seguros?",
+    "a1": "Sí, 100%. Todo el procesamiento de PDF ocurre directamente en tu navegador usando JavaScript. Tus archivos nunca se suben a ningún servidor. Literalmente no podemos ver tus archivos.",
+    "q2": "¿Es realmente gratis?",
+    "a2": "Sí, todas las herramientas son completamente gratuitas. No hay cargos ocultos, planes de suscripción ni límites de uso.",
+    "q3": "¿Cuál es el tamaño máximo del archivo?",
+    "a3": "El tamaño máximo del archivo depende de tu navegador y la memoria del dispositivo. La mayoría de los navegadores modernos pueden manejar archivos de hasta 500 MB sin problemas.",
+    "q4": "¿Necesito instalar algo?",
+    "a4": "No se requiere instalación. Todo funciona directamente en tu navegador web en cualquier dispositivo.",
+    "q5": "¿Qué navegadores son compatibles?",
+    "a5": "Todos los navegadores modernos son compatibles: Chrome, Firefox, Safari, Edge y Opera.",
+    "q6": "¿Añadirán más herramientas?",
+    "a6": "¡Las 12 herramientas ya están disponibles! Combinar, comprimir, convertir, dividir, rotar, marca de agua, proteger y desbloquear PDF, todo gratis."
+  },
+  "footer": {
+    "tools": "Herramientas",
+    "legal": "Legal",
+    "privacy": "Política de privacidad",
+    "copyright": "© 2024 PDFSlick. Todos los derechos reservados.",
+    "tagline": "Herramientas PDF gratuitas que respetan tu privacidad."
+  },
+  "upload": {
+    "dragDrop": "Arrastra y suelta tu PDF aquí",
+    "or": "o",
+    "browse": "Examinar archivos",
+    "supports": "Compatible con archivos PDF de hasta 500 MB"
+  },
+  "common": {
+    "download": "Descargar",
+    "downloadAll": "Descargar todo",
+    "processing": "Procesando...",
+    "done": "¡Listo!",
+    "reset": "Procesar otro archivo",
+    "fileSize": "Tamaño del archivo",
+    "pages": "Páginas",
+    "comingSoon": "Próximamente"
+  },
+  "steps": {
+    "step1": "Subir",
+    "step2": "Procesar",
+    "step3": "Descargar",
+    "step1Desc": "Selecciona o arrastra tu archivo PDF",
+    "step2Desc": "Lo procesamos en tu navegador",
+    "step3Desc": "Descarga tu resultado al instante"
+  },
+  "merge": {
+    "title": "Unir archivos PDF",
+    "subtitle": "Combina varios archivos PDF en un solo documento en línea gratis",
+    "uploadMultiple": "Arrastra y suelta archivos PDF aquí",
+    "supportsMultiple": "Añade varios archivos PDF para unirlos",
+    "mergeButton": "Unir PDFs",
+    "filesAdded": "archivos añadidos",
+    "dragToReorder": "Arrastra para reordenar",
+    "addMore": "Añadir más archivos",
+    "resultTitle": "¡Tu PDF unido está listo!",
+    "resultDesc": "Todos los archivos se han unido correctamente"
+  },
+  "compress": {
+    "title": "Comprimir PDF",
+    "subtitle": "Reduce el tamaño de tu archivo PDF manteniendo la calidad",
+    "compressButton": "Comprimir PDF",
+    "quality": "Nivel de compresión",
+    "low": "Bajo (mejor calidad)",
+    "medium": "Medio (equilibrado)",
+    "high": "Alto (tamaño mínimo)",
+    "resultTitle": "¡PDF comprimido!",
+    "originalSize": "Tamaño original",
+    "compressedSize": "Tamaño comprimido",
+    "savedPercent": "ahorrado"
+  },
+  "pdfToJpg": {
+    "title": "PDF a JPG",
+    "subtitle": "Convierte páginas PDF en imágenes JPG de alta calidad",
+    "convertButton": "Convertir a JPG",
+    "quality": "Calidad de imagen",
+    "resultTitle": "¡Conversión completa!",
+    "pageCount": "páginas convertidas",
+    "downloadAll": "Descargar todas las imágenes"
+  },
+  "jpgToPdf": {
+    "title": "JPG a PDF",
+    "subtitle": "Convierte imágenes JPG en un documento PDF",
+    "uploadImages": "Arrastra y suelta imágenes aquí",
+    "supportsImages": "Compatible con JPG, PNG, GIF, WebP",
+    "convertButton": "Convertir a PDF",
+    "resultTitle": "¡PDF creado!",
+    "imagesAdded": "imágenes añadidas"
+  },
+  "split": {
+    "title": "Dividir PDF",
+    "subtitle": "Divide tu PDF en varios archivos por rangos de páginas",
+    "splitButton": "Dividir PDF",
+    "splitMode": "Modo de división",
+    "byRange": "Por rango de páginas",
+    "everyPage": "Cada página individual",
+    "pageRange": "Rango de páginas (ej. 1-3, 5, 7-9)",
+    "resultTitle": "¡PDF dividido con éxito!",
+    "filesCreated": "archivos creados"
+  },
+  "rotate": {
+    "title": "Rotar PDF",
+    "subtitle": "Rota las páginas del PDF a la orientación correcta",
+    "rotateButton": "Rotar PDF",
+    "rotation": "Rotación",
+    "rotate90": "90° en sentido horario",
+    "rotate180": "180°",
+    "rotate270": "90° en sentido antihorario",
+    "allPages": "Todas las páginas",
+    "resultTitle": "¡PDF rotado!"
+  },
+  "pdfToPng": {
+    "title": "Convertidor PDF a PNG",
+    "subtitle": "Convierte páginas PDF a imágenes PNG sin pérdida con soporte de transparencia",
+    "convertBtn": "Convertir a PNG",
+    "scale": "Escala de renderizado",
+    "scale1x": "1× Estándar",
+    "scale2x": "2× Recomendado",
+    "scale3x": "3× Alta resolución",
+    "successTitle": "¡Conversión completada!",
+    "downloadAll": "Descargar todo como ZIP",
+    "downloadAllPages": "Descargar todas las páginas como ZIP"
+  },
+  "watermark": {
+    "title": "Agregar marca de agua a PDF",
+    "subtitle": "Añade una marca de agua de texto personalizada a cada página de tu PDF",
+    "watermarkText": "Texto de marca de agua",
+    "fontSize": "Tamaño de fuente",
+    "opacity": "Opacidad",
+    "color": "Color",
+    "position": "Posición",
+    "diagonal": "Diagonal",
+    "center": "Centro",
+    "top": "Arriba",
+    "bottom": "Abajo",
+    "watermarkBtn": "Agregar marca de agua",
+    "successTitle": "¡Marca de agua agregada!"
+  },
+  "unlock": {
+    "title": "Desbloquear PDF",
+    "subtitle": "Elimina la protección con contraseña de tus archivos PDF",
+    "enterPassword": "Ingresa la contraseña del PDF",
+    "passwordPlaceholder": "Ingresa la contraseña del PDF",
+    "unlockBtn": "Desbloquear PDF",
+    "notEncrypted": "Este PDF no está protegido con contraseña.",
+    "wrongPassword": "Contraseña incorrecta. Intenta de nuevo.",
+    "successTitle": "¡PDF desbloqueado!"
+  },
+  "protect": {
+    "title": "Proteger PDF con contraseña",
+    "subtitle": "Añade protección con contraseña a tus archivos PDF",
+    "setPassword": "Establecer contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "passwordsMatch": "Las contraseñas coinciden",
+    "passwordsNoMatch": "Las contraseñas no coinciden",
+    "protectBtn": "Proteger PDF",
+    "successTitle": "¡PDF protegido!",
+    "note": "El PDF se re-renderizará con protección. El contenido de texto se rasterizará por seguridad."
+  },
+  "pdfToWord": {
+    "title": "Convertidor PDF a Word",
+    "subtitle": "Extrae texto del PDF y conviértelo en un documento Word editable",
+    "convertBtn": "Convertir a Word",
+    "successTitle": "¡Conversión completada!",
+    "note": "Esta herramienta extrae contenido de texto del PDF. Diseños complejos, imágenes y formato pueden no preservarse completamente.",
+    "noText": "No se encontró texto en este PDF. Puede ser un documento escaneado o basado en imágenes."
+  },
+  "wordToPdf": {
+    "title": "Convertidor Word a PDF",
+    "subtitle": "Convierte documentos Word a formato PDF al instante",
+    "convertBtn": "Convertir a PDF",
+    "pageSize": "Tamaño de página",
+    "margins": "Márgenes",
+    "normal": "Normal",
+    "narrow": "Estrecho",
+    "wide": "Ancho",
+    "successTitle": "¡PDF creado!",
+    "docWarning": "Solo se admite el formato .docx. Guarda tu archivo .doc como .docx primero."
+  }
+}

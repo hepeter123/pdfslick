@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow any future admin or API paths
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://pdfslick.com/sitemap.xml

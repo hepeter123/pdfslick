@@ -1,0 +1,256 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "allTools": "すべてのツール",
+    "language": "言語"
+  },
+  "hero": {
+    "title": "無料オンラインPDFツール",
+    "subtitle": "アップロード不要・登録不要・完全プライベート",
+    "description": "ブラウザで直接PDFファイルを処理します。高速・安全・完全無料。",
+    "ctaButton": "ツールを選択"
+  },
+  "tools": {
+    "mergePdf": {
+      "name": "PDFを結合",
+      "description": "複数のPDFファイルを1つに結合する"
+    },
+    "compressPdf": {
+      "name": "PDFを圧縮",
+      "description": "画質を維持しながらPDFのファイルサイズを縮小"
+    },
+    "pdfToJpg": {
+      "name": "PDFをJPGに変換",
+      "description": "PDFページをJPG画像に変換する"
+    },
+    "jpgToPdf": {
+      "name": "JPGをPDFに変換",
+      "description": "画像をPDFドキュメントに変換する"
+    },
+    "splitPdf": {
+      "name": "PDFを分割",
+      "description": "PDFを複数のファイルに分割する"
+    },
+    "rotatePdf": {
+      "name": "PDFを回転",
+      "description": "PDFページを簡単に回転する"
+    },
+    "pdfToWord": {
+      "name": "PDFをWordに変換",
+      "description": "PDFを編集可能なWordドキュメントに変換"
+    },
+    "wordToPdf": {
+      "name": "WordをPDFに変換",
+      "description": "WordドキュメントをPDFに変換する"
+    },
+    "pdfToPng": {
+      "name": "PDFをPNGに変換",
+      "description": "PDFページをPNG画像に変換する"
+    },
+    "addWatermark": {
+      "name": "透かしを追加",
+      "description": "PDFにテキストまたは画像の透かしを追加"
+    },
+    "unlockPdf": {
+      "name": "PDFのロック解除",
+      "description": "PDFのパスワード保護を解除する"
+    },
+    "protectPdf": {
+      "name": "PDFを保護",
+      "description": "PDFにパスワード保護を追加する"
+    }
+  },
+  "trust": {
+    "privacy": {
+      "title": "100%プライベート",
+      "description": "ファイルはブラウザから外に出ません。すべての処理はお使いのデバイスでローカルに行われます。"
+    },
+    "free": {
+      "title": "常に無料",
+      "description": "隠れた料金なし、サブスクリプション不要。すべてのツールを完全無料でご利用いただけます。"
+    },
+    "noSignup": {
+      "title": "登録不要",
+      "description": "すぐにどのツールでも使い始められます。アカウントもメールアドレスも不要です。"
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "q1": "ファイルは安全ですか？",
+    "a1": "はい、100%安全です。すべてのPDF処理はJavaScriptを使ってブラウザ内で直接行われます。ファイルがサーバーにアップロードされることは一切ありません。私たちはお客様のファイルを見ることができません。",
+    "q2": "本当に無料ですか？",
+    "a2": "はい、すべてのツールは完全無料です。隠れた料金、サブスクリプションプラン、使用制限は一切ありません。",
+    "q3": "最大ファイルサイズは？",
+    "a3": "最大ファイルサイズはブラウザとデバイスのメモリによって異なります。ほとんどの最新ブラウザでは500MBまでのファイルを問題なく扱えます。",
+    "q4": "インストールが必要ですか？",
+    "a4": "インストールは不要です。すべてのデバイスのウェブブラウザで直接動作します。",
+    "q5": "対応しているブラウザは？",
+    "a5": "すべての主要ブラウザに対応しています：Chrome、Firefox、Safari、Edge、Opera。",
+    "q6": "今後ツールは追加されますか？",
+    "a6": "結合、圧縮、PDF→JPG、JPG→PDF、分割、回転、PDF→PNG、PDF→Word、Word→PDF、透かし追加、ロック解除、パスワード保護の全12ツールをご利用いただけます。今後もさらに便利なツールを追加予定です。"
+  },
+  "footer": {
+    "tools": "ツール",
+    "legal": "法的情報",
+    "privacy": "プライバシーポリシー",
+    "copyright": "© 2024 PDFSlick. All rights reserved.",
+    "tagline": "プライバシーを尊重する無料PDFツール。"
+  },
+  "upload": {
+    "dragDrop": "ここにPDFをドラッグ＆ドロップ",
+    "or": "または",
+    "browse": "ファイルを選択",
+    "supports": "500MBまでのPDFファイルに対応"
+  },
+  "common": {
+    "download": "ダウンロード",
+    "downloadAll": "すべてダウンロード",
+    "processing": "処理中...",
+    "done": "完了！",
+    "reset": "別のファイルを処理する",
+    "fileSize": "ファイルサイズ",
+    "pages": "ページ",
+    "comingSoon": "近日公開"
+  },
+  "steps": {
+    "step1": "アップロード",
+    "step2": "処理",
+    "step3": "ダウンロード",
+    "step1Desc": "PDFファイルを選択またはドラッグ",
+    "step2Desc": "ブラウザ内で処理します",
+    "step3Desc": "結果をすぐにダウンロード"
+  },
+  "merge": {
+    "title": "PDFファイルを結合",
+    "subtitle": "複数のPDFファイルをオンラインで無料で1つのドキュメントに結合",
+    "uploadMultiple": "ここにPDFファイルをドラッグ＆ドロップ",
+    "supportsMultiple": "結合する複数のPDFファイルを追加",
+    "mergeButton": "PDFを結合",
+    "filesAdded": "ファイルを追加済み",
+    "dragToReorder": "ドラッグで並べ替え",
+    "addMore": "ファイルをさらに追加",
+    "resultTitle": "結合されたPDFの準備ができました！",
+    "resultDesc": "すべてのファイルが正常に結合されました"
+  },
+  "compress": {
+    "title": "PDFを圧縮",
+    "subtitle": "品質を維持しながらPDFファイルサイズを縮小",
+    "compressButton": "PDFを圧縮",
+    "quality": "圧縮レベル",
+    "low": "低（最高品質）",
+    "medium": "中（バランス）",
+    "high": "高（最小サイズ）",
+    "resultTitle": "PDF圧縮完了！",
+    "originalSize": "元のサイズ",
+    "compressedSize": "圧縮後サイズ",
+    "savedPercent": "削減"
+  },
+  "pdfToJpg": {
+    "title": "PDFをJPGに変換",
+    "subtitle": "PDFページを高品質なJPG画像に変換",
+    "convertButton": "JPGに変換",
+    "quality": "画像品質",
+    "resultTitle": "変換完了！",
+    "pageCount": "ページを変換しました",
+    "downloadAll": "すべての画像をダウンロード"
+  },
+  "jpgToPdf": {
+    "title": "JPGをPDFに変換",
+    "subtitle": "JPG画像をPDFドキュメントに変換",
+    "uploadImages": "ここに画像をドラッグ＆ドロップ",
+    "supportsImages": "JPG、PNG、GIF、WebPに対応",
+    "convertButton": "PDFに変換",
+    "resultTitle": "PDF作成完了！",
+    "imagesAdded": "枚の画像を追加済み"
+  },
+  "split": {
+    "title": "PDFを分割",
+    "subtitle": "ページ範囲でPDFを複数のファイルに分割",
+    "splitButton": "PDFを分割",
+    "splitMode": "分割モード",
+    "byRange": "ページ範囲で分割",
+    "everyPage": "1ページごとに分割",
+    "pageRange": "ページ範囲（例：1-3, 5, 7-9）",
+    "resultTitle": "PDF分割完了！",
+    "filesCreated": "ファイルを作成しました"
+  },
+  "rotate": {
+    "title": "PDFを回転",
+    "subtitle": "PDFページを正しい向きに回転",
+    "rotateButton": "PDFを回転",
+    "rotation": "回転",
+    "rotate90": "右に90°",
+    "rotate180": "180°",
+    "rotate270": "左に90°",
+    "allPages": "すべてのページ",
+    "resultTitle": "PDF回転完了！"
+  },
+  "pdfToPng": {
+    "title": "PDF → PNG 変換",
+    "subtitle": "PDFページをロスレスPNG画像に変換（透過対応）",
+    "convertBtn": "PNGに変換",
+    "scale": "レンダリング倍率",
+    "scale1x": "1× 標準",
+    "scale2x": "2× 推奨",
+    "scale3x": "3× 高解像度",
+    "successTitle": "変換完了！",
+    "downloadAll": "ZIPで一括ダウンロード",
+    "downloadAllPages": "全ページをZIPでダウンロード"
+  },
+  "watermark": {
+    "title": "PDFに透かしを追加",
+    "subtitle": "PDFの全ページにカスタムテキスト透かしを追加",
+    "watermarkText": "透かしテキスト",
+    "fontSize": "フォントサイズ",
+    "opacity": "不透明度",
+    "color": "色",
+    "position": "位置",
+    "diagonal": "斜め",
+    "center": "中央",
+    "top": "上部",
+    "bottom": "下部",
+    "watermarkBtn": "透かしを追加",
+    "successTitle": "透かしを追加しました！"
+  },
+  "unlock": {
+    "title": "PDFロック解除",
+    "subtitle": "PDFファイルのパスワード保護を解除",
+    "enterPassword": "PDFパスワードを入力",
+    "passwordPlaceholder": "PDFのパスワードを入力してください",
+    "unlockBtn": "PDFをロック解除",
+    "notEncrypted": "このPDFはパスワード保護されていません。",
+    "wrongPassword": "パスワードが正しくありません。もう一度お試しください。",
+    "successTitle": "PDFのロックを解除しました！"
+  },
+  "protect": {
+    "title": "PDFをパスワードで保護",
+    "subtitle": "PDFファイルにパスワード保護を追加",
+    "setPassword": "パスワードを設定",
+    "confirmPassword": "パスワードを確認",
+    "passwordsMatch": "パスワードが一致",
+    "passwordsNoMatch": "パスワードが一致しません",
+    "protectBtn": "PDFを保護",
+    "successTitle": "PDFを保護しました！",
+    "note": "PDFはパスワード保護付きで再レンダリングされます。テキストコンテンツはセキュリティのためラスタライズされます。"
+  },
+  "pdfToWord": {
+    "title": "PDF → Word 変換",
+    "subtitle": "PDFからテキストを抽出し、編集可能なWord文書に変換",
+    "convertBtn": "Wordに変換",
+    "successTitle": "変換完了！",
+    "note": "このツールはPDFからテキストを抽出します。複雑なレイアウト、画像、書式は完全に保持されない場合があります。",
+    "noText": "このPDFにテキストが見つかりませんでした。スキャン文書または画像ベースの文書の可能性があります。"
+  },
+  "wordToPdf": {
+    "title": "Word → PDF 変換",
+    "subtitle": "Word文書をPDF形式に即座に変換",
+    "convertBtn": "PDFに変換",
+    "pageSize": "ページサイズ",
+    "margins": "余白",
+    "normal": "標準",
+    "narrow": "狭い",
+    "wide": "広い",
+    "successTitle": "PDFを作成しました！",
+    "docWarning": ".docx形式のみ対応しています。.docファイルは.docxとして保存してからお使いください。"
+  }
+}

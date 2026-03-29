@@ -1,0 +1,256 @@
+{
+  "nav": {
+    "home": "首页",
+    "allTools": "所有工具",
+    "language": "语言"
+  },
+  "hero": {
+    "title": "免费在线PDF工具",
+    "subtitle": "无需上传，无需注册，100%私密",
+    "description": "直接在浏览器中处理您的PDF文件。快速、安全、完全免费。",
+    "ctaButton": "选择工具"
+  },
+  "tools": {
+    "mergePdf": {
+      "name": "合并PDF",
+      "description": "将多个PDF文件合并为一个"
+    },
+    "compressPdf": {
+      "name": "压缩PDF",
+      "description": "在保持质量的同时缩小PDF文件大小"
+    },
+    "pdfToJpg": {
+      "name": "PDF转JPG",
+      "description": "将PDF页面转换为JPG图片"
+    },
+    "jpgToPdf": {
+      "name": "JPG转PDF",
+      "description": "将图片转换为PDF文档"
+    },
+    "splitPdf": {
+      "name": "拆分PDF",
+      "description": "将PDF拆分为多个文件"
+    },
+    "rotatePdf": {
+      "name": "旋转PDF",
+      "description": "轻松旋转PDF页面"
+    },
+    "pdfToWord": {
+      "name": "PDF转Word",
+      "description": "将PDF转换为可编辑的Word文档"
+    },
+    "wordToPdf": {
+      "name": "Word转PDF",
+      "description": "将Word文档转换为PDF"
+    },
+    "pdfToPng": {
+      "name": "PDF转PNG",
+      "description": "将PDF页面转换为PNG图片"
+    },
+    "addWatermark": {
+      "name": "添加水印",
+      "description": "为PDF添加文字或图片水印"
+    },
+    "unlockPdf": {
+      "name": "解锁PDF",
+      "description": "移除PDF密码保护"
+    },
+    "protectPdf": {
+      "name": "保护PDF",
+      "description": "为PDF添加密码保护"
+    }
+  },
+  "trust": {
+    "privacy": {
+      "title": "100%私密",
+      "description": "文件永远不会离开您的浏览器。所有处理都在您的设备本地完成。"
+    },
+    "free": {
+      "title": "永久免费",
+      "description": "无隐藏费用，无需订阅。所有工具完全免费使用。"
+    },
+    "noSignup": {
+      "title": "无需注册",
+      "description": "立即使用任何工具。无需账户，无需邮箱。"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "q1": "我的文件安全吗？",
+    "a1": "是的，100%安全。所有PDF处理都直接在您的浏览器中通过JavaScript完成。您的文件永远不会上传到任何服务器。我们根本无法看到您的文件。",
+    "q2": "这真的是免费的吗？",
+    "a2": "是的，所有工具完全免费。没有隐藏费用，没有订阅计划，也没有使用限制。",
+    "q3": "最大文件大小是多少？",
+    "a3": "最大文件大小取决于您的浏览器和设备内存。大多数现代浏览器可以轻松处理高达500MB的文件。",
+    "q4": "我需要安装任何东西吗？",
+    "a4": "无需安装。一切都直接在您的网络浏览器中运行，适用于任何设备。",
+    "q5": "支持哪些浏览器？",
+    "a5": "支持所有现代浏览器：Chrome、Firefox、Safari、Edge和Opera。",
+    "q6": "你们会增加更多工具吗？",
+    "a6": "我们现在提供 12 种 PDF 工具，包括合并、压缩、拆分、旋转、PDF 转 JPG、PDF 转 PNG、JPG 转 PDF、PDF 转 Word、Word 转 PDF、添加水印、解锁 PDF 和保护 PDF。更多工具正在开发中！"
+  },
+  "footer": {
+    "tools": "工具",
+    "legal": "法律",
+    "privacy": "隐私政策",
+    "copyright": "© 2024 PDFSlick。保留所有权利。",
+    "tagline": "尊重您隐私的免费PDF工具。"
+  },
+  "upload": {
+    "dragDrop": "将PDF拖放到此处",
+    "or": "或",
+    "browse": "浏览文件",
+    "supports": "支持最大500MB的PDF文件"
+  },
+  "common": {
+    "download": "下载",
+    "downloadAll": "全部下载",
+    "processing": "处理中...",
+    "done": "完成！",
+    "reset": "处理其他文件",
+    "fileSize": "文件大小",
+    "pages": "页数",
+    "comingSoon": "即将推出"
+  },
+  "steps": {
+    "step1": "上传",
+    "step2": "处理",
+    "step3": "下载",
+    "step1Desc": "选择或拖拽您的PDF文件",
+    "step2Desc": "在您的浏览器中处理",
+    "step3Desc": "立即下载处理结果"
+  },
+  "merge": {
+    "title": "合并PDF文件",
+    "subtitle": "在线免费将多个PDF文件合并为一个文档",
+    "uploadMultiple": "将PDF文件拖放到此处",
+    "supportsMultiple": "添加多个PDF文件进行合并",
+    "mergeButton": "合并PDF",
+    "filesAdded": "个文件已添加",
+    "dragToReorder": "拖动重新排序",
+    "addMore": "添加更多文件",
+    "resultTitle": "您的合并PDF已准备好！",
+    "resultDesc": "所有文件已成功合并"
+  },
+  "compress": {
+    "title": "压缩PDF",
+    "subtitle": "在保持质量的同时缩小PDF文件大小",
+    "compressButton": "压缩PDF",
+    "quality": "压缩级别",
+    "low": "低（最佳质量）",
+    "medium": "中（均衡）",
+    "high": "高（最小体积）",
+    "resultTitle": "PDF压缩完成！",
+    "originalSize": "原始大小",
+    "compressedSize": "压缩后大小",
+    "savedPercent": "已节省"
+  },
+  "pdfToJpg": {
+    "title": "PDF转JPG",
+    "subtitle": "将PDF页面转换为高质量JPG图片",
+    "convertButton": "转换为JPG",
+    "quality": "图片质量",
+    "resultTitle": "转换完成！",
+    "pageCount": "页已转换",
+    "downloadAll": "下载所有图片"
+  },
+  "jpgToPdf": {
+    "title": "JPG转PDF",
+    "subtitle": "将JPG图片转换为PDF文档",
+    "uploadImages": "将图片拖放到此处",
+    "supportsImages": "支持JPG、PNG、GIF、WebP",
+    "convertButton": "转换为PDF",
+    "resultTitle": "PDF已创建！",
+    "imagesAdded": "张图片已添加"
+  },
+  "split": {
+    "title": "拆分PDF",
+    "subtitle": "按页面范围将PDF拆分为多个文件",
+    "splitButton": "拆分PDF",
+    "splitMode": "拆分模式",
+    "byRange": "按页面范围",
+    "everyPage": "每个单页",
+    "pageRange": "页面范围（例如 1-3, 5, 7-9）",
+    "resultTitle": "PDF拆分完成！",
+    "filesCreated": "个文件已创建"
+  },
+  "rotate": {
+    "title": "旋转PDF",
+    "subtitle": "将PDF页面旋转到正确方向",
+    "rotateButton": "旋转PDF",
+    "rotation": "旋转角度",
+    "rotate90": "顺时针90°",
+    "rotate180": "180°",
+    "rotate270": "逆时针90°",
+    "allPages": "所有页面",
+    "resultTitle": "PDF已旋转！"
+  },
+  "pdfToPng": {
+    "title": "PDF 转 PNG 转换器",
+    "subtitle": "将 PDF 页面转换为无损 PNG 图片，支持透明背景",
+    "convertBtn": "转换为 PNG",
+    "scale": "渲染倍率",
+    "scale1x": "1× 标准",
+    "scale2x": "2× 推荐",
+    "scale3x": "3× 高清",
+    "successTitle": "转换完成！",
+    "downloadAll": "全部下载为 ZIP",
+    "downloadAllPages": "下载所有页面为 ZIP"
+  },
+  "watermark": {
+    "title": "PDF 添加水印",
+    "subtitle": "为 PDF 每一页添加自定义文字水印",
+    "watermarkText": "水印文字",
+    "fontSize": "字体大小",
+    "opacity": "透明度",
+    "color": "颜色",
+    "position": "位置",
+    "diagonal": "对角线",
+    "center": "居中",
+    "top": "顶部",
+    "bottom": "底部",
+    "watermarkBtn": "添加水印",
+    "successTitle": "水印已添加！"
+  },
+  "unlock": {
+    "title": "解锁 PDF",
+    "subtitle": "移除 PDF 文件的密码保护",
+    "enterPassword": "输入 PDF 密码",
+    "passwordPlaceholder": "请输入 PDF 密码",
+    "unlockBtn": "解锁 PDF",
+    "notEncrypted": "此 PDF 未设置密码保护。",
+    "wrongPassword": "密码错误，请重试。",
+    "successTitle": "PDF 已解锁！"
+  },
+  "protect": {
+    "title": "PDF 密码保护",
+    "subtitle": "为您的 PDF 文件添加密码保护",
+    "setPassword": "设置密码",
+    "confirmPassword": "确认密码",
+    "passwordsMatch": "密码匹配",
+    "passwordsNoMatch": "密码不匹配",
+    "protectBtn": "保护 PDF",
+    "successTitle": "PDF 已加密！",
+    "note": "PDF 将以密码保护方式重新渲染。文本内容将被栅格化以确保安全。"
+  },
+  "pdfToWord": {
+    "title": "PDF 转 Word 转换器",
+    "subtitle": "从 PDF 中提取文本并转换为可编辑的 Word 文档",
+    "convertBtn": "转换为 Word",
+    "successTitle": "转换完成！",
+    "note": "此工具从 PDF 中提取文本内容。复杂的排版、图片和格式可能无法完全保留。",
+    "noText": "未在此 PDF 中找到文本内容。它可能是扫描件或纯图片文档。"
+  },
+  "wordToPdf": {
+    "title": "Word 转 PDF 转换器",
+    "subtitle": "将 Word 文档即时转换为 PDF 格式",
+    "convertBtn": "转换为 PDF",
+    "pageSize": "页面大小",
+    "margins": "页边距",
+    "normal": "正常",
+    "narrow": "窄",
+    "wide": "宽",
+    "successTitle": "PDF 已创建！",
+    "docWarning": "仅支持 .docx 格式。请先将 .doc 文件另存为 .docx。"
+  }
+}
