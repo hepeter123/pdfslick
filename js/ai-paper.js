@@ -8,7 +8,7 @@
 
   // ─── Configuration ───────────────────────────────────────
   const MAX_FILE_SIZE = 20 * 1024 * 1024;
-  const FREE_PAPERS_PER_DAY = 5; // TODO: 上线前改回 1
+  const FREE_PAPERS_PER_DAY = 999; // TODO: 上线前改回 1
   const FREE_EXPLAINS_PER_PAPER = 5;
   const FREE_TRANSLATES_PER_PAPER = 5;
   const FREE_REWRITES_PER_PAPER = 5;
@@ -22,16 +22,12 @@
     es: 'Español', pt: 'Português', fr: 'Français', de: 'Deutsch'
   };
 
-  // ─── PDF.js Setup ────────────────────────────────────────
-  if (typeof pdfjsLib !== 'undefined') {
-    pdfjsLib.GlobalWorkerOptions.workerSrc =
-      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-  }
+  // ─── PDF.js Setup (loaded via ES module in HTML) ─────────
 
   // ─── State ───────────────────────────────────────────────
   let pdfDoc = null;
   let paperText = '';
-  let currentScale = 1.2;
+  let currentScale = 1.0; // multiplier on fit-width (1.0 = exactly fit container)
   let chatHistory = [];
   let allCards = []; // { id, type, text?, action?, result }
   let usageCounts = { explain: 0, translate: 0, rewrite: 0, questions: 0 };
@@ -165,111 +161,198 @@
   if (backBtn) backBtn.addEventListener('click', exitReaderMode);
 
   // ─── PDF Rendering ───────────────────────────────────────
+  const PDFJS_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.8.69';
+
   async function loadPDF(file) {
     pdfLoading.style.display = 'flex';
     pdfViewer.innerHTML = '';
     pdfViewer.appendChild(pdfLoading);
     try {
-      const buf = await file.arrayBuffer();
-      pdfDoc = await pdfjsLib.getDocument({ data: buf }).promise;
+      var buf = await file.arrayBuffer();
+      pdfDoc = await pdfjsLib.getDocument({
+        data: buf,
+        cMapUrl: PDFJS_CDN + '/cmaps/',
+        cMapPacked: true,
+        standardFontDataUrl: PDFJS_CDN + '/standard_fonts/',
+        enableXfa: true           // support XFA forms
+      }).promise;
       pageInfo.textContent = 'Page 1 / ' + pdfDoc.numPages;
       paperText = await extractAllText(pdfDoc);
       pdfLoading.style.display = 'none';
-      await renderAllPages();
+      await fitWidthAndRender();
+      pdfViewer.scrollTop = 0;
       incrementPapersUsed();
-      // NO auto-analysis — panel stays on welcome
     } catch (err) {
-      console.error('PDF load error:', err);
-      pdfLoading.innerHTML = '<p style="color:#E53E3E;">Failed to load PDF.</p>';
+      console.error('[AI Paper] PDF load error:', err);
+      var msg = 'Failed to load PDF.';
+      if (err && err.message) {
+        if (err.message.includes('password')) msg = 'This PDF is password-protected. Please use Unlock PDF first.';
+        else if (err.message.includes('worker')) msg = 'PDF.js worker failed to load. Please refresh the page.';
+      }
+      pdfLoading.innerHTML = '<p style="color:#E53E3E;">' + msg + '</p>';
     }
   }
 
   async function extractAllText(pdf) {
-    let t = '';
-    for (let i = 1; i <= pdf.numPages; i++) {
-      const page = await pdf.getPage(i);
-      const c = await page.getTextContent();
-      t += c.items.map(x => x.str).join(' ') + '\n\n';
+    var t = '';
+    for (var i = 1; i <= pdf.numPages; i++) {
+      try {
+        var page = await pdf.getPage(i);
+        var c = await page.getTextContent();
+        t += c.items.map(function(x) { return x.str; }).join(' ') + '\n\n';
+      } catch (e) {
+        console.warn('[AI Paper] Text extract failed on page ' + i, e);
+      }
     }
     return t;
   }
 
+  var _renderVersion = 0; // incremented on each render; stale renders abort
+
   async function renderAllPages() {
+    var myVersion = ++_renderVersion;
+    // Hide selection UI before clearing
+    if (typeof hideSelectionUI === 'function') hideSelectionUI();
     pdfViewer.innerHTML = '';
-    for (let i = 1; i <= pdfDoc.numPages; i++) await renderPage(i);
-  }
-
-  async function renderPage(num) {
-    const page = await pdfDoc.getPage(num);
-    const dpr = window.devicePixelRatio || 1;
-
-    // CSS viewport (logical size on screen)
-    const cssViewport = page.getViewport({ scale: currentScale });
-    // Canvas viewport (physical pixels for sharp rendering)
-    const canvasViewport = page.getViewport({ scale: currentScale * dpr });
-
-    const cssW = cssViewport.width;
-    const cssH = cssViewport.height;
-
-    // Page container
-    const div = document.createElement('div');
-    div.className = 'page';
-    div.dataset.pageNumber = num;
-    div.style.width = cssW + 'px';
-    div.style.height = cssH + 'px';
-    div.style.position = 'relative';
-
-    // Canvas — render at high-res, display at CSS size
-    const canvas = document.createElement('canvas');
-    canvas.width = canvasViewport.width;
-    canvas.height = canvasViewport.height;
-    canvas.style.width = cssW + 'px';
-    canvas.style.height = cssH + 'px';
-    div.appendChild(canvas);
-
-    // Text layer — must match CSS viewport exactly
-    const textDiv = document.createElement('div');
-    textDiv.className = 'textLayer';
-    textDiv.style.width = cssW + 'px';
-    textDiv.style.height = cssH + 'px';
-    div.appendChild(textDiv);
-
-    pdfViewer.appendChild(div);
-
-    // Render canvas at high DPI
-    await page.render({
-      canvasContext: canvas.getContext('2d'),
-      viewport: canvasViewport
-    }).promise;
-
-    // Render text layer (use CSS viewport so spans align with visual text)
-    const textContent = await page.getTextContent();
-    const textLayerTask = pdfjsLib.renderTextLayer({
-      textContent: textContent,
-      container: textDiv,
-      viewport: cssViewport,
-      textDivs: []
-    });
-    // Wait for text layer to finish rendering spans into DOM
-    if (textLayerTask && textLayerTask.promise) {
-      await textLayerTask.promise;
+    for (var i = 1; i <= pdfDoc.numPages; i++) {
+      if (_renderVersion !== myVersion) return; // a newer render started — abort this one
+      try {
+        await renderPage(i);
+      } catch (err) {
+        console.error('[AI Paper] renderPage ' + i + ' failed:', err);
+        var placeholder = document.createElement('div');
+        placeholder.className = 'page';
+        placeholder.style.cssText = 'width:100%;height:200px;display:flex;align-items:center;justify-content:center;color:#E53E3E;background:#fff';
+        placeholder.textContent = 'Page ' + i + ' failed to render';
+        pdfViewer.appendChild(placeholder);
+      }
     }
   }
 
-  // ─── Zoom ────────────────────────────────────────────────
-  function updateZoom(s) {
-    currentScale = Math.max(0.5, Math.min(3, s));
-    zoomLabel.textContent = Math.round(currentScale * 100) + '%';
-    if (pdfDoc) renderAllPages();
+  // ─── PDF Scale & Rendering (complete rewrite) ────────────
+  var _baseScale = 1;     // scale that makes page exactly fit container width
+  var _zoomTimer = null;
+  var _resizeTimer = null;
+
+  // Measure container and compute fit-width scale from page 1
+  async function calcBaseScale() {
+    if (!pdfDoc) return 1;
+    var page = await pdfDoc.getPage(1);
+    var vp = page.getViewport({ scale: 1 });
+    var available = pdfViewer.clientWidth - 40; // 20px padding each side
+    if (available <= 0) available = 500;
+    _baseScale = available / vp.width;
+    return _baseScale;
   }
-  if (zoomInBtn) zoomInBtn.addEventListener('click', () => updateZoom(currentScale + 0.2));
-  if (zoomOutBtn) zoomOutBtn.addEventListener('click', () => updateZoom(currentScale - 0.2));
-  if (fitWidthBtn) fitWidthBtn.addEventListener('click', async () => {
+
+  // Fit-width: set scale = base and re-render
+  async function fitWidthAndRender() {
+    await calcBaseScale();
+    currentScale = _baseScale;
+    updateZoomLabel();
+    await renderAllPages();
+  }
+
+  function updateZoomLabel() {
+    var pct = Math.round((currentScale / _baseScale) * 100);
+    if (zoomLabel) zoomLabel.textContent = pct + '%';
+  }
+
+  // ─── Render All Pages ─────────────────────────────────────
+  async function renderPage(num) {
+    var page = await pdfDoc.getPage(num);
+    var viewport = page.getViewport({ scale: currentScale });
+    var w = Math.round(viewport.width);
+    var h = Math.round(viewport.height);
+
+    // Page wrapper
+    var pageDiv = document.createElement('div');
+    pageDiv.className = 'page';
+    pageDiv.dataset.pageNumber = num;
+
+    // Canvas — determines page size (display: block, not absolute)
+    var canvas = document.createElement('canvas');
+    canvas.width = w;
+    canvas.height = h;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    pageDiv.appendChild(canvas);
+
+    // Text layer — overlays canvas
+    var textLayerDiv = document.createElement('div');
+    textLayerDiv.className = 'textLayer';
+    textLayerDiv.style.setProperty('--scale-factor', viewport.scale);
+    pageDiv.appendChild(textLayerDiv);
+
+    pdfViewer.appendChild(pageDiv);
+
+    // ── Canvas render ──
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillRect(0, 0, w, h);
+    try {
+      await page.render({ canvasContext: ctx, viewport: viewport }).promise;
+    } catch (err) {
+      console.error('[AI Paper] Render error page ' + num + ':', err);
+    }
+
+    // ── Text layer render ──
+    try {
+      var tc = await page.getTextContent();
+      if (typeof pdfjsLib.TextLayer === 'function') {
+        await new pdfjsLib.TextLayer({ textContentSource: tc, container: textLayerDiv, viewport: viewport }).render();
+      } else if (typeof pdfjsLib.renderTextLayer === 'function') {
+        var task = pdfjsLib.renderTextLayer({ textContentSource: tc, container: textLayerDiv, viewport: viewport, textDivs: [] });
+        if (task && task.promise) await task.promise;
+      }
+    } catch (err) {
+      console.warn('[AI Paper] TextLayer error page ' + num + ':', err);
+    }
+
+    console.log('[AI Paper] Page ' + num + ': ' + w + 'x' + h + ', scale=' + currentScale.toFixed(3));
+  }
+
+  // ─── Zoom ────────────────────────────────────────────────
+  function zoomTo(newScale, immediate) {
+    currentScale = Math.max(0.2, Math.min(5, newScale));
+    updateZoomLabel();
     if (!pdfDoc) return;
-    const p = await pdfDoc.getPage(1);
-    const v = p.getViewport({ scale: 1 });
-    updateZoom((pdfViewer.clientWidth - 32) / v.width);
-  });
+    if (immediate) { renderAllPages(); return; }
+    clearTimeout(_zoomTimer);
+    _zoomTimer = setTimeout(function() { renderAllPages(); }, 200);
+  }
+
+  if (zoomInBtn) zoomInBtn.addEventListener('click', function() { zoomTo(currentScale * 1.25, true); });
+  if (zoomOutBtn) zoomOutBtn.addEventListener('click', function() { zoomTo(currentScale * 0.8, true); });
+  if (fitWidthBtn) fitWidthBtn.addEventListener('click', function() { fitWidthAndRender(); });
+
+  // Ctrl + Wheel zoom
+  if (pdfViewer) {
+    pdfViewer.addEventListener('wheel', function(e) {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        var factor = e.deltaY > 0 ? 0.9 : 1.1;
+        zoomTo(currentScale * factor);
+      }
+    }, { passive: false });
+  }
+
+  // ─── ResizeObserver — re-fit on container resize ─────────
+  if (pdfViewer && typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(function() {
+      if (!pdfDoc) return;
+      clearTimeout(_resizeTimer);
+      _resizeTimer = setTimeout(function() {
+        var oldBase = _baseScale;
+        calcBaseScale().then(function() {
+          // Maintain zoom percentage after resize
+          currentScale = currentScale * (_baseScale / oldBase);
+          updateZoomLabel();
+          renderAllPages();
+        });
+      }, 300);
+    }).observe(pdfViewer);
+  }
 
   if (pdfViewer) pdfViewer.addEventListener('scroll', () => {
     if (!pdfDoc) return;
@@ -293,44 +376,189 @@
     document.addEventListener('mouseup', () => { if (resizing) { resizing = false; resizer.classList.remove('active'); document.body.style.cursor = ''; document.body.style.userSelect = ''; } });
   }
 
-  // ─── Text Selection → Floating Toolbar ───────────────────
-  document.addEventListener('mouseup', (e) => {
-    setTimeout(() => {
-      const sel = window.getSelection();
-      const text = sel ? sel.toString().trim() : '';
-      if (text.length > 3 && text.length < 2000 && pdfViewer && pdfViewer.contains(sel.anchorNode)) {
-        const range = sel.getRangeAt(0);
-        const rect = range.getBoundingClientRect();
-        const tw = 300, th = 44, gap = 8;
-        let left = rect.left + rect.width / 2 - tw / 2;
+  // ─── Selection Handles (SciSpace-style) ──────────────────
+  const handleStart = document.createElement('div');
+  handleStart.className = 'aip-sel-handle aip-sel-handle--start';
+  document.body.appendChild(handleStart);
+  const handleEnd = document.createElement('div');
+  handleEnd.className = 'aip-sel-handle aip-sel-handle--end';
+  document.body.appendChild(handleEnd);
+
+  let activeHandle = null;   // 'start' | 'end' | null
+  let savedRange = null;     // cloned Range while dragging
+
+  function isNodeInPdf(node) {
+    while (node) {
+      if (node === pdfViewer) return true;
+      node = node.parentNode;
+    }
+    return false;
+  }
+
+  function getCaretRange(x, y) {
+    if (document.caretRangeFromPoint) return document.caretRangeFromPoint(x, y);
+    if (document.caretPositionFromPoint) {
+      var pos = document.caretPositionFromPoint(x, y);
+      if (pos) { var r = document.createRange(); r.setStart(pos.offsetNode, pos.offset); r.collapse(true); return r; }
+    }
+    return null;
+  }
+
+  function positionHandles(range) {
+    var rects = range.getClientRects();
+    if (!rects.length) { hideSelectionUI(); return; }
+    var first = rects[0], last = rects[rects.length - 1];
+    // Start handle — bottom-left of first rect
+    handleStart.style.left = (first.left - 5) + 'px';
+    handleStart.style.top = (first.bottom - 3) + 'px';
+    handleStart.style.display = 'block';
+    // End handle — bottom-right of last rect
+    handleEnd.style.left = (last.right - 5) + 'px';
+    handleEnd.style.top = (last.bottom - 3) + 'px';
+    handleEnd.style.display = 'block';
+  }
+
+  function showSelectionUI() {
+    var sel = window.getSelection();
+    var text = sel ? sel.toString().trim() : '';
+    if (text.length > 3 && text.length < 2000 && sel.anchorNode && isNodeInPdf(sel.anchorNode) && sel.rangeCount > 0) {
+      var range = sel.getRangeAt(0);
+      var rect = range.getBoundingClientRect();
+      // Position floating toolbar above selection
+      var tw = 300, th = 44, gap = 8;
+      var left = rect.left + rect.width / 2 - tw / 2;
+      left = Math.max(gap, Math.min(left, window.innerWidth - tw - gap));
+      var top = rect.top - th - gap;
+      if (top < gap) top = rect.bottom + gap;
+      floatToolbar.style.left = left + 'px';
+      floatToolbar.style.top = top + 'px';
+      floatToolbar.style.display = 'flex';
+      floatToolbar._selectedText = text;
+      // Show drag handles
+      positionHandles(range);
+      savedRange = range.cloneRange();
+      return true;
+    }
+    return false;
+  }
+
+  function hideSelectionUI() {
+    floatToolbar.style.display = 'none';
+    handleStart.style.display = 'none';
+    handleEnd.style.display = 'none';
+    savedRange = null;
+  }
+
+  // ─── Handle Drag ────────────────────────────────────────
+  function onHandleDragStart(which, e) {
+    e.preventDefault();
+    e.stopPropagation();
+    activeHandle = which;
+    (which === 'start' ? handleStart : handleEnd).classList.add('dragging');
+  }
+
+  handleStart.addEventListener('mousedown', function(e) { onHandleDragStart('start', e); });
+  handleStart.addEventListener('touchstart', function(e) { onHandleDragStart('start', e); }, { passive: false });
+  handleEnd.addEventListener('mousedown', function(e) { onHandleDragStart('end', e); });
+  handleEnd.addEventListener('touchstart', function(e) { onHandleDragStart('end', e); }, { passive: false });
+
+  function onHandleDragMove(x, y) {
+    if (!activeHandle || !savedRange) return;
+    var caretR = getCaretRange(x, y);
+    if (!caretR || !isNodeInPdf(caretR.startContainer)) return;
+    try {
+      var newRange = document.createRange();
+      if (activeHandle === 'start') {
+        newRange.setStart(caretR.startContainer, caretR.startOffset);
+        newRange.setEnd(savedRange.endContainer, savedRange.endOffset);
+      } else {
+        newRange.setStart(savedRange.startContainer, savedRange.startOffset);
+        newRange.setEnd(caretR.startContainer, caretR.startOffset);
+      }
+      // Only apply if range is valid (start before end)
+      if (!newRange.collapsed || activeHandle === 'end') {
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(newRange);
+        positionHandles(newRange);
+        // Update toolbar position
+        var rect = newRange.getBoundingClientRect();
+        var tw = 300, th = 44, gap = 8;
+        var left = rect.left + rect.width / 2 - tw / 2;
         left = Math.max(gap, Math.min(left, window.innerWidth - tw - gap));
-        let top = rect.top - th - gap;
+        var top = rect.top - th - gap;
         if (top < gap) top = rect.bottom + gap;
         floatToolbar.style.left = left + 'px';
         floatToolbar.style.top = top + 'px';
-        floatToolbar.style.display = 'flex';
-        floatToolbar._selectedText = text;
-      } else if (!floatToolbar.contains(e.target)) {
-        floatToolbar.style.display = 'none';
+      }
+    } catch (_) { /* range boundary error — ignore */ }
+  }
+
+  document.addEventListener('mousemove', function(e) {
+    if (activeHandle) { e.preventDefault(); onHandleDragMove(e.clientX, e.clientY); }
+  });
+  document.addEventListener('touchmove', function(e) {
+    if (activeHandle && e.touches.length) { e.preventDefault(); onHandleDragMove(e.touches[0].clientX, e.touches[0].clientY); }
+  }, { passive: false });
+
+  function onHandleDragEnd() {
+    if (!activeHandle) return;
+    handleStart.classList.remove('dragging');
+    handleEnd.classList.remove('dragging');
+    activeHandle = null;
+    // Update savedRange and toolbar text
+    var sel = window.getSelection();
+    if (sel && sel.rangeCount) {
+      savedRange = sel.getRangeAt(0).cloneRange();
+      floatToolbar._selectedText = sel.toString().trim();
+    }
+  }
+  document.addEventListener('mouseup', onHandleDragEnd);
+  document.addEventListener('touchend', onHandleDragEnd);
+
+  // ─── Text Selection → Floating Toolbar ───────────────────
+  document.addEventListener('mouseup', function(e) {
+    if (activeHandle) return; // handle drag end handled above
+    setTimeout(function() {
+      if (!showSelectionUI()) {
+        // No valid selection — hide everything (unless clicking toolbar or handle)
+        if (!floatToolbar.contains(e.target) &&
+            e.target !== handleStart && e.target !== handleEnd) {
+          hideSelectionUI();
+        }
       }
     }, 50);
   });
 
+  // Touch: show toolbar on selection change (long-press select on mobile)
+  document.addEventListener('selectionchange', function() {
+    if (activeHandle) return;
+    var sel = window.getSelection();
+    var text = sel ? sel.toString().trim() : '';
+    if (text.length > 3 && sel.anchorNode && isNodeInPdf(sel.anchorNode)) {
+      setTimeout(function() { showSelectionUI(); }, 80);
+    }
+  });
+
   if (floatToolbar) {
-    floatToolbar.querySelectorAll('.aip-float-btn').forEach(btn => {
-      btn.addEventListener('click', e => {
+    floatToolbar.querySelectorAll('.aip-float-btn').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
         e.stopPropagation();
-        const action = btn.dataset.action;
-        const text = floatToolbar._selectedText;
+        var action = btn.dataset.action;
+        var text = floatToolbar._selectedText;
         if (text && action) handleUnderstandAction(action, text);
-        floatToolbar.style.display = 'none';
+        hideSelectionUI();
         window.getSelection().removeAllRanges();
       });
     });
   }
 
-  document.addEventListener('mousedown', e => {
-    if (floatToolbar && !floatToolbar.contains(e.target)) floatToolbar.style.display = 'none';
+  document.addEventListener('mousedown', function(e) {
+    // Don't hide if clicking handles or toolbar
+    if (e.target === handleStart || e.target === handleEnd) return;
+    if (floatToolbar && !floatToolbar.contains(e.target)) {
+      hideSelectionUI();
+    }
   });
 
   // ─── Understanding Actions ───────────────────────────────

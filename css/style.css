@@ -4131,59 +4131,92 @@ button.hamburger.open span:nth-child(3) {
 
 .aip-pdf-viewer {
   flex: 1;
-  overflow: auto;
-  padding: var(--space-4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-3);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 16px;
 }
 .aip-pdf-viewer .page {
   position: relative;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  background: white;
+  margin: 0 auto 16px auto;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  line-height: 0;         /* prevent extra space below canvas */
 }
 .aip-pdf-viewer .page canvas {
-  display: block;
-  position: relative;
-  z-index: 1;
-  /* Prevent browser image-smoothing blur on scaled canvas */
-  image-rendering: auto;
+  display: block;          /* NOT absolute — canvas defines page size */
 }
+
+/** Text Layer — PDF.js 4.x **/
 .aip-pdf-viewer .textLayer {
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
+  text-align: initial;
+  inset: 0;
+  overflow: clip;
   opacity: 1;
-  line-height: 1.0;
-  z-index: 2;              /* ABOVE canvas so clicks/selection work */
-  pointer-events: auto;    /* layer itself is interactive */
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  z-index: 2;
+  pointer-events: auto;
 }
-.aip-pdf-viewer .textLayer span {
-  color: transparent;       /* invisible text over the rendered canvas */
+
+.aip-pdf-viewer .textLayer :is(span, br) {
+  color: transparent;
   position: absolute;
   white-space: pre;
-  pointer-events: auto;     /* each span is clickable/selectable */
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
   cursor: text;
+  transform-origin: 0% 0%;
+  pointer-events: all;
 }
-.aip-pdf-viewer .textLayer span::selection {
-  background: rgba(108, 92, 231, 0.3);
+
+.aip-pdf-viewer .textLayer ::selection {
+  background: rgba(108, 92, 231, 0.35);
   color: transparent;
 }
-.aip-pdf-viewer .textLayer span::-moz-selection {
-  background: rgba(108, 92, 231, 0.3);
+
+.aip-pdf-viewer .textLayer ::-moz-selection {
+  background: rgba(108, 92, 231, 0.35);
   color: transparent;
 }
-/* Prevent any ancestor from blocking text selection */
-.aip-pdf-viewer .textLayer br {
+
+/* ---- Selection Handles (SciSpace-style) ---- */
+.aip-sel-handle {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-ai, #6C5CE7);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(108,92,231,0.45);
+  z-index: 1060;
   display: none;
+  cursor: grab;
+  touch-action: none;
+  pointer-events: auto;
+  transition: transform .12s ease;
+}
+.aip-sel-handle:hover,
+.aip-sel-handle.dragging {
+  transform: scale(1.35);
+  cursor: grabbing;
+}
+.aip-sel-handle::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 14px;
+  background: var(--color-ai, #6C5CE7);
+  left: 50%;
+  margin-left: -1px;
+  border-radius: 1px;
+}
+.aip-sel-handle--start::before {
+  bottom: calc(100% - 1px);
+}
+.aip-sel-handle--end::before {
+  top: calc(100% - 1px);
 }
 
 .aip-pdf-loading {
