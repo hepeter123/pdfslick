@@ -1,0 +1,285 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "allTools": "Alle Werkzeuge",
+    "language": "Sprache"
+  },
+  "hero": {
+    "title": "Kostenlose Online-PDF-Werkzeuge",
+    "subtitle": "Kein Upload, keine Anmeldung, 100% privat",
+    "description": "Verarbeiten Sie Ihre PDF-Dateien direkt im Browser. Schnell, sicher und völlig kostenlos.",
+    "ctaButton": "Werkzeug auswählen"
+  },
+  "tools": {
+    "mergePdf": {
+      "name": "PDF zusammenführen",
+      "description": "Mehrere PDF-Dateien zu einer zusammenführen"
+    },
+    "compressPdf": {
+      "name": "PDF komprimieren",
+      "description": "PDF-Dateigröße reduzieren bei gleichbleibender Qualität"
+    },
+    "pdfToJpg": {
+      "name": "PDF zu JPG",
+      "description": "PDF-Seiten in JPG-Bilder umwandeln"
+    },
+    "jpgToPdf": {
+      "name": "JPG zu PDF",
+      "description": "Bilder in ein PDF-Dokument umwandeln"
+    },
+    "splitPdf": {
+      "name": "PDF aufteilen",
+      "description": "PDF in mehrere Dateien aufteilen"
+    },
+    "rotatePdf": {
+      "name": "PDF drehen",
+      "description": "PDF-Seiten einfach drehen"
+    },
+    "pdfToWord": {
+      "name": "PDF zu Word",
+      "description": "PDF in bearbeitbares Word-Dokument umwandeln"
+    },
+    "wordToPdf": {
+      "name": "Word zu PDF",
+      "description": "Word-Dokumente in PDF umwandeln"
+    },
+    "pdfToPng": {
+      "name": "PDF zu PNG",
+      "description": "PDF-Seiten in PNG-Bilder umwandeln"
+    },
+    "addWatermark": {
+      "name": "Wasserzeichen hinzufügen",
+      "description": "Text- oder Bildwasserzeichen zu PDF hinzufügen"
+    },
+    "unlockPdf": {
+      "name": "PDF entsperren",
+      "description": "PDF-Passwortschutz entfernen"
+    },
+    "protectPdf": {
+      "name": "PDF schützen",
+      "description": "Passwortschutz zu PDF hinzufügen"
+    }
+  },
+  "trust": {
+    "privacy": {
+      "title": "100% Privat",
+      "description": "Dateien verlassen niemals Ihren Browser. Die gesamte Verarbeitung erfolgt lokal auf Ihrem Gerät."
+    },
+    "free": {
+      "title": "Immer kostenlos",
+      "description": "Keine versteckten Gebühren, kein Abonnement erforderlich. Alle Werkzeuge völlig kostenlos nutzen."
+    },
+    "noSignup": {
+      "title": "Keine Anmeldung",
+      "description": "Beginnen Sie sofort mit jedem Werkzeug. Kein Konto, keine E-Mail-Adresse erforderlich."
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "q1": "Sind meine Dateien sicher?",
+    "a1": "Ja, zu 100%. Die gesamte PDF-Verarbeitung erfolgt direkt in Ihrem Browser mit JavaScript. Ihre Dateien werden niemals auf einen Server hochgeladen. Wir können Ihre Dateien buchstäblich nicht sehen.",
+    "q2": "Ist das wirklich kostenlos?",
+    "a2": "Ja, alle Werkzeuge sind völlig kostenlos. Es gibt keine versteckten Gebühren, keine Abonnementpläne und keine Nutzungsbeschränkungen.",
+    "q3": "Was ist die maximale Dateigröße?",
+    "a3": "Die maximale Dateigröße hängt von Ihrem Browser und dem Gerätespeicher ab. Die meisten modernen Browser können problemlos mit Dateien bis zu 500 MB umgehen.",
+    "q4": "Muss ich etwas installieren?",
+    "a4": "Keine Installation erforderlich. Alles funktioniert direkt in Ihrem Webbrowser auf jedem Gerät.",
+    "q5": "Welche Browser werden unterstützt?",
+    "a5": "Alle modernen Browser werden unterstützt: Chrome, Firefox, Safari, Edge und Opera.",
+    "q6": "Werden weitere Werkzeuge hinzugefügt?",
+    "a6": "Alle 12 Werkzeuge sind jetzt verfügbar! Zusammenführen, komprimieren, aufteilen, drehen, zwischen PDF und JPG/PNG/Word konvertieren, Wasserzeichen hinzufügen sowie PDFs schützen oder entsperren — alles ist einsatzbereit."
+  },
+  "footer": {
+    "tools": "Werkzeuge",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutzerklärung",
+    "copyright": "© 2024 PDFSlick. Alle Rechte vorbehalten.",
+    "tagline": "Kostenlose PDF-Werkzeuge, die Ihre Privatsphäre respektieren."
+  },
+  "upload": {
+    "dragDrop": "PDF hier per Drag & Drop ablegen",
+    "or": "oder",
+    "browse": "Dateien durchsuchen",
+    "supports": "Unterstützt PDF-Dateien bis zu 500 MB"
+  },
+  "common": {
+    "download": "Herunterladen",
+    "downloadAll": "Alle herunterladen",
+    "processing": "Wird verarbeitet...",
+    "done": "Fertig!",
+    "reset": "Weitere Datei verarbeiten",
+    "fileSize": "Dateigröße",
+    "pages": "Seiten",
+    "comingSoon": "Demnächst verfügbar"
+  },
+  "steps": {
+    "step1": "Hochladen",
+    "step2": "Verarbeiten",
+    "step3": "Herunterladen",
+    "step1Desc": "PDF-Datei auswählen oder per Drag & Drop ablegen",
+    "step2Desc": "Wir verarbeiten sie in Ihrem Browser",
+    "step3Desc": "Ergebnis sofort herunterladen"
+  },
+  "merge": {
+    "title": "PDF-Dateien zusammenführen",
+    "subtitle": "Mehrere PDF-Dateien kostenlos online zu einem Dokument zusammenführen",
+    "uploadMultiple": "PDF-Dateien hier per Drag & Drop ablegen",
+    "supportsMultiple": "Mehrere PDF-Dateien zum Zusammenführen hinzufügen",
+    "mergeButton": "PDFs zusammenführen",
+    "filesAdded": "Dateien hinzugefügt",
+    "dragToReorder": "Zum Neuanordnen ziehen",
+    "addMore": "Weitere Dateien hinzufügen",
+    "resultTitle": "Ihr zusammengeführtes PDF ist bereit!",
+    "resultDesc": "Alle Dateien wurden erfolgreich zusammengeführt"
+  },
+  "compress": {
+    "title": "PDF komprimieren",
+    "subtitle": "PDF-Dateigröße bei gleichbleibender Qualität reduzieren",
+    "compressButton": "PDF komprimieren",
+    "quality": "Komprimierungsgrad",
+    "low": "Niedrig (beste Qualität)",
+    "medium": "Mittel (ausgewogen)",
+    "high": "Hoch (kleinste Größe)",
+    "resultTitle": "PDF komprimiert!",
+    "originalSize": "Ursprüngliche Größe",
+    "compressedSize": "Komprimierte Größe",
+    "savedPercent": "gespart"
+  },
+  "pdfToJpg": {
+    "title": "PDF zu JPG",
+    "subtitle": "PDF-Seiten in hochwertige JPG-Bilder umwandeln",
+    "convertButton": "In JPG umwandeln",
+    "quality": "Bildqualität",
+    "resultTitle": "Konvertierung abgeschlossen!",
+    "pageCount": "Seiten konvertiert",
+    "downloadAll": "Alle Bilder herunterladen"
+  },
+  "jpgToPdf": {
+    "title": "JPG zu PDF",
+    "subtitle": "JPG-Bilder in ein PDF-Dokument umwandeln",
+    "uploadImages": "Bilder hier per Drag & Drop ablegen",
+    "supportsImages": "Unterstützt JPG, PNG, GIF, WebP",
+    "convertButton": "In PDF umwandeln",
+    "resultTitle": "PDF erstellt!",
+    "imagesAdded": "Bilder hinzugefügt"
+  },
+  "split": {
+    "title": "PDF aufteilen",
+    "subtitle": "PDF nach Seitenbereichen in mehrere Dateien aufteilen",
+    "splitButton": "PDF aufteilen",
+    "splitMode": "Teilungsmodus",
+    "byRange": "Nach Seitenbereich",
+    "everyPage": "Jede einzelne Seite",
+    "pageRange": "Seitenbereich (z. B. 1-3, 5, 7-9)",
+    "resultTitle": "PDF erfolgreich aufgeteilt!",
+    "filesCreated": "Dateien erstellt"
+  },
+  "rotate": {
+    "title": "PDF drehen",
+    "subtitle": "PDF-Seiten in die richtige Ausrichtung drehen",
+    "rotateButton": "PDF drehen",
+    "rotation": "Drehung",
+    "rotate90": "90° im Uhrzeigersinn",
+    "rotate180": "180°",
+    "rotate270": "90° gegen den Uhrzeigersinn",
+    "allPages": "Alle Seiten",
+    "resultTitle": "PDF gedreht!"
+  },
+  "pdfToPng": {
+    "title": "PDF zu PNG Konverter",
+    "subtitle": "PDF-Seiten in verlustfreie PNG-Bilder mit Transparenzunterstützung konvertieren",
+    "convertBtn": "In PNG konvertieren",
+    "scale": "Renderingskalierung",
+    "scale1x": "1× Standard",
+    "scale2x": "2× Empfohlen",
+    "scale3x": "3× Hochauflösend",
+    "successTitle": "Konvertierung abgeschlossen!",
+    "downloadAll": "Alles als ZIP herunterladen",
+    "downloadAllPages": "Alle Seiten als ZIP herunterladen"
+  },
+  "watermark": {
+    "title": "Wasserzeichen zum PDF hinzufügen",
+    "subtitle": "Fügen Sie jeder Seite Ihres PDFs ein individuelles Text-Wasserzeichen hinzu",
+    "watermarkText": "Wasserzeichen-Text",
+    "fontSize": "Schriftgröße",
+    "opacity": "Deckkraft",
+    "color": "Farbe",
+    "position": "Position",
+    "diagonal": "Diagonal",
+    "center": "Zentriert",
+    "top": "Oben",
+    "bottom": "Unten",
+    "watermarkBtn": "Wasserzeichen hinzufügen",
+    "successTitle": "Wasserzeichen hinzugefügt!"
+  },
+  "unlock": {
+    "title": "PDF entsperren",
+    "subtitle": "Passwortschutz von Ihren PDF-Dateien entfernen",
+    "enterPassword": "PDF-Passwort eingeben",
+    "passwordPlaceholder": "Geben Sie das PDF-Passwort ein",
+    "unlockBtn": "PDF entsperren",
+    "notEncrypted": "Dieses PDF ist nicht passwortgeschützt.",
+    "wrongPassword": "Falsches Passwort. Bitte versuchen Sie es erneut.",
+    "successTitle": "PDF entsperrt!"
+  },
+  "protect": {
+    "title": "PDF mit Passwort schützen",
+    "subtitle": "Fügen Sie Ihren PDF-Dateien Passwortschutz hinzu",
+    "setPassword": "Passwort festlegen",
+    "confirmPassword": "Passwort bestätigen",
+    "passwordsMatch": "Passwörter stimmen überein",
+    "passwordsNoMatch": "Passwörter stimmen nicht überein",
+    "protectBtn": "PDF schützen",
+    "successTitle": "PDF geschützt!",
+    "note": "Das PDF wird mit Passwortschutz neu gerendert. Textinhalte werden aus Sicherheitsgründen gerastert."
+  },
+  "pdfToWord": {
+    "title": "PDF zu Word Konverter",
+    "subtitle": "Text aus PDF extrahieren und in ein bearbeitbares Word-Dokument konvertieren",
+    "convertBtn": "In Word konvertieren",
+    "successTitle": "Konvertierung abgeschlossen!",
+    "note": "Dieses Tool extrahiert Textinhalte aus dem PDF. Komplexe Layouts, Bilder und Formatierungen werden möglicherweise nicht vollständig beibehalten.",
+    "noText": "In diesem PDF wurde kein Text gefunden. Es könnte ein gescanntes oder bildbasiertes Dokument sein."
+  },
+  "wordToPdf": {
+    "title": "Word zu PDF Konverter",
+    "subtitle": "Word-Dokumente sofort in das PDF-Format konvertieren",
+    "convertBtn": "In PDF konvertieren",
+    "pageSize": "Seitengröße",
+    "margins": "Ränder",
+    "normal": "Normal",
+    "narrow": "Schmal",
+    "wide": "Breit",
+    "successTitle": "PDF erstellt!",
+    "docWarning": "Nur das .docx-Format wird unterstützt. Bitte speichern Sie Ihre .doc-Datei zuerst als .docx."
+  },
+  "nav.aiPaper": "AI Paper",
+  "hero.ctaAI": "AI Paper Reader testen",
+  "hero.ctaTools": "PDF-Tools ansehen",
+  "aiFeatures": {
+    "title": "AI Paper Reader",
+    "subtitle": "Mehr als Übersetzung — echtes Verständnis akademischer Artikel",
+    "summary": { "title": "Sofortiges Verständnis", "desc": "Markieren Sie eine Passage und erhalten Sie sofort eine verständliche Erklärung." },
+    "translate": { "title": "Drei Verständnismodi", "desc": "Akademische Übersetzung (präzise), einfache Erklärung (Alltagssprache), und Umschreibungsvorschläge (für Ihre Zitate)." },
+    "qa": { "title": "Fragen & Vertiefen", "desc": "Noch unklar? Stellen Sie Fragen zu jedem Teil des Artikels. Die KI antwortet in Ihrer Sprache." },
+    "cta": "AI Paper Reader kostenlos testen"
+  },
+  "aiPaper": {
+    "title": "AI Paper Reader",
+    "subtitle": "Laden Sie einen akademischen Artikel hoch und verstehen Sie ihn sofort. Markieren Sie eine Passage für verständliche Erklärungen, akademische Übersetzungen und Umschreibungsvorschläge.",
+    "panelTitle": "AI Paper Reader",
+    "understandIn": "Verstehen in:",
+    "analyzing": "Artikel wird analysiert...",
+    "summaryTitle": "Artikelzusammenfassung",
+    "termsTitle": "Schlüsselbegriffe",
+    "exportNotes": "Notizen exportieren",
+    "upload": { "title": "Ziehen Sie Ihren Artikel hierher", "subtitle": "PDF-Format, bis zu 20 MB", "btn": "PDF auswählen" },
+    "toolbar": { "translate": "Übersetzen", "explain": "Erklären", "rewrite": "Umschreiben" },
+    "limitTitle": "Tägliches Gratis-Limit erreicht",
+    "limitDesc": "Upgraden Sie auf Pro für unbegrenztes Verständnis jedes Artikels.",
+    "upgradeBtn": "Auf Pro upgraden",
+    "chat": { "title": "Fragen zu diesem Artikel", "placeholder": "Stellen Sie Ihre Frage zum Artikel...", "remaining": "kostenlose Fragen übrig" },
+    "howto": { "title": "So funktioniert's", "step1": { "title": "Artikel hochladen", "desc": "Ziehen Sie ein akademisches PDF hinein. Wir unterstützen Artikel aus allen Fachgebieten." }, "step2": { "title": "Markieren & Verstehen", "desc": "Markieren Sie Text im Artikel. Die KI erklärt, übersetzt oder schreibt ihn sofort um." }, "step3": { "title": "Fragen & Vertiefen", "desc": "Noch Fragen? Fragen Sie weiter. Die KI antwortet basierend auf dem Artikelinhalt." } },
+    "pricing": { "title": "Unbegrenztes AI-Artikelverständnis freischalten", "subtitle": "Jeder Artikel kostet uns ~0,30$ AI-Verarbeitung — wir halten die Preise niedrig, damit alle Forscher zugreifen können.", "perUse": "Pro Nutzung", "perPaper": "/ Artikel", "monthly": "Monatlich", "perMonth": "/ Monat", "yearly": "Jährlich", "perYear": "/ Jahr", "save": "38,9 $ sparen", "popular": "Am beliebtesten", "feature1a": "Vollständiges Verständnis eines Artikels", "feature1b": "Unbegrenzte Fragen", "feature1c": "Notizen-Export", "feature2a": "Unbegrenzte Artikel", "feature2b": "Unbegrenzte AI-Fragen", "feature2c": "Alle Sprachen", "feature2d": "Notizen-Export", "feature3a": "Alles vom Monatsplan", "feature3b": "Prioritätsverarbeitung", "feature3c": "Bestes Preis-Leistungs-Verhältnis", "buyOnce": "Jetzt kaufen", "subscribe": "Abonnieren" }
+  }
+}

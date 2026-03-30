@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5L3LS3MCY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K5L3LS3MCY');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Paper Reader &mdash; Understand Any Academic Paper in Plain Language | PDFSlick</title>
+  <meta name="description" content="Upload any academic paper and instantly understand it. Get plain-language explanations, academic translations, and rewrite suggestions. Highlight any passage and ask AI to explain. Free daily usage.">
+  <meta name="keywords" content="understand academic papers, AI paper reader, explain research paper, academic paper helper, paper reading assistant">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pdf-slick.com/ai-paper/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Paper Reader &mdash; Understand Any Academic Paper in Plain Language | PDFSlick">
+  <meta property="og:description" content="Upload academic papers, highlight any passage and get instant plain-language explanations. Ask AI to explain any concept. Free daily usage.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pdf-slick.com/ai-paper/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Paper Reader | PDFSlick">
+  <meta name="twitter:description" content="Upload academic papers, highlight any passage and get instant AI explanations. Understand research in plain language.">
+
+  <!-- Schema.org WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PDFSlick AI Paper Reader",
+    "url": "https://pdf-slick.com/ai-paper/",
+    "description": "AI-powered academic paper reader. Upload any research paper, highlight passages, and get instant plain-language explanations, academic translations, and rewrite suggestions.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "PDF split-screen reader with AI panel",
+      "Highlight any passage for instant explanation",
+      "Academic translation with terminology",
+      "Plain-language explanation",
+      "Rewrite suggestions for citations",
+      "Key terms glossary",
+      "Interactive Q&A about paper content",
+      "Export notes as PDF",
+      "Support for 7 languages"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="alternate" hreflang="en" href="https://pdf-slick.com/ai-paper/">
+  <link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/ai-paper/">
+  <link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/ai-paper/">
+  <link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/ai-paper/">
+  <link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/ai-paper/">
+  <link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/ai-paper/">
+  <link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/ai-paper/">
+  <link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/ai-paper/">
+  <link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/ai-paper/">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="/" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/><path d="M8 20h12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="logo-text">PDFSlick</span>
+      </a>
+      <div class="nav-links">
+        <a href="/" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="/ai-paper/" class="nav-link nav-link--ai active">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4v1a4 4 0 01-8 0V6a4 4 0 014-4z"/><path d="M6.5 10a3.5 3.5 0 00-2.06 6.33L6 22h12l1.56-5.67A3.5 3.5 0 0017.5 10"/><path d="M10 16h4"/></svg>
+          <span data-i18n="nav.aiPaper">AI Paper</span>
+          <span class="nav-badge">AI</span>
+        </a>
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            <span id="currentLang">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/ai-paper/" class="lang-option" data-lang="en">English</a>
+            <a href="/zh/ai-paper/" class="lang-option" data-lang="zh">简体中文</a>
+            <a href="/ja/ai-paper/" class="lang-option" data-lang="ja">日本語</a>
+            <a href="/ko/ai-paper/" class="lang-option" data-lang="ko">한국어</a>
+            <a href="/es/ai-paper/" class="lang-option" data-lang="es">Español</a>
+            <a href="/pt/ai-paper/" class="lang-option" data-lang="pt">Português</a>
+            <a href="/fr/ai-paper/" class="lang-option" data-lang="fr">Français</a>
+            <a href="/de/ai-paper/" class="lang-option" data-lang="de">Deutsch</a>
+          </div>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/" class="mobile-menu-link" data-i18n="nav.home">Home</a>
+    <a href="/ai-paper/" class="mobile-menu-link mobile-menu-link--ai">AI Paper Reader</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="/merge-pdf/" class="mobile-menu-link">Merge PDF</a>
+    <a href="/compress-pdf/" class="mobile-menu-link">Compress PDF</a>
+    <a href="/split-pdf/" class="mobile-menu-link">Split PDF</a>
+    <a href="/rotate-pdf/" class="mobile-menu-link">Rotate PDF</a>
+    <a href="/pdf-to-jpg/" class="mobile-menu-link">PDF to JPG</a>
+    <a href="/pdf-to-png/" class="mobile-menu-link">PDF to PNG</a>
+    <a href="/jpg-to-pdf/" class="mobile-menu-link">JPG to PDF</a>
+    <a href="/pdf-to-word/" class="mobile-menu-link">PDF to Word</a>
+    <a href="/word-to-pdf/" class="mobile-menu-link">Word to PDF</a>
+    <a href="/add-watermark/" class="mobile-menu-link">Add Watermark</a>
+    <a href="/unlock-pdf/" class="mobile-menu-link">Unlock PDF</a>
+    <a href="/protect-pdf/" class="mobile-menu-link">Protect PDF</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-langs">
+      <a href="/ai-paper/" class="lang-option" data-lang="en">English</a>
+      <a href="/zh/ai-paper/" class="lang-option" data-lang="zh">简体中文</a>
+      <a href="/ja/ai-paper/" class="lang-option" data-lang="ja">日本語</a>
+      <a href="/ko/ai-paper/" class="lang-option" data-lang="ko">한국어</a>
+      <a href="/es/ai-paper/" class="lang-option" data-lang="es">Español</a>
+      <a href="/pt/ai-paper/" class="lang-option" data-lang="pt">Português</a>
+      <a href="/fr/ai-paper/" class="lang-option" data-lang="fr">Français</a>
+      <a href="/de/ai-paper/" class="lang-option" data-lang="de">Deutsch</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Upload Screen (shown before PDF is loaded) -->
+    <section class="aip-upload-screen" id="aipUploadScreen">
+      <!-- Tool Header -->
+      <div class="tool-header tool-header--ai">
+        <div class="container">
+          <div class="tool-header-icon tool-header-icon--ai">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect width="48" height="48" rx="12" fill="url(#aiGrad2)"/>
+              <defs><linearGradient id="aiGrad2" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
+              <path d="M16 14h10a2 2 0 012 2v14a2 2 0 01-2 2H16a2 2 0 01-2-2V16a2 2 0 012-2z" fill="rgba(255,255,255,0.25)" stroke="white" stroke-width="1.5"/>
+              <path d="M20 20h4M20 24h6M20 28h3" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="33" cy="19" r="5" fill="rgba(255,255,255,0.3)" stroke="white" stroke-width="1.5"/>
+              <path d="M31 19l1.5 1.5L35 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h1 data-i18n="aiPaper.title">AI Paper Reader</h1>
+          <p class="tool-subtitle" data-i18n="aiPaper.subtitle">Upload any academic paper and understand it instantly. Highlight any passage for plain-language explanations, academic translations, and rewrite suggestions.</p>
+        </div>
+      </div>
+
+      <!-- Upload Zone -->
+      <section class="tool-section">
+        <div class="container" style="max-width:680px;">
+          <div class="tool-card" id="aipUploadCard">
+            <div class="upload-zone" id="uploadZone" role="button" tabindex="0" aria-label="Upload a PDF paper">
+              <input type="file" id="fileInput" accept=".pdf,application/pdf" hidden>
+              <div class="upload-icon">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                  <circle cx="28" cy="28" r="28" fill="#EDE9FE"/>
+                  <path d="M28 18v16M20 26l8-8 8 8" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18 38h20" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <p class="upload-primary" data-i18n="aiPaper.upload.title">Drop your academic paper here</p>
+              <p class="upload-secondary" data-i18n="aiPaper.upload.subtitle">PDF format, up to 20 MB</p>
+              <button class="btn btn-ai upload-trigger" type="button" data-i18n="aiPaper.upload.btn">Select PDF Paper</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How-To Steps -->
+      <section class="howto-section">
+        <div class="container">
+          <h2 class="section-title" data-i18n="aiPaper.howto.title">How It Works</h2>
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <div class="step-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              </div>
+              <h3 data-i18n="aiPaper.howto.step1.title">Upload Your Paper</h3>
+              <p data-i18n="aiPaper.howto.step1.desc">Drop any academic PDF. We support papers from all fields and publishers.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <div class="step-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              </div>
+              <h3 data-i18n="aiPaper.howto.step2.title">Highlight &amp; Explain</h3>
+              <p data-i18n="aiPaper.howto.step2.desc">Select any text in the paper. AI instantly explains it in plain language, translates it, or rewrites it for your use.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <div class="step-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              </div>
+              <h3 data-i18n="aiPaper.howto.step3.title">Ask &amp; Understand</h3>
+              <p data-i18n="aiPaper.howto.step3.desc">Still confused? Ask follow-up questions. AI answers based on the paper, in your language.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEO Content -->
+      <section class="seo-section">
+        <div class="container">
+          <div class="seo-content">
+            <h2>AI Paper Reader &mdash; Understand Any Academic Paper in Plain Language</h2>
+            <p>Reading academic papers is one of the biggest challenges for researchers, students, and professionals worldwide. PDFSlick's AI Paper Reader goes beyond simple translation &mdash; it helps you truly understand complex research by providing three complementary tools: plain-language explanations, precise academic translations, and rewrite suggestions for citations.</p>
+
+            <h3>More Than Translation &mdash; True Understanding</h3>
+            <p>Traditional translation tools translate word by word, often producing awkward output with academic writing. Our AI Paper Reader understands the context, methodology, and findings before producing explanations. The plain-language mode explains complex concepts using everyday words and analogies, while academic translation preserves technical terminology with original English terms in parentheses.</p>
+
+            <h3>Highlight Any Passage, Get Instant Understanding</h3>
+            <p>Simply highlight any text in the PDF viewer and choose what you need: a plain explanation, an academic translation, or a rewrite suggestion for your own paper. Each explanation card stays in your sidebar for reference, and you can ask follow-up questions about any passage.</p>
+
+            <h3>Key Features</h3>
+            <p><strong>Split-Screen Reader:</strong> PDF on the left, AI assistant on the right. Drag the divider to adjust. <strong>Auto Summary:</strong> Upload a paper and get an instant plain-language overview with key terms explained. <strong>Three Understanding Modes:</strong> Translate (academic precision), Explain (plain language), Rewrite (for your citations). <strong>Follow-up Chat:</strong> Ask anything about the paper. <strong>Export Notes:</strong> Download all your understanding cards and conversations as a PDF.</p>
+
+            <h3>Supported Languages</h3>
+            <p>PDFSlick AI Paper Reader supports understanding in seven languages: Chinese (Simplified), Japanese, Korean, Spanish, Portuguese, French, and German.</p>
+
+            <h3>Who Is This For?</h3>
+            <p>Graduate students reading papers outside their native language. Researchers keeping up with international publications. Medical professionals reviewing clinical studies. Engineers exploring cross-disciplinary research. Anyone who wants to understand &mdash; not just read &mdash; academic papers.</p>
+
+            <h3>Privacy &amp; Free Usage</h3>
+            <p>Your paper text is sent to our secure AI server for analysis and returned to your browser. We do not store papers after processing. Every user gets one free paper per day with free explanations &mdash; no registration required.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Reader Screen (shown after PDF is loaded) -->
+    <section class="aip-reader" id="aipReader" style="display:none;">
+
+      <!-- Left Panel: PDF Viewer -->
+      <div class="aip-pdf-panel" id="aipPdfPanel">
+        <!-- PDF Toolbar -->
+        <div class="aip-pdf-toolbar">
+          <div class="aip-pdf-toolbar-left">
+            <button class="aip-pdf-btn" id="aipBackBtn" type="button" title="Back to upload">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <span class="aip-pdf-filename" id="aipPdfFilename">paper.pdf</span>
+          </div>
+          <div class="aip-pdf-toolbar-center">
+            <button class="aip-pdf-btn" id="aipZoomOut" type="button" title="Zoom out">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </button>
+            <span class="aip-pdf-zoom-label" id="aipZoomLabel">100%</span>
+            <button class="aip-pdf-btn" id="aipZoomIn" type="button" title="Zoom in">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </button>
+            <span class="aip-pdf-page-info" id="aipPageInfo">Page 1 / 1</span>
+          </div>
+          <div class="aip-pdf-toolbar-right">
+            <button class="aip-pdf-btn" id="aipFitWidth" type="button" title="Fit width">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+            </button>
+          </div>
+        </div>
+        <!-- PDF Viewer Container -->
+        <div class="aip-pdf-viewer" id="aipPdfViewer">
+          <div class="aip-pdf-loading" id="aipPdfLoading">
+            <div class="spinner"></div>
+            <p>Loading PDF...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resizer -->
+      <div class="aip-resizer" id="aipResizer" title="Drag to resize panels"></div>
+
+      <!-- Right Panel: AI Chat-style Panel -->
+      <div class="aip-ai-panel" id="aipAiPanel">
+
+        <!-- Panel Toolbar (fixed top) -->
+        <div class="aip-panel-toolbar">
+          <div class="aip-panel-toolbar-left">
+            <button class="aip-toolbar-action" id="aipSummaryBtn" type="button" title="Generate paper summary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              Summary
+            </button>
+            <button class="aip-toolbar-action" id="aipTermsBtn" type="button" title="Extract key terms">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Key Terms
+            </button>
+          </div>
+          <div class="aip-panel-toolbar-right">
+            <select id="aipTargetLang" class="aip-lang-mini" title="Understand in">
+              <option value="zh">中文</option>
+              <option value="ja">日本語</option>
+              <option value="ko">한국어</option>
+              <option value="es">ES</option>
+              <option value="pt">PT</option>
+              <option value="fr">FR</option>
+              <option value="de">DE</option>
+            </select>
+            <button class="aip-panel-btn" id="aipExportNotesBtn" type="button" title="Export notes as PDF">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Scrollable Cards Flow (chat-like) -->
+        <div class="aip-panel-flow" id="aipPanelFlow">
+
+          <!-- Welcome Message (hidden once first card appears) -->
+          <div class="aip-welcome" id="aipWelcome">
+            <div class="aip-welcome-icon">
+              <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#EDE9FE"/>
+                <path d="M16 20h16M16 26h10" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round"/>
+                <path d="M32 18l3-3M35 15l-1.5 5.5L28 22" stroke="#6C5CE7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="aip-welcome-title">Select text to get started</p>
+            <p class="aip-welcome-desc">选中论文中的任意文字，点击浮动按钮即可获得翻译、解释或改写建议。</p>
+            <p class="aip-welcome-hint">You can also click <strong>Summary</strong> or <strong>Key Terms</strong> above.</p>
+          </div>
+
+          <!-- Cards are appended here dynamically -->
+
+        </div><!-- /.aip-panel-flow -->
+
+        <!-- Bottom Input (general question, always visible) -->
+        <div class="aip-bottom-input">
+          <div class="aip-bottom-input-wrap">
+            <textarea class="aip-chat-input" id="aipChatInput" placeholder="Ask anything about this paper..." rows="1" data-i18n-placeholder="aiPaper.chat.placeholder"></textarea>
+            <button class="aip-chat-send" id="aipChatSend" type="button" aria-label="Send message">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+          <p class="aip-chat-counter"><span id="aipQuestionsLeft">5</span>/5 free questions</p>
+        </div>
+
+      </div><!-- /.aip-ai-panel -->
+
+    </section><!-- /.aip-reader -->
+
+    <!-- Floating Toolbar (appears on text selection in PDF) -->
+    <div class="aip-float-toolbar" id="aipFloatToolbar" style="display:none;">
+      <button class="aip-float-btn" data-action="translate" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        <span data-i18n="aiPaper.toolbar.translate">Translate</span>
+      </button>
+      <button class="aip-float-btn aip-float-btn--primary" data-action="explain" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <span data-i18n="aiPaper.toolbar.explain">Explain</span>
+      </button>
+      <button class="aip-float-btn" data-action="rewrite" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        <span data-i18n="aiPaper.toolbar.rewrite">Rewrite</span>
+      </button>
+    </div>
+
+    <!-- Mobile AI FAB -->
+    <button class="aip-mobile-fab" id="aipMobileFab" style="display:none;" aria-label="Open AI Assistant">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2a4 4 0 014 4v1a4 4 0 01-8 0V6a4 4 0 014-4z"/><path d="M6.5 10a3.5 3.5 0 00-2.06 6.33L6 22h12l1.56-5.67A3.5 3.5 0 0017.5 10"/></svg>
+      <span>AI</span>
+    </button>
+
+    <!-- Mobile AI Panel (slide-up) -->
+    <div class="aip-mobile-panel" id="aipMobilePanel" style="display:none;">
+      <div class="aip-mobile-panel-header">
+        <div class="aip-mobile-panel-handle"></div>
+        <h3 data-i18n="aiPaper.panelTitle">AI Paper Reader</h3>
+        <button class="aip-mobile-panel-close" id="aipMobilePanelClose" type="button" aria-label="Close panel">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="aip-mobile-panel-body" id="aipMobilePanelBody"></div>
+    </div>
+
+    <!-- Usage Limit Banner -->
+    <div class="aip-limit-banner" id="aipLimitBanner" style="display:none;">
+      <div class="aip-limit-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D69E2E" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <div class="aip-limit-text">
+        <p class="aip-limit-title" data-i18n="aiPaper.limitTitle">Daily free limit reached</p>
+        <p class="aip-limit-desc" data-i18n="aiPaper.limitDesc">You've used your free explanations for today. Upgrade to Pro for unlimited understanding of every paper you read.</p>
+      </div>
+      <a href="#aipPricing" class="btn btn-ai btn-sm" data-i18n="aiPaper.upgradeBtn">Upgrade to Pro</a>
+    </div>
+
+    <!-- Pricing Section -->
+    <section class="aip-pricing-section" id="aipPricing">
+      <div class="container">
+        <h2 class="section-title" data-i18n="aiPaper.pricing.title">Unlock Unlimited AI Paper Understanding</h2>
+        <p class="section-subtitle" data-i18n="aiPaper.pricing.subtitle">Each paper costs us ~$0.30 to process with advanced AI &mdash; we keep prices low so every researcher can afford it.</p>
+        <div class="aip-pricing-grid">
+          <div class="aip-pricing-card">
+            <div class="aip-pricing-badge" data-i18n="aiPaper.pricing.perUse">Per Use</div>
+            <div class="aip-pricing-price"><span class="aip-pricing-amount">$1.99</span><span class="aip-pricing-period" data-i18n="aiPaper.pricing.perPaper">/ paper</span></div>
+            <ul class="aip-pricing-features">
+              <li data-i18n="aiPaper.pricing.feature1a">Unlimited understanding for one paper</li>
+              <li data-i18n="aiPaper.pricing.feature1b">Unlimited questions for that paper</li>
+              <li data-i18n="aiPaper.pricing.feature1c">Export notes as PDF</li>
+            </ul>
+            <button class="btn btn-outline" type="button" data-i18n="aiPaper.pricing.buyOnce">Buy Now</button>
+          </div>
+          <div class="aip-pricing-card aip-pricing-card--popular">
+            <div class="aip-pricing-popular-tag" data-i18n="aiPaper.pricing.popular">Most Popular</div>
+            <div class="aip-pricing-badge" data-i18n="aiPaper.pricing.monthly">Monthly</div>
+            <div class="aip-pricing-price"><span class="aip-pricing-amount">$9.9</span><span class="aip-pricing-period" data-i18n="aiPaper.pricing.perMonth">/ month</span></div>
+            <ul class="aip-pricing-features">
+              <li data-i18n="aiPaper.pricing.feature2a">Unlimited papers</li>
+              <li data-i18n="aiPaper.pricing.feature2b">Unlimited AI explanations</li>
+              <li data-i18n="aiPaper.pricing.feature2c">All languages supported</li>
+              <li data-i18n="aiPaper.pricing.feature2d">Export notes as PDF</li>
+            </ul>
+            <button class="btn btn-ai" type="button" data-i18n="aiPaper.pricing.subscribe">Subscribe</button>
+          </div>
+          <div class="aip-pricing-card">
+            <div class="aip-pricing-badge" data-i18n="aiPaper.pricing.yearly">Yearly</div>
+            <div class="aip-pricing-price"><span class="aip-pricing-amount">$79.9</span><span class="aip-pricing-period" data-i18n="aiPaper.pricing.perYear">/ year</span></div>
+            <div class="aip-pricing-save" data-i18n="aiPaper.pricing.save">Save $38.9</div>
+            <ul class="aip-pricing-features">
+              <li data-i18n="aiPaper.pricing.feature3a">Everything in Monthly</li>
+              <li data-i18n="aiPaper.pricing.feature3b">Priority processing</li>
+              <li data-i18n="aiPaper.pricing.feature3c">Best value</li>
+            </ul>
+            <button class="btn btn-outline" type="button" data-i18n="aiPaper.pricing.subscribe">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad Placeholder -->
+    <div class="ad-placeholder container">
+      <div class="ad-box" aria-label="Advertisement">
+        <span data-i18n="ad.placeholder">Advertisement</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/></svg>
+          <span class="logo-text">PDFSlick</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer.tagline">Free PDF tools that respect your privacy.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-i18n="footer.tools">Tools</h4>
+          <a href="/merge-pdf/" data-i18n="tools.mergePdf.name">Merge PDF</a>
+          <a href="/compress-pdf/" data-i18n="tools.compressPdf.name">Compress PDF</a>
+          <a href="/split-pdf/" data-i18n="tools.splitPdf.name">Split PDF</a>
+          <a href="/rotate-pdf/" data-i18n="tools.rotatePdf.name">Rotate PDF</a>
+          <a href="/add-watermark/" data-i18n="tools.addWatermark.name">Add Watermark</a>
+          <a href="/unlock-pdf/" data-i18n="tools.unlockPdf.name">Unlock PDF</a>
+        </div>
+        <div class="footer-col">
+          <h4>Convert</h4>
+          <a href="/pdf-to-jpg/" data-i18n="tools.pdfToJpg.name">PDF to JPG</a>
+          <a href="/pdf-to-png/" data-i18n="tools.pdfToPng.name">PDF to PNG</a>
+          <a href="/pdf-to-word/" data-i18n="tools.pdfToWord.name">PDF to Word</a>
+          <a href="/jpg-to-pdf/" data-i18n="tools.jpgToPdf.name">JPG to PDF</a>
+          <a href="/word-to-pdf/" data-i18n="tools.wordToPdf.name">Word to PDF</a>
+          <a href="/protect-pdf/" data-i18n="tools.protectPdf.name">Protect PDF</a>
+        </div>
+        <div class="footer-col">
+          <h4>AI</h4>
+          <a href="/ai-paper/">AI Paper Reader</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legal">Legal</h4>
+          <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p data-i18n="footer.copyright">&copy; 2024 PDFSlick. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/ai-paper.js"></script>
+</body>
+</html>

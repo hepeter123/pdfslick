@@ -1,0 +1,283 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "allTools": "Tous les outils",
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "Outils PDF gratuits en ligne",
+    "subtitle": "Sans téléchargement, sans inscription, 100% privé",
+    "description": "Traitez vos fichiers PDF directement dans le navigateur. Rapide, sécurisé et entièrement gratuit.",
+    "ctaButton": "Choisir un outil"
+  },
+  "tools": {
+    "mergePdf": {
+      "name": "Fusionner PDF",
+      "description": "Combinez plusieurs fichiers PDF en un seul"
+    },
+    "compressPdf": {
+      "name": "Compresser PDF",
+      "description": "Réduisez la taille du fichier PDF tout en maintenant la qualité"
+    },
+    "pdfToJpg": {
+      "name": "PDF en JPG",
+      "description": "Convertissez des pages PDF en images JPG"
+    },
+    "jpgToPdf": {
+      "name": "JPG en PDF",
+      "description": "Convertissez des images en document PDF"
+    },
+    "splitPdf": {
+      "name": "Diviser PDF",
+      "description": "Divisez un PDF en plusieurs fichiers"
+    },
+    "rotatePdf": {
+      "name": "Faire pivoter PDF",
+      "description": "Faites pivoter les pages PDF facilement"
+    },
+    "pdfToWord": {
+      "name": "PDF en Word",
+      "description": "Convertissez un PDF en document Word modifiable"
+    },
+    "wordToPdf": {
+      "name": "Word en PDF",
+      "description": "Convertissez des documents Word en PDF"
+    },
+    "pdfToPng": {
+      "name": "PDF en PNG",
+      "description": "Convertissez des pages PDF en images PNG"
+    },
+    "addWatermark": {
+      "name": "Ajouter un filigrane",
+      "description": "Ajoutez un filigrane texte ou image à un PDF"
+    },
+    "unlockPdf": {
+      "name": "Déverrouiller PDF",
+      "description": "Supprimez la protection par mot de passe d'un PDF"
+    },
+    "protectPdf": {
+      "name": "Protéger PDF",
+      "description": "Ajoutez une protection par mot de passe à un PDF"
+    }
+  },
+  "trust": {
+    "privacy": {
+      "title": "100% Privé",
+      "description": "Les fichiers ne quittent jamais votre navigateur. Tout le traitement se fait localement sur votre appareil."
+    },
+    "free": {
+      "title": "Toujours gratuit",
+      "description": "Aucun frais caché, aucun abonnement requis. Utilisez tous les outils entièrement gratuitement."
+    },
+    "noSignup": {
+      "title": "Sans inscription",
+      "description": "Commencez à utiliser n'importe quel outil instantanément. Aucun compte, aucun e-mail requis."
+    }
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "q1": "Mes fichiers sont-ils sécurisés ?",
+    "a1": "Oui, à 100%. Tout le traitement PDF se fait directement dans votre navigateur via JavaScript. Vos fichiers ne sont jamais téléchargés sur un serveur. Nous ne pouvons littéralement pas voir vos fichiers.",
+    "q2": "Est-ce vraiment gratuit ?",
+    "a2": "Oui, tous les outils sont entièrement gratuits. Il n'y a pas de frais cachés, de plans d'abonnement ni de limites d'utilisation.",
+    "q3": "Quelle est la taille maximale du fichier ?",
+    "a3": "La taille maximale du fichier dépend de votre navigateur et de la mémoire de votre appareil. La plupart des navigateurs modernes peuvent gérer des fichiers jusqu'à 500 Mo sans problème.",
+    "q4": "Dois-je installer quelque chose ?",
+    "a4": "Aucune installation n'est requise. Tout fonctionne directement dans votre navigateur sur n'importe quel appareil.",
+    "q5": "Quels navigateurs sont pris en charge ?",
+    "a5": "Tous les navigateurs modernes sont pris en charge : Chrome, Firefox, Safari, Edge et Opera.",
+    "q6": "Allez-vous ajouter d'autres outils ?",
+    "a6": "Nos 12 outils sont désormais tous disponibles ! Fusionner, compresser, diviser, pivoter, convertir entre PDF et JPG/PNG/Word, ajouter un filigrane, et protéger ou déverrouiller vos PDF — tout est prêt à utiliser."
+  },
+  "footer": {
+    "tools": "Outils",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "copyright": "© 2024 PDFSlick. Tous droits réservés.",
+    "tagline": "Outils PDF gratuits qui respectent votre vie privée."
+  },
+  "upload": {
+    "dragDrop": "Glissez-déposez votre PDF ici",
+    "or": "ou",
+    "browse": "Parcourir les fichiers",
+    "supports": "Prend en charge les fichiers PDF jusqu'à 500 Mo"
+  },
+  "common": {
+    "download": "Télécharger",
+    "downloadAll": "Tout télécharger",
+    "processing": "Traitement en cours...",
+    "done": "Terminé !",
+    "reset": "Traiter un autre fichier",
+    "fileSize": "Taille du fichier",
+    "pages": "Pages",
+    "comingSoon": "Bientôt disponible"
+  },
+  "steps": {
+    "step1": "Téléverser",
+    "step2": "Traiter",
+    "step3": "Télécharger",
+    "step1Desc": "Sélectionnez ou glissez votre fichier PDF",
+    "step2Desc": "Nous le traitons dans votre navigateur",
+    "step3Desc": "Téléchargez votre résultat instantanément"
+  },
+  "merge": {
+    "title": "Fusionner des fichiers PDF",
+    "subtitle": "Combinez plusieurs fichiers PDF en un seul document en ligne gratuitement",
+    "uploadMultiple": "Glissez-déposez des fichiers PDF ici",
+    "supportsMultiple": "Ajoutez plusieurs fichiers PDF à fusionner",
+    "mergeButton": "Fusionner les PDF",
+    "filesAdded": "fichiers ajoutés",
+    "dragToReorder": "Glisser pour réorganiser",
+    "addMore": "Ajouter d'autres fichiers",
+    "resultTitle": "Votre PDF fusionné est prêt !",
+    "resultDesc": "Tous les fichiers ont été fusionnés avec succès"
+  },
+  "compress": {
+    "title": "Compresser PDF",
+    "subtitle": "Réduisez la taille de votre fichier PDF tout en maintenant la qualité",
+    "compressButton": "Compresser PDF",
+    "quality": "Niveau de compression",
+    "low": "Faible (meilleure qualité)",
+    "medium": "Moyen (équilibré)",
+    "high": "Élevé (taille minimale)",
+    "resultTitle": "PDF compressé !",
+    "originalSize": "Taille originale",
+    "compressedSize": "Taille compressée",
+    "savedPercent": "économisé"
+  },
+  "pdfToJpg": {
+    "title": "PDF en JPG",
+    "subtitle": "Convertissez des pages PDF en images JPG de haute qualité",
+    "convertButton": "Convertir en JPG",
+    "quality": "Qualité d'image",
+    "resultTitle": "Conversion terminée !",
+    "pageCount": "pages converties",
+    "downloadAll": "Télécharger toutes les images"
+  },
+  "jpgToPdf": {
+    "title": "JPG en PDF",
+    "subtitle": "Convertissez des images JPG en document PDF",
+    "uploadImages": "Glissez-déposez des images ici",
+    "supportsImages": "Prend en charge JPG, PNG, GIF, WebP",
+    "convertButton": "Convertir en PDF",
+    "resultTitle": "PDF créé !",
+    "imagesAdded": "images ajoutées"
+  },
+  "split": {
+    "title": "Diviser PDF",
+    "subtitle": "Divisez votre PDF en plusieurs fichiers par plages de pages",
+    "splitButton": "Diviser PDF",
+    "splitMode": "Mode de division",
+    "byRange": "Par plage de pages",
+    "everyPage": "Chaque page individuelle",
+    "pageRange": "Plage de pages (ex. 1-3, 5, 7-9)",
+    "resultTitle": "PDF divisé avec succès !",
+    "filesCreated": "fichiers créés"
+  },
+  "rotate": {
+    "title": "Faire pivoter PDF",
+    "subtitle": "Faites pivoter les pages PDF dans la bonne orientation",
+    "rotateButton": "Faire pivoter PDF",
+    "rotation": "Rotation",
+    "rotate90": "90° dans le sens horaire",
+    "rotate180": "180°",
+    "rotate270": "90° dans le sens antihoraire",
+    "allPages": "Toutes les pages",
+    "resultTitle": "PDF pivoté !"
+  },
+  "pdfToPng": {
+    "title": "Convertisseur PDF en PNG",
+    "subtitle": "Convertissez les pages PDF en images PNG sans perte avec support de la transparence",
+    "convertBtn": "Convertir en PNG",
+    "scale": "Échelle de rendu",
+    "scale1x": "1× Standard",
+    "scale2x": "2× Recommandé",
+    "scale3x": "3× Haute résolution",
+    "successTitle": "Conversion terminée !",
+    "downloadAll": "Tout télécharger en ZIP",
+    "downloadAllPages": "Télécharger toutes les pages en ZIP"
+  },
+  "watermark": {
+    "title": "Ajouter un filigrane au PDF",
+    "subtitle": "Ajoutez un filigrane texte personnalisé à chaque page de votre PDF",
+    "watermarkText": "Texte du filigrane",
+    "fontSize": "Taille de police",
+    "opacity": "Opacité",
+    "color": "Couleur",
+    "position": "Position",
+    "diagonal": "Diagonale",
+    "center": "Centre",
+    "top": "Haut",
+    "bottom": "Bas",
+    "watermarkBtn": "Ajouter le filigrane",
+    "successTitle": "Filigrane ajouté !"
+  },
+  "unlock": {
+    "title": "Déverrouiller le PDF",
+    "subtitle": "Supprimez la protection par mot de passe de vos fichiers PDF",
+    "enterPassword": "Entrez le mot de passe du PDF",
+    "passwordPlaceholder": "Entrez le mot de passe du PDF",
+    "unlockBtn": "Déverrouiller le PDF",
+    "notEncrypted": "Ce PDF n'est pas protégé par mot de passe.",
+    "wrongPassword": "Mot de passe incorrect. Veuillez réessayer.",
+    "successTitle": "PDF déverrouillé !"
+  },
+  "protect": {
+    "title": "Protéger le PDF par mot de passe",
+    "subtitle": "Ajoutez une protection par mot de passe à vos fichiers PDF",
+    "setPassword": "Définir le mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "passwordsMatch": "Les mots de passe correspondent",
+    "passwordsNoMatch": "Les mots de passe ne correspondent pas",
+    "protectBtn": "Protéger le PDF",
+    "successTitle": "PDF protégé !",
+    "note": "Le PDF sera re-rendu avec protection. Le contenu textuel sera rastérisé pour la sécurité."
+  },
+  "pdfToWord": {
+    "title": "Convertisseur PDF en Word",
+    "subtitle": "Extrayez le texte du PDF et convertissez-le en document Word modifiable",
+    "convertBtn": "Convertir en Word",
+    "successTitle": "Conversion terminée !",
+    "note": "Cet outil extrait le contenu textuel du PDF. Les mises en page complexes, images et formatages peuvent ne pas être entièrement préservés.",
+    "noText": "Aucun texte n'a été trouvé dans ce PDF. Il peut s'agir d'un document numérisé ou basé sur des images."
+  },
+  "wordToPdf": {
+    "title": "Convertisseur Word en PDF",
+    "subtitle": "Convertissez instantanément vos documents Word en format PDF",
+    "convertBtn": "Convertir en PDF",
+    "pageSize": "Format de page",
+    "margins": "Marges",
+    "normal": "Normales",
+    "narrow": "Étroites",
+    "wide": "Larges",
+    "successTitle": "PDF créé !",
+    "docWarning": "Seul le format .docx est pris en charge. Enregistrez d'abord votre fichier .doc au format .docx."
+  },
+  "nav.aiPaper": "AI Paper",
+  "hero.ctaAI": "Essayer AI Paper Reader",
+  "hero.ctaTools": "Voir les outils PDF",
+  "aiFeatures": {
+    "title": "AI Paper Reader",
+    "subtitle": "Plus qu'une traduction — une vraie compréhension des articles académiques",
+    "summary": { "title": "Compréhension instantanée", "desc": "Sélectionnez un passage et obtenez une explication en langage simple instantanément." },
+    "translate": { "title": "Trois modes de compréhension", "desc": "Traduction académique (précise), explication simple (en mots de tous les jours), et suggestions de réécriture (pour vos citations)." },
+    "qa": { "title": "Questions et approfondissement", "desc": "Encore confus ? Posez des questions sur n'importe quelle partie de l'article. L'IA répond dans votre langue." },
+    "cta": "Essayer AI Paper Reader — Gratuit"
+  },
+  "aiPaper": {
+    "title": "AI Paper Reader",
+    "subtitle": "Téléchargez un article académique et comprenez-le instantanément. Sélectionnez un passage pour des explications simples, des traductions académiques et des suggestions de réécriture.",
+    "panelTitle": "AI Paper Reader",
+    "understandIn": "Comprendre en :",
+    "analyzing": "Analyse de votre article...",
+    "summaryTitle": "Résumé de l'article",
+    "termsTitle": "Termes clés",
+    "exportNotes": "Exporter les notes",
+    "upload": { "title": "Déposez votre article ici", "subtitle": "Format PDF, jusqu'à 20 Mo", "btn": "Sélectionner un PDF" },
+    "toolbar": { "translate": "Traduire", "explain": "Expliquer", "rewrite": "Réécrire" },
+    "limitTitle": "Limite quotidienne gratuite atteinte", "limitDesc": "Passez à Pro pour comprendre chaque article sans limite.", "upgradeBtn": "Passer à Pro",
+    "chat": { "title": "Poser une question sur cet article", "placeholder": "Posez votre question sur l'article...", "remaining": "questions gratuites restantes" },
+    "howto": { "title": "Comment ça marche", "step1": { "title": "Téléchargez votre article", "desc": "Déposez n'importe quel PDF académique. Nous supportons les articles de tous les domaines." }, "step2": { "title": "Sélectionnez et comprenez", "desc": "Sélectionnez du texte dans l'article. L'IA vous l'explique, traduit ou réécrit instantanément." }, "step3": { "title": "Questionnez et approfondissez", "desc": "Des doutes ? Continuez à poser des questions. L'IA répond en se basant sur le contenu de l'article." } },
+    "pricing": { "title": "Débloquez la compréhension illimitée d'articles", "subtitle": "Chaque article nous coûte ~0,30$ de traitement IA — nous maintenons des prix bas pour que tous puissent y accéder.", "perUse": "À l'unité", "perPaper": "/ article", "monthly": "Mensuel", "perMonth": "/ mois", "yearly": "Annuel", "perYear": "/ an", "save": "Économisez 38,9 $", "popular": "Le plus populaire", "feature1a": "Compréhension complète d'un article", "feature1b": "Questions illimitées", "feature1c": "Export des notes", "feature2a": "Articles illimités", "feature2b": "Questions AI illimitées", "feature2c": "Toutes les langues", "feature2d": "Export des notes", "feature3a": "Tout du plan mensuel", "feature3b": "Traitement prioritaire", "feature3c": "Meilleur rapport qualité-prix", "buyOnce": "Acheter", "subscribe": "S'abonner" }
+  }
+}

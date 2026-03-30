@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5L3LS3MCY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K5L3LS3MCY');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF 합치기 | PDFSlick</title>
+  <meta name="description" content="여러 PDF 파일을 하나로 합치기">
+  <meta name="keywords" content="merge pdf online free, combine pdf files, pdf merger, join pdf, merge pdf documents, combine pdf online">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pdf-slick.com/ko/merge-pdf/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PDF 합치기 | PDFSlick">
+  <meta property="og:description" content="여러 PDF 파일을 하나로 합치기">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pdf-slick.com/ko/merge-pdf/">
+
+  <!-- Schema.org WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PDFSlick Merge PDF",
+    "url": "https://pdf-slick.com/ko/merge-pdf/",
+    "description": "Free online tool to merge multiple PDF files into one document. No registration required.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    },
+    "featureList": [
+        "Merge multiple PDF files",
+        "Drag and drop reordering",
+        "No file size limit per file",
+        "No registration required",
+        "Files processed locally in browser"
+    ]
+}
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="alternate" hreflang="en" href="https://pdf-slick.com/merge-pdf/">
+  <link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/merge-pdf/">
+  <link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/merge-pdf/">
+  <link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/merge-pdf/">
+  <link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/merge-pdf/">
+  <link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/merge-pdf/">
+  <link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/merge-pdf/">
+  <link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/merge-pdf/">
+  <link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/merge-pdf/">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="/ko/" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/><path d="M8 20h12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="logo-text">PDFSlick</span>
+      </a>
+      <div class="nav-links">
+        <a href="/ko/" class="nav-link" data-i18n="nav.home">홈</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            <span id="currentLang">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/merge-pdf/" class="lang-option" data-lang="en">🇺🇸 English</a>
+            <a href="/zh/merge-pdf/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+            <a href="/ja/merge-pdf/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+            <a href="/ko/merge-pdf/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+            <a href="/es/merge-pdf/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+            <a href="/pt/merge-pdf/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+            <a href="/fr/merge-pdf/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+            <a href="/de/merge-pdf/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+          </div>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/ko/" class="mobile-menu-link" data-i18n="nav.home">홈</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="/ko/merge-pdf/" class="mobile-menu-link">Merge PDF</a>
+    <a href="/ko/compress-pdf/" class="mobile-menu-link">Compress PDF</a>
+    <a href="/ko/split-pdf/" class="mobile-menu-link">Split PDF</a>
+    <a href="/ko/rotate-pdf/" class="mobile-menu-link">Rotate PDF</a>
+    <a href="/ko/pdf-to-jpg/" class="mobile-menu-link">PDF to JPG</a>
+    <a href="/ko/pdf-to-png/" class="mobile-menu-link">PDF to PNG</a>
+    <a href="/ko/jpg-to-pdf/" class="mobile-menu-link">JPG to PDF</a>
+    <a href="/ko/pdf-to-word/" class="mobile-menu-link">PDF to Word</a>
+    <a href="/ko/word-to-pdf/" class="mobile-menu-link">Word to PDF</a>
+    <a href="/ko/add-watermark/" class="mobile-menu-link">Add Watermark</a>
+    <a href="/ko/unlock-pdf/" class="mobile-menu-link">Unlock PDF</a>
+    <a href="/ko/protect-pdf/" class="mobile-menu-link">Protect PDF</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-langs">
+      <a href="/merge-pdf/" class="lang-option" data-lang="en">🇺🇸 English</a>
+      <a href="/zh/merge-pdf/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+      <a href="/ja/merge-pdf/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+      <a href="/ko/merge-pdf/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+      <a href="/es/merge-pdf/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+      <a href="/pt/merge-pdf/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+      <a href="/fr/merge-pdf/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+      <a href="/de/merge-pdf/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Tool Header -->
+    <section class="tool-header">
+      <div class="container">
+        <div class="tool-header-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <rect width="48" height="48" rx="12" fill="#FEF0ED"/>
+            <path d="M14 12h8a5 5 0 010 10h-8V12z" fill="#E8573F"/>
+            <path d="M14 22h10" stroke="#E8573F" stroke-width="2" stroke-linecap="round"/>
+            <rect x="26" y="12" width="8" height="20" rx="2" fill="#E8573F" opacity="0.4"/>
+            <path d="M22 28l4 4 4-4" stroke="#E8573F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M26 32V20" stroke="#E8573F" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h1 data-i18n="tools.mergePdf.title">Merge PDF Files Online</h1>
+        <p class="tool-subtitle" data-i18n="tools.mergePdf.subtitle">Combine multiple PDF documents into a single file. Free, fast, and secure — no upload to servers.</p>
+      </div>
+    </section>
+
+    <!-- Tool Card -->
+    <section class="tool-section">
+      <div class="container">
+        <div class="tool-card">
+
+          <!-- Upload Zone -->
+          <div class="upload-zone" id="uploadZone" role="button" tabindex="0" aria-label="Upload PDF files">
+            <input type="file" id="fileInput" accept=".pdf,application/pdf" multiple hidden>
+            <div class="upload-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <circle cx="28" cy="28" r="28" fill="#FEF0ED"/>
+                <path d="M28 18v16M20 26l8-8 8 8" stroke="#E8573F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 38h20" stroke="#E8573F" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="upload-primary" data-i18n="upload.dragDrop">여기에 PDF를 드래그 앤 드롭하세요</p>
+            <p class="upload-secondary" data-i18n="upload.orClick">or click to browse files</p>
+            <button class="btn btn-outline upload-trigger" type="button" data-i18n="upload.selectFiles">Select PDF Files</button>
+          </div>
+
+          <!-- File List -->
+          <div class="file-list-container" id="fileListContainer" style="display:none;">
+            <div class="file-list-header">
+              <h3 data-i18n="merge.fileListTitle">Files to Merge <span id="fileCount" class="badge">0</span></h3>
+              <p class="file-list-hint" data-i18n="merge.dragHint">Drag rows to reorder · files will be merged in listed order</p>
+            </div>
+            <ul class="file-list" id="fileList" aria-label="PDF files to merge"></ul>
+            <div class="file-list-actions">
+              <button class="btn btn-outline btn-sm" id="addMoreBtn" type="button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <span data-i18n="merge.addMore">파일 더 추가</span>
+              </button>
+              <input type="file" id="addMoreInput" accept=".pdf,application/pdf" multiple hidden>
+            </div>
+          </div>
+
+          <!-- Action Button -->
+          <div class="action-area" id="actionArea" style="display:none;">
+            <button class="btn btn-primary btn-lg" id="mergeBtn" type="button" disabled>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"/></svg>
+              <span data-i18n="merge.mergeBtn">Merge PDFs</span>
+            </button>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="progress-container" id="progressContainer" style="display:none;" aria-live="polite">
+            <div class="progress-label">
+              <span data-i18n="progress.merging">Merging PDFs…</span>
+              <span id="progressPercent">0%</span>
+            </div>
+            <div class="progress-bar-track">
+              <div class="progress-bar-fill" id="progressBar" style="width:0%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <!-- Result Section -->
+          <div class="result-section" id="resultSection" style="display:none;" aria-live="polite">
+            <div class="result-icon result-icon--success">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 data-i18n="merge.successTitle">PDF Merged Successfully!</h3>
+            <p class="result-meta" id="resultMeta"></p>
+            <div class="result-actions">
+              <a class="btn btn-primary btn-lg" id="downloadBtn" href="#" download="merged.pdf">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span data-i18n="result.download">Download Merged PDF</span>
+              </a>
+              <button class="btn btn-outline" id="resetBtn" type="button" data-i18n="result.mergeAnother">Merge Another</button>
+            </div>
+          </div>
+
+        </div><!-- /.tool-card -->
+      </div>
+    </section>
+
+    <!-- How-To Steps -->
+    <section class="howto-section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="howto.title">How to Merge PDF Files</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <h3 data-i18n="merge.step1.title">Upload PDF Files</h3>
+            <p data-i18n="merge.step1.desc">Select two or more PDF files from your device, or drag and drop them directly into the upload zone.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+            </div>
+            <h3 data-i18n="merge.step2.title">Arrange Order</h3>
+            <p data-i18n="merge.step2.desc">Drag and drop files in the list to set the desired order. The merged PDF will follow exactly this sequence.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <h3 data-i18n="merge.step3.title">Download Merged PDF</h3>
+            <p data-i18n="merge.step3.desc">Click "Merge PDFs" and your combined document downloads instantly — no email, no sign-up required.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO Content -->
+    <section class="seo-section">
+      <div class="container">
+        <div class="seo-content">
+          <h2>Merge PDF Online Free — The Easiest Way to Combine PDFs</h2>
+          <p>Need to combine multiple PDF files into one? PDFSlick's free PDF merger tool lets you merge PDF documents directly in your browser — no software to install, no account to create, and no file size limits per file. Whether you're consolidating invoices, combining chapters of a report, or assembling a portfolio, our tool handles it in seconds.</p>
+
+          <h3>Why Use PDFSlick to Merge PDFs?</h3>
+          <p>Unlike many online PDF merger tools that upload your files to remote servers, PDFSlick processes everything locally using your browser's built-in capabilities. Your documents never leave your device, which means your sensitive business contracts, personal tax documents, or confidential reports stay completely private. We use the industry-standard pdf-lib library to guarantee professional-quality output every time.</p>
+
+          <h3>How Our PDF Merger Works</h3>
+          <p>Our tool leverages pdf-lib, a robust JavaScript PDF manipulation library, to combine your files with full fidelity. All fonts, images, vector graphics, hyperlinks, and form fields embedded in your original PDFs are preserved in the merged output. The resulting file is a fully standards-compliant PDF that opens correctly in Adobe Acrobat, Preview, web browsers, and any other PDF viewer.</p>
+
+          <h3>Drag-to-Reorder for Perfect Results</h3>
+          <p>Getting the page order right is critical when merging documents. PDFSlick provides an intuitive drag-and-drop interface so you can arrange your files in exactly the right sequence before merging. Add as many PDFs as you need, shuffle them around, remove any you don't want, and add more files at any point. You're in complete control of the final output.</p>
+
+          <h3>Common Use Cases for Merging PDFs</h3>
+          <p>Professionals across every industry rely on PDF merging daily. Accountants combine bank statements and receipts into single expense reports. Lawyers assemble contract exhibits into one exhibit file. Students compile research notes and references into unified study guides. Real estate agents bundle listing sheets, disclosure forms, and inspection reports. HR departments consolidate onboarding documents into complete packets for new employees.</p>
+
+          <h3>Supported Features</h3>
+          <p>PDFSlick's merge tool supports all standard PDF versions and preserves embedded content including rasterized images (JPEG, PNG, TIFF), vector artwork, custom fonts, clickable hyperlinks, bookmarks, and fillable form fields. Multi-page PDFs are fully supported — you can merge a 1-page document with a 200-page document without any issues. The merged PDF maintains the original resolution and quality of every source file.</p>
+
+          <h3>Completely Free, No Limits</h3>
+          <p>There are no hidden fees, no premium tiers, and no watermarks added to your merged PDF. PDFSlick is genuinely free to use as often as you need. Merge two files, merge twenty — the tool works the same way every time. Bookmark this page and come back whenever you have PDFs to combine.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad Placeholder -->
+    <div class="ad-placeholder container">
+      <div class="ad-box" aria-label="Advertisement">
+        <span data-i18n="ad.placeholder">Advertisement</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/ko/" class="logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/></svg>
+          <span class="logo-text">PDFSlick</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer.tagline">개인정보를 존중하는 무료 PDF 도구.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-i18n="footer.tools">도구</h4>
+          <a href="/ko/merge-pdf/" data-i18n="tools.mergePdf.name">PDF 합치기</a>
+          <a href="/ko/compress-pdf/" data-i18n="tools.compressPdf.name">PDF 압축</a>
+          <a href="/ko/split-pdf/" data-i18n="tools.splitPdf.name">PDF 분할</a>
+          <a href="/ko/rotate-pdf/" data-i18n="tools.rotatePdf.name">PDF 회전</a>
+          <a href="/ko/add-watermark/" data-i18n="tools.addWatermark.name">워터마크 추가</a>
+          <a href="/ko/unlock-pdf/" data-i18n="tools.unlockPdf.name">PDF 잠금 해제</a>
+        </div>
+        <div class="footer-col">
+          <h4>Convert</h4>
+          <a href="/ko/pdf-to-jpg/" data-i18n="tools.pdfToJpg.name">PDF를 JPG로</a>
+          <a href="/ko/pdf-to-png/" data-i18n="tools.pdfToPng.name">PDF를 PNG로</a>
+          <a href="/ko/pdf-to-word/" data-i18n="tools.pdfToWord.name">PDF를 Word로</a>
+          <a href="/ko/jpg-to-pdf/" data-i18n="tools.jpgToPdf.name">JPG를 PDF로</a>
+          <a href="/ko/word-to-pdf/" data-i18n="tools.wordToPdf.name">Word를 PDF로</a>
+          <a href="/ko/protect-pdf/" data-i18n="tools.protectPdf.name">PDF 보호</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legal">법적 고지</h4>
+          <a href="/ko/privacy.html" data-i18n="footer.privacy">개인정보처리방침</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p data-i18n="footer.copyright">© 2024 PDFSlick. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/merge.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5L3LS3MCY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K5L3LS3MCY');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF aufteilen | PDFSlick</title>
+  <meta name="description" content="PDF in mehrere Dateien aufteilen">
+  <meta name="keywords" content="split pdf online free, separate pdf pages, pdf splitter, extract pdf pages, divide pdf">
+  <link rel="canonical" href="https://pdf-slick.com/de/split-pdf/">
+  <meta property="og:title" content="PDF aufteilen | PDFSlick">
+  <meta property="og:description" content="PDF in mehrere Dateien aufteilen">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pdf-slick.com/de/split-pdf/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PDF aufteilen | PDFSlick">
+  <meta name="twitter:description" content="PDF in mehrere Dateien aufteilen">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Split PDF Online",
+    "url": "https://pdf-slick.com/de/split-pdf/",
+    "description": "Free online PDF splitter. Extract page ranges or split every page into individual PDF files. Runs entirely in your browser — no files are uploaded to any server.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    },
+    "featureList": [
+        "Split PDF by page range",
+        "Extract every page as a separate PDF",
+        "Download all split pages as a ZIP file",
+        "100% browser-based, no server upload"
+    ]
+}
+  </script>
+  <link rel="alternate" hreflang="en" href="https://pdf-slick.com/split-pdf/">
+  <link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/split-pdf/">
+  <link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/split-pdf/">
+  <link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/split-pdf/">
+  <link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/split-pdf/">
+  <link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/split-pdf/">
+  <link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/split-pdf/">
+  <link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/split-pdf/">
+  <link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/split-pdf/">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="/de/" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/><path d="M8 20h12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="logo-text">PDFSlick</span>
+      </a>
+      <div class="nav-links">
+        <a href="/de/" class="nav-link" data-i18n="nav.home">Startseite</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            <span id="currentLang">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/split-pdf/" class="lang-option" data-lang="en">🇺🇸 English</a>
+            <a href="/zh/split-pdf/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+            <a href="/ja/split-pdf/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+            <a href="/ko/split-pdf/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+            <a href="/es/split-pdf/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+            <a href="/pt/split-pdf/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+            <a href="/fr/split-pdf/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+            <a href="/de/split-pdf/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+          </div>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/de/" class="mobile-menu-link" data-i18n="nav.home">Startseite</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="/de/merge-pdf/" class="mobile-menu-link">Merge PDF</a>
+    <a href="/de/compress-pdf/" class="mobile-menu-link">Compress PDF</a>
+    <a href="/de/split-pdf/" class="mobile-menu-link">Split PDF</a>
+    <a href="/de/rotate-pdf/" class="mobile-menu-link">Rotate PDF</a>
+    <a href="/de/pdf-to-jpg/" class="mobile-menu-link">PDF to JPG</a>
+    <a href="/de/pdf-to-png/" class="mobile-menu-link">PDF to PNG</a>
+    <a href="/de/jpg-to-pdf/" class="mobile-menu-link">JPG to PDF</a>
+    <a href="/de/pdf-to-word/" class="mobile-menu-link">PDF to Word</a>
+    <a href="/de/word-to-pdf/" class="mobile-menu-link">Word to PDF</a>
+    <a href="/de/add-watermark/" class="mobile-menu-link">Add Watermark</a>
+    <a href="/de/unlock-pdf/" class="mobile-menu-link">Unlock PDF</a>
+    <a href="/de/protect-pdf/" class="mobile-menu-link">Protect PDF</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-langs">
+      <a href="/split-pdf/" class="lang-option" data-lang="en">🇺🇸 English</a>
+      <a href="/zh/split-pdf/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+      <a href="/ja/split-pdf/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+      <a href="/ko/split-pdf/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+      <a href="/es/split-pdf/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+      <a href="/pt/split-pdf/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+      <a href="/fr/split-pdf/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+      <a href="/de/split-pdf/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+    </div>
+  </div>
+
+  <!-- Hero / Tool Section -->
+  <section class="tool-hero">
+    <div class="container">
+      <div class="tool-hero-text">
+        <h1 data-i18n="split.title">PDF aufteilen</h1>
+        <p data-i18n="split.subtitle">PDF nach Seitenbereichen in mehrere Dateien aufteilen</p>
+      </div>
+
+      <!-- Upload Zone -->
+      <div class="upload-zone" id="uploadZone" role="button" tabindex="0" aria-label="Upload a PDF file">
+        <input type="file" id="fileInput" accept=".pdf,application/pdf" hidden>
+        <div class="upload-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+        </div>
+        <p class="upload-title" data-i18n="split.upload.title">Drop your PDF here or click to browse</p>
+        <p class="upload-sub" data-i18n="split.upload.sub">PDF files only — processed entirely in your browser</p>
+        <button class="btn btn-outline" type="button" data-i18n="split.upload.btn">Choose PDF File</button>
+      </div>
+
+      <!-- File Info & Page Count -->
+      <div id="fileInfo" class="file-info-bar" hidden>
+        <div class="file-info-inner">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span id="fileName" class="file-name-label"></span>
+          <span id="pageCount" class="page-count-badge"></span>
+          <button id="clearFileBtn" class="icon-btn" type="button" aria-label="Remove file" title="Remove file">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Split Options Panel -->
+      <div id="optionsPanel" class="options-panel" hidden>
+        <h3 class="options-title" data-i18n="split.options.title">Split Options</h3>
+
+        <div class="radio-group">
+          <label class="radio-option" id="modeRangeLabel">
+            <input type="radio" name="splitMode" id="modeRange" value="range" checked>
+            <span class="radio-custom"></span>
+            <div class="radio-text">
+              <strong data-i18n="split.mode.range">Extract page range</strong>
+              <small data-i18n="split.mode.range.desc">Extract specific pages or ranges into a single PDF</small>
+            </div>
+          </label>
+          <label class="radio-option" id="modeAllLabel">
+            <input type="radio" name="splitMode" id="modeAll" value="all">
+            <span class="radio-custom"></span>
+            <div class="radio-text">
+              <strong data-i18n="split.mode.all">Split every page</strong>
+              <small data-i18n="split.mode.all.desc">Each page becomes a separate PDF, downloaded as a ZIP</small>
+            </div>
+          </label>
+        </div>
+
+        <!-- Range Input -->
+        <div id="rangeGroup" class="range-group">
+          <label for="rangeInput" class="input-label" data-i18n="split.range.label">Page range</label>
+          <input
+            type="text"
+            id="rangeInput"
+            class="text-input"
+            placeholder="e.g. 1-3, 5, 7-9"
+            aria-label="Page range, e.g. 1-3, 5, 7-9"
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <p class="input-hint" data-i18n="split.range.hint">Enter page numbers and ranges separated by commas. Example: <code>1-3, 5, 7-9</code></p>
+          <p id="rangeError" class="input-error" hidden></p>
+        </div>
+
+        <!-- Action Button -->
+        <button class="btn btn-primary btn-lg" id="splitBtn" type="button" disabled data-i18n="split.btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5M8 3H3v5M21 21l-5-5M3 21l5-5M12 12v9M12 3v4"/></svg>
+          <span data-i18n="split.btn">Split PDF</span>
+        </button>
+      </div>
+
+      <!-- Progress Bar -->
+      <div id="progressWrap" class="progress-wrap" hidden>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progressBar" style="width:0%"></div>
+        </div>
+        <p class="progress-label" id="progressLabel" data-i18n="split.splitting">Splitting PDF…</p>
+      </div>
+
+      <!-- Result Section -->
+      <div id="resultSection" class="result-section" hidden>
+        <div class="result-icon">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h2 data-i18n="split.result.title">Split Complete!</h2>
+        <p id="resultInfo" class="result-info"></p>
+        <a id="downloadBtn" class="btn btn-primary btn-lg" download data-i18n="split.result.download">Download File</a>
+        <button id="resetBtn" class="btn btn-outline btn-sm" type="button" data-i18n="split.result.reset">Split Another PDF</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Ad Placeholder -->
+  <div class="container">
+    <div class="ad-placeholder" aria-label="Advertisement">
+      <span>Advertisement</span>
+    </div>
+  </div>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title" data-i18n="split.how.title">How to Split a PDF</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <h3 data-i18n="split.step1.title">Upload PDF</h3>
+          <p data-i18n="split.step1.desc">Drag and drop your PDF file onto the upload area, or click to select a file from your device. The tool will read the file and display the total page count.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3 data-i18n="split.step2.title">Set Options</h3>
+          <p data-i18n="split.step2.desc">Choose whether to extract a specific page range (e.g. 1-3, 5, 7-9) into a single PDF, or split every page into its own separate PDF file.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h3 data-i18n="split.step3.title">Download</h3>
+          <p data-i18n="split.step3.desc">Click Split PDF and download your file. When splitting all pages, you'll receive a ZIP archive containing each page as an individual PDF file.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Content -->
+  <section class="seo-content">
+    <div class="container seo-inner">
+      <h2>Split PDF Online — Free PDF Splitter with No Limits</h2>
+      <p>PDFs often bundle content that you want to share or work with separately — chapters of a book, individual invoices in a batch export, or specific pages from a lengthy report. PDFSlick's free online PDF splitter gives you full control over your document pages with no software to install, no account to create, and no files ever leaving your browser.</p>
+
+      <h3>Two Powerful Ways to Split a PDF</h3>
+      <p>PDFSlick offers two splitting modes to cover all common use cases:</p>
+      <p><strong>Extract Page Range:</strong> Use this mode when you want to pull specific pages out of a PDF and save them as a new, smaller PDF. You can specify individual pages, hyphenated ranges, or a combination — for example, entering <code>1-3, 5, 8-10</code> will create a PDF containing pages 1, 2, 3, 5, 8, 9, and 10 from the original document.</p>
+      <p><strong>Split Every Page:</strong> This mode takes each page of the original PDF and saves it as its own individual PDF file. All the separate page files are then bundled into a single ZIP archive for easy download. This is ideal for processing invoices, separating handouts, or archiving individual document pages.</p>
+
+      <h3>No Upload Required — Complete Privacy</h3>
+      <p>Most online PDF tools route your files through a remote server for processing. This creates potential privacy exposure, particularly with confidential legal, medical, or financial PDFs. PDFSlick uses <strong>pdf-lib</strong>, a JavaScript library that runs entirely in your web browser. When you open a PDF with PDFSlick, the file is read from your local disk into browser memory. The split pages are also generated in memory and downloaded directly to your device. At no point does any file content pass through PDFSlick's servers.</p>
+
+      <h3>How Page Range Syntax Works</h3>
+      <p>The page range input accepts a flexible comma-separated format. Single numbers select individual pages; a hyphen between two numbers selects a range. You can mix and match freely. For a 20-page document: <code>1, 3-6, 10, 14-20</code> would extract pages 1, 3, 4, 5, 6, 10, 14, 15, 16, 17, 18, 19, and 20. Pages are always included in their original document order regardless of the order you type the ranges.</p>
+
+      <h3>Other PDF Tools You May Need</h3>
+      <p>After splitting your PDF you may want to <a href="/de/merge-pdf/">merge</a> selected pages with another document, or <a href="/de/compress-pdf/">compress</a> a large PDF to reduce file size. You can also <a href="/de/rotate-pdf/">rotate</a> any pages that appear sideways, or convert the PDF to JPG images using PDFSlick's <a href="/de/pdf-to-jpg/">PDF to JPG</a> tool.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/de/" class="logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/></svg>
+          <span class="logo-text">PDFSlick</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer.tagline">Kostenlose PDF-Werkzeuge, die Ihre Privatsphäre respektieren.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-i18n="footer.tools">Werkzeuge</h4>
+          <a href="/de/merge-pdf/" data-i18n="tools.mergePdf.name">PDF zusammenführen</a>
+          <a href="/de/compress-pdf/" data-i18n="tools.compressPdf.name">PDF komprimieren</a>
+          <a href="/de/split-pdf/" data-i18n="tools.splitPdf.name">PDF aufteilen</a>
+          <a href="/de/rotate-pdf/" data-i18n="tools.rotatePdf.name">PDF drehen</a>
+          <a href="/de/add-watermark/" data-i18n="tools.addWatermark.name">Wasserzeichen hinzufügen</a>
+          <a href="/de/unlock-pdf/" data-i18n="tools.unlockPdf.name">PDF entsperren</a>
+        </div>
+        <div class="footer-col">
+          <h4>Convert</h4>
+          <a href="/de/pdf-to-jpg/" data-i18n="tools.pdfToJpg.name">PDF zu JPG</a>
+          <a href="/de/pdf-to-png/" data-i18n="tools.pdfToPng.name">PDF zu PNG</a>
+          <a href="/de/pdf-to-word/" data-i18n="tools.pdfToWord.name">PDF zu Word</a>
+          <a href="/de/jpg-to-pdf/" data-i18n="tools.jpgToPdf.name">JPG zu PDF</a>
+          <a href="/de/word-to-pdf/" data-i18n="tools.wordToPdf.name">Word zu PDF</a>
+          <a href="/de/protect-pdf/" data-i18n="tools.protectPdf.name">PDF schützen</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legal">Rechtliches</h4>
+          <a href="/de/privacy.html" data-i18n="footer.privacy">Datenschutzerklärung</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p data-i18n="footer.copyright">© 2024 PDFSlick. Alle Rechte vorbehalten.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/split.js"></script>
+</body>
+</html>

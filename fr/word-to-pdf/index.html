@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5L3LS3MCY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K5L3LS3MCY');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word en PDF | PDFSlick</title>
+  <meta name="description" content="Convertissez des documents Word en PDF">
+  <meta name="keywords" content="word to pdf converter, docx to pdf, convert word to pdf online free, word to pdf online, doc to pdf, word document to pdf">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pdf-slick.com/fr/word-to-pdf/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Word en PDF | PDFSlick">
+  <meta property="og:description" content="Convertissez des documents Word en PDF">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pdf-slick.com/fr/word-to-pdf/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Word en PDF | PDFSlick">
+  <meta name="twitter:description" content="Convertissez des documents Word en PDF">
+
+  <!-- Schema.org WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PDFSlick Word to PDF Converter",
+    "url": "https://pdf-slick.com/fr/word-to-pdf/",
+    "description": "Free online tool to convert Word documents (.docx) to PDF format. No registration required.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    },
+    "featureList": [
+        "Convert DOCX and DOC to PDF",
+        "Preserves formatting, fonts, tables, and images",
+        "Server-side conversion for pixel-perfect results",
+        "No registration required",
+        "Up to 10 MB file size",
+        "3 free conversions per day"
+    ]
+}
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="alternate" hreflang="en" href="https://pdf-slick.com/word-to-pdf/">
+  <link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/word-to-pdf/">
+  <link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/word-to-pdf/">
+  <link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/word-to-pdf/">
+  <link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/word-to-pdf/">
+  <link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/word-to-pdf/">
+  <link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/word-to-pdf/">
+  <link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/word-to-pdf/">
+  <link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/word-to-pdf/">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="/fr/" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/><path d="M8 20h12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="logo-text">PDFSlick</span>
+      </a>
+      <div class="nav-links">
+        <a href="/fr/" class="nav-link" data-i18n="nav.home">Accueil</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            <span id="currentLang">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/word-to-pdf/" class="lang-option" data-lang="en">🇺🇸 English</a>
+            <a href="/zh/word-to-pdf/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+            <a href="/ja/word-to-pdf/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+            <a href="/ko/word-to-pdf/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+            <a href="/es/word-to-pdf/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+            <a href="/pt/word-to-pdf/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+            <a href="/fr/word-to-pdf/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+            <a href="/de/word-to-pdf/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+          </div>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/fr/" class="mobile-menu-link" data-i18n="nav.home">Accueil</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="/fr/merge-pdf/" class="mobile-menu-link">Merge PDF</a>
+    <a href="/fr/compress-pdf/" class="mobile-menu-link">Compress PDF</a>
+    <a href="/fr/split-pdf/" class="mobile-menu-link">Split PDF</a>
+    <a href="/fr/rotate-pdf/" class="mobile-menu-link">Rotate PDF</a>
+    <a href="/fr/pdf-to-jpg/" class="mobile-menu-link">PDF to JPG</a>
+    <a href="/fr/pdf-to-png/" class="mobile-menu-link">PDF to PNG</a>
+    <a href="/fr/jpg-to-pdf/" class="mobile-menu-link">JPG to PDF</a>
+    <a href="/fr/pdf-to-word/" class="mobile-menu-link">PDF to Word</a>
+    <a href="/fr/word-to-pdf/" class="mobile-menu-link">Word to PDF</a>
+    <a href="/fr/add-watermark/" class="mobile-menu-link">Add Watermark</a>
+    <a href="/fr/unlock-pdf/" class="mobile-menu-link">Unlock PDF</a>
+    <a href="/fr/protect-pdf/" class="mobile-menu-link">Protect PDF</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-langs">
+      <a href="/word-to-pdf/" class="lang-option" data-lang="en">🇺🇸 English</a>
+      <a href="/zh/word-to-pdf/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+      <a href="/ja/word-to-pdf/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+      <a href="/ko/word-to-pdf/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+      <a href="/es/word-to-pdf/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+      <a href="/pt/word-to-pdf/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+      <a href="/fr/word-to-pdf/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+      <a href="/de/word-to-pdf/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Tool Header -->
+    <section class="tool-header">
+      <div class="container">
+        <div class="tool-header-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <rect width="48" height="48" rx="12" fill="#FEF0ED"/>
+            <path d="M14 10h12l8 8v20a2 2 0 01-2 2H14a2 2 0 01-2-2V12a2 2 0 012-2z" fill="#E8573F" opacity="0.2"/>
+            <path d="M14 10h12l8 8v20a2 2 0 01-2 2H14a2 2 0 01-2-2V12a2 2 0 012-2z" stroke="#E8573F" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M26 10v8h8" stroke="#E8573F" stroke-width="2" stroke-linejoin="round"/>
+            <text x="17" y="32" font-size="10" font-weight="700" fill="#E8573F" font-family="sans-serif">W</text>
+          </svg>
+        </div>
+        <h1 data-i18n="tools.wordToPdf.title">Word to PDF Converter</h1>
+        <p class="tool-subtitle" data-i18n="tools.wordToPdf.subtitle">Convert Word documents to PDF format instantly. Free, fast, and secure — processed entirely in your browser.</p>
+      </div>
+    </section>
+
+    <!-- Tool Card -->
+    <section class="tool-section">
+      <div class="container">
+        <div class="tool-card">
+
+          <!-- Coming Soon Notice -->
+          <div class="coming-soon-notice">
+            <div class="coming-soon-icon">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="32" fill="#FEF0ED"/>
+                <path d="M32 18v12l8 4" stroke="#E8573F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="32" cy="32" r="14" stroke="#E8573F" stroke-width="2.5"/>
+              </svg>
+            </div>
+            <h3 class="coming-soon-title" data-i18n="wordToPdf.comingSoonTitle">Coming Soon</h3>
+            <p class="coming-soon-desc" data-i18n="wordToPdf.comingSoonDesc">This feature is coming soon. We're working on a high-quality conversion engine. Stay tuned!</p>
+            <a href="/fr/" class="btn btn-outline" data-i18n="wordToPdf.backHome">Back to Home</a>
+          </div>
+
+        </div><!-- /.tool-card -->
+      </div>
+    </section>
+
+    <!-- How-To Steps -->
+    <section class="howto-section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="howto.wordToPdfTitle">How to Convert Word to PDF</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <h3 data-i18n="wordToPdf.step1.title">Upload DOCX File</h3>
+            <p data-i18n="wordToPdf.step1.desc">Select a Word document (.docx) from your device, or drag and drop it directly into the upload zone.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3 data-i18n="wordToPdf.step2.title">Convert Instantly</h3>
+            <p data-i18n="wordToPdf.step2.desc">Click "Convert to PDF" and our server-side engine will process your document, preserving all formatting, fonts, tables, and images.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <h3 data-i18n="wordToPdf.step3.title">Download PDF</h3>
+            <p data-i18n="wordToPdf.step3.desc">Click "Convert to PDF" and your document downloads as a PDF instantly. No email, no sign-up required.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO Content -->
+    <section class="seo-section">
+      <div class="container">
+        <div class="seo-content">
+          <h2>Convert Word to PDF Online Free — The Fastest DOCX to PDF Converter</h2>
+          <p>Need to turn a Word document into a PDF? PDFSlick's free Word to PDF converter transforms your .docx files into professional, universally readable PDF documents directly in your browser. No software installation, no account creation, and no files uploaded to external servers. Your document stays on your device throughout the entire conversion process.</p>
+
+          <h3>Why Convert Word Documents to PDF?</h3>
+          <p>PDF is the universal standard for document sharing. Unlike Word files that can look different depending on the viewer's software, fonts, and operating system, PDFs render identically everywhere — on any device, any operating system, any PDF reader. Converting your Word documents to PDF ensures your formatting, fonts, tables, and layout appear exactly as you intended, whether the recipient opens the file on a Windows PC, Mac, iPhone, or Android tablet.</p>
+
+          <h3>How Our Word to PDF Converter Works</h3>
+          <p>PDFSlick uses a professional server-side document processing engine to convert your Word files. When you upload a .docx or .doc file, it is securely transmitted to our conversion service via an encrypted HTTPS connection, processed using industry-standard document rendering technology, and the resulting PDF is sent directly back to your browser. The entire process takes just seconds. The result is a pixel-perfect PDF that preserves your document's formatting, fonts, tables, images, and layout exactly as they appear in Microsoft Word.</p>
+
+          <h3>Full Format Support</h3>
+          <p>Unlike client-side converters that struggle with complex documents, our server-side engine handles the full range of Word document features: headers and footers, page numbers, tables of contents, footnotes, embedded images, charts, complex table layouts, custom fonts, and advanced formatting. Both the modern .docx format and the legacy .doc format are fully supported.</p>
+
+          <h3>Privacy and Security</h3>
+          <p>Your documents are transmitted via encrypted HTTPS and processed in an isolated, ephemeral environment. Files are never stored on any server — they are processed in memory and immediately discarded after conversion. No copies are kept, no logs of file contents are stored, and no human ever sees your documents. This makes PDFSlick a safe choice for converting sensitive documents like contracts, financial statements, HR documents, and legal filings.</p>
+
+          <h3>Common Use Cases</h3>
+          <p>Students convert assignments and theses to PDF before submission. Business professionals convert proposals, reports, and invoices to ensure consistent formatting. Job seekers convert resumes and cover letters to PDF to guarantee they look perfect on any device. Legal professionals convert contracts and agreements to the non-editable PDF format for official distribution. Teachers convert lesson plans and handouts for reliable printing across different computers.</p>
+
+          <h3>Supported Content</h3>
+          <p>Our converter handles the most common Word document elements: headings (H1 through H6), paragraphs, bold, italic, and underlined text, numbered and bulleted lists, tables with cell content, hyperlinks, and embedded images. The output PDF faithfully represents the content structure of your original document in a clean, readable format suitable for sharing, printing, and archiving.</p>
+
+          <h3>Free to Use</h3>
+          <p>PDFSlick's Word to PDF converter is free to use with up to 3 conversions per day. There are no watermarks added to your output and no registration required. Files up to 10 MB are supported. Need more conversions? Upgrade for unlimited access. Bookmark this page and return whenever you have a Word document to convert.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad Placeholder -->
+    <div class="ad-placeholder container">
+      <div class="ad-box" aria-label="Advertisement">
+        <span data-i18n="ad.placeholder">Advertisement</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/fr/" class="logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/></svg>
+          <span class="logo-text">PDFSlick</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer.tagline">Outils PDF gratuits qui respectent votre vie privée.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-i18n="footer.tools">Outils</h4>
+          <a href="/fr/merge-pdf/" data-i18n="tools.mergePdf.name">Fusionner PDF</a>
+          <a href="/fr/compress-pdf/" data-i18n="tools.compressPdf.name">Compresser PDF</a>
+          <a href="/fr/split-pdf/" data-i18n="tools.splitPdf.name">Diviser PDF</a>
+          <a href="/fr/rotate-pdf/" data-i18n="tools.rotatePdf.name">Faire pivoter PDF</a>
+          <a href="/fr/add-watermark/" data-i18n="tools.addWatermark.name">Ajouter un filigrane</a>
+          <a href="/fr/unlock-pdf/" data-i18n="tools.unlockPdf.name">Déverrouiller PDF</a>
+        </div>
+        <div class="footer-col">
+          <h4>Convert</h4>
+          <a href="/fr/pdf-to-jpg/" data-i18n="tools.pdfToJpg.name">PDF en JPG</a>
+          <a href="/fr/pdf-to-png/" data-i18n="tools.pdfToPng.name">PDF en PNG</a>
+          <a href="/fr/pdf-to-word/" data-i18n="tools.pdfToWord.name">PDF en Word</a>
+          <a href="/fr/jpg-to-pdf/" data-i18n="tools.jpgToPdf.name">JPG en PDF</a>
+          <a href="/fr/word-to-pdf/" data-i18n="tools.wordToPdf.name">Word en PDF</a>
+          <a href="/fr/protect-pdf/" data-i18n="tools.protectPdf.name">Protéger PDF</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legal">Mentions légales</h4>
+          <a href="/fr/privacy.html" data-i18n="footer.privacy">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p data-i18n="footer.copyright">© 2024 PDFSlick. Tous droits réservés.</p></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/app.js"></script>
+  <!-- word-to-pdf.js disabled while feature is Coming Soon -->
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5L3LS3MCY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K5L3LS3MCY');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proteger PDF | PDFSlick</title>
+  <meta name="description" content="Adicione proteção por senha ao PDF">
+  <meta name="keywords" content="protect pdf, password protect pdf, encrypt pdf, add password to pdf, pdf password protection, secure pdf online free">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pdf-slick.com/pt/protect-pdf/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Proteger PDF | PDFSlick">
+  <meta property="og:description" content="Adicione proteção por senha ao PDF">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pdf-slick.com/pt/protect-pdf/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Proteger PDF | PDFSlick">
+  <meta name="twitter:description" content="Adicione proteção por senha ao PDF">
+
+  <!-- Schema.org WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PDFSlick Protect PDF",
+    "url": "https://pdf-slick.com/pt/protect-pdf/",
+    "description": "Free online tool to add password protection to PDF files. Encrypt PDFs directly in your browser — no files uploaded to any server.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    },
+    "featureList": [
+        "Add password protection to PDF files",
+        "AES encryption via jsPDF",
+        "No file size limit",
+        "No registration required",
+        "Files processed locally in browser"
+    ]
+}
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="alternate" hreflang="en" href="https://pdf-slick.com/protect-pdf/">
+  <link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/protect-pdf/">
+  <link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/protect-pdf/">
+  <link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/protect-pdf/">
+  <link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/protect-pdf/">
+  <link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/protect-pdf/">
+  <link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/protect-pdf/">
+  <link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/protect-pdf/">
+  <link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/protect-pdf/">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="/pt/" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/><path d="M8 20h12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="logo-text">PDFSlick</span>
+      </a>
+      <div class="nav-links">
+        <a href="/pt/" class="nav-link" data-i18n="nav.home">Início</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            <span id="currentLang">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/protect-pdf/" class="lang-option" data-lang="en">English</a>
+            <a href="/zh/protect-pdf/" class="lang-option" data-lang="zh">简体中文</a>
+            <a href="/ja/protect-pdf/" class="lang-option" data-lang="ja">日本語</a>
+            <a href="/ko/protect-pdf/" class="lang-option" data-lang="ko">한국어</a>
+            <a href="/es/protect-pdf/" class="lang-option" data-lang="es">Español</a>
+            <a href="/pt/protect-pdf/" class="lang-option" data-lang="pt">Português</a>
+            <a href="/fr/protect-pdf/" class="lang-option" data-lang="fr">Français</a>
+            <a href="/de/protect-pdf/" class="lang-option" data-lang="de">Deutsch</a>
+          </div>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/pt/" class="mobile-menu-link" data-i18n="nav.home">Início</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="/pt/merge-pdf/" class="mobile-menu-link">Merge PDF</a>
+    <a href="/pt/compress-pdf/" class="mobile-menu-link">Compress PDF</a>
+    <a href="/pt/split-pdf/" class="mobile-menu-link">Split PDF</a>
+    <a href="/pt/rotate-pdf/" class="mobile-menu-link">Rotate PDF</a>
+    <a href="/pt/pdf-to-jpg/" class="mobile-menu-link">PDF to JPG</a>
+    <a href="/pt/pdf-to-png/" class="mobile-menu-link">PDF to PNG</a>
+    <a href="/pt/jpg-to-pdf/" class="mobile-menu-link">JPG to PDF</a>
+    <a href="/pt/pdf-to-word/" class="mobile-menu-link">PDF to Word</a>
+    <a href="/pt/word-to-pdf/" class="mobile-menu-link">Word to PDF</a>
+    <a href="/pt/add-watermark/" class="mobile-menu-link">Add Watermark</a>
+    <a href="/pt/unlock-pdf/" class="mobile-menu-link">Unlock PDF</a>
+    <a href="/pt/protect-pdf/" class="mobile-menu-link">Protect PDF</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-langs">
+      <a href="/protect-pdf/" class="lang-option" data-lang="en">🇺🇸 English</a>
+      <a href="/zh/protect-pdf/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+      <a href="/ja/protect-pdf/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+      <a href="/ko/protect-pdf/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+      <a href="/es/protect-pdf/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+      <a href="/pt/protect-pdf/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+      <a href="/fr/protect-pdf/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+      <a href="/de/protect-pdf/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Tool Header -->
+    <section class="tool-header">
+      <div class="container">
+        <div class="tool-header-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <rect width="48" height="48" rx="12" fill="#FEF0ED"/>
+            <rect x="16" y="20" width="16" height="14" rx="2" stroke="#E8573F" stroke-width="2" fill="none"/>
+            <path d="M20 20v-4a4 4 0 118 0v4" stroke="#E8573F" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="24" cy="28" r="2" fill="#E8573F"/>
+            <line x1="24" y1="30" x2="24" y2="32" stroke="#E8573F" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h1 data-i18n="tools.protectPdf.title">Protect PDF with Password</h1>
+        <p class="tool-subtitle" data-i18n="tools.protectPdf.subtitle">Add password protection to your PDF files. Encrypt documents to prevent unauthorized access — free, fast, and private.</p>
+      </div>
+    </section>
+
+    <!-- Tool Card -->
+    <section class="tool-section">
+      <div class="container">
+        <div class="tool-card">
+
+          <!-- Upload Zone -->
+          <div class="upload-zone" id="uploadZone" role="button" tabindex="0" aria-label="Upload a PDF file">
+            <input type="file" id="fileInput" accept=".pdf,application/pdf" hidden>
+            <div class="upload-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <circle cx="28" cy="28" r="28" fill="#FEF0ED"/>
+                <path d="M28 18v16M20 26l8-8 8 8" stroke="#E8573F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 38h20" stroke="#E8573F" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="upload-primary" data-i18n="upload.dragDrop">Arraste e solte seu PDF aqui</p>
+            <p class="upload-secondary" data-i18n="upload.orClick">or click to browse files</p>
+            <button class="btn btn-outline upload-trigger" type="button" data-i18n="upload.selectFile">Select PDF File</button>
+          </div>
+
+          <!-- Selected File Info -->
+          <div class="selected-file-info" id="selectedFileInfo" style="display:none;">
+            <div class="selected-file-details">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <div class="selected-file-text">
+                <span class="selected-file-name" id="selectedFileName"></span>
+                <span class="selected-file-meta">
+                  <span id="selectedFileSize"></span>
+                  <span id="selectedPageCount"></span>
+                </span>
+              </div>
+              <button class="btn btn-outline btn-sm" id="removeFileBtn" type="button" aria-label="Remove file" title="Remove file">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Password Settings -->
+          <div id="passwordSection" style="display:none;">
+            <div class="options-panel">
+              <h3 class="options-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                Password Settings
+              </h3>
+
+              <div class="option-group">
+                <label class="option-group-label" for="passwordInput">Password</label>
+                <div class="password-input-wrap">
+                  <input type="password" id="passwordInput" class="text-input" placeholder="Enter password" minlength="1" autocomplete="new-password">
+                  <button type="button" class="password-toggle-btn" id="togglePassword1" aria-label="Show password" title="Show password">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="option-group">
+                <label class="option-group-label" for="confirmPasswordInput">Confirm Password</label>
+                <div class="password-input-wrap">
+                  <input type="password" id="confirmPasswordInput" class="text-input" placeholder="Confirm password" minlength="1" autocomplete="new-password">
+                  <button type="button" class="password-toggle-btn" id="togglePassword2" aria-label="Show password" title="Show password">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                </div>
+                <div id="passwordMatch" class="password-match-indicator"></div>
+              </div>
+
+              <div class="option-note">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span>The PDF will be re-rendered with password protection. Text-based content will be rasterized at high resolution (2x scale) to ensure quality.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Button -->
+          <div class="action-area" id="actionArea" style="display:none;">
+            <button class="btn btn-primary btn-lg" id="protectBtn" type="button" disabled>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              <span>Protect PDF</span>
+            </button>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="progress-container" id="progressContainer" style="display:none;" aria-live="polite">
+            <div class="progress-label">
+              <span id="progressText">Encrypting PDF...</span>
+              <span id="progressPercent">0%</span>
+            </div>
+            <div class="progress-bar-track">
+              <div class="progress-bar-fill" id="progressBar" style="width:0%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <!-- Result Section -->
+          <div class="result-section" id="resultSection" style="display:none;" aria-live="polite">
+            <div class="result-icon result-icon--success">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>PDF Protected Successfully!</h3>
+            <p class="result-meta" id="resultMeta"></p>
+            <div class="result-actions">
+              <a class="btn btn-primary btn-lg" id="downloadBtn" href="#" download="protected.pdf">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Protected PDF</span>
+              </a>
+              <button class="btn btn-outline" id="resetBtn" type="button">Protect Another PDF</button>
+            </div>
+          </div>
+
+        </div><!-- /.tool-card -->
+      </div>
+    </section>
+
+    <!-- How-To Steps -->
+    <section class="howto-section">
+      <div class="container">
+        <h2 class="section-title">How to Protect a PDF with Password</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <h3>Upload Your PDF</h3>
+            <p>Select a PDF file from your device by clicking the upload area or drag and drop it directly. The file stays in your browser and is never uploaded to any server.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            </div>
+            <h3>Set a Password</h3>
+            <p>Enter your desired password and confirm it. The password will be required to open the PDF in any PDF viewer. Choose a strong, memorable password.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <h3>Download Protected PDF</h3>
+            <p>Click "Protect PDF" and your encrypted document will be ready in seconds. Download the password-protected PDF directly to your device.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO Content -->
+    <section class="seo-section">
+      <div class="container">
+        <div class="seo-content">
+          <h2>Password Protect PDF Online Free — Secure Your PDF Documents</h2>
+          <p>Need to restrict access to a sensitive PDF? PDFSlick's free PDF protection tool lets you add password encryption to any PDF document directly in your browser — no software to install, no account to create, and no files uploaded to external servers. Whether you're securing financial reports, legal contracts, medical records, or personal documents, our tool encrypts your PDF with industry-standard protection in seconds.</p>
+
+          <h3>Why Password Protect Your PDFs?</h3>
+          <p>PDF files are one of the most common formats for sharing documents, but they're also easy to forward, copy, or access without authorization. Adding password protection creates a secure barrier that prevents anyone without the correct password from opening the document. This is especially important for documents containing personally identifiable information (PII), trade secrets, financial data, confidential business strategies, or any content meant for a specific audience only.</p>
+
+          <h3>How Our PDF Protection Works</h3>
+          <p>PDFSlick uses a two-step process to protect your PDF. First, each page of your original PDF is rendered at high resolution (2x scale) using Mozilla's PDF.js library to ensure visual fidelity. Then, a new encrypted PDF is generated using jsPDF with password-based encryption. The resulting file requires the password you specified to open in any standard PDF viewer, including Adobe Acrobat, Preview, Chrome's built-in viewer, and more.</p>
+
+          <h3>100% Private — No Server Upload</h3>
+          <p>Unlike many online PDF encryption services that require you to upload your sensitive documents to their servers, PDFSlick processes everything locally in your web browser using JavaScript. Your original PDF and your password never leave your device. This makes PDFSlick the ideal choice for encrypting confidential documents — legal briefs, tax returns, medical records, HR documents, and other sensitive files can all be protected without any data transmission.</p>
+
+          <h3>Important Notes About This Tool</h3>
+          <p>Because browser-based JavaScript cannot modify the encryption layer of an existing PDF directly, our tool re-renders each page as a high-quality image before creating the encrypted output. This means the protected PDF preserves the visual appearance of every page at high resolution, but embedded text will no longer be selectable or searchable. The visual quality remains excellent thanks to the 2x rendering scale, and the output is fully compatible with all PDF viewers and printers.</p>
+
+          <h3>Common Use Cases</h3>
+          <p>Professionals across every field use PDF password protection daily. Accountants protect financial statements and tax documents before emailing them to clients. Lawyers encrypt sensitive case files and contracts. Healthcare providers secure patient records that need to be shared electronically. HR departments password-protect offer letters and employee documents. Real estate agents secure contracts and disclosure forms. Students protect thesis drafts and research papers shared with advisors.</p>
+
+          <h3>Tips for Strong Passwords</h3>
+          <p>Choose a password that is at least 8 characters long and includes a mix of uppercase letters, lowercase letters, numbers, and special characters. Avoid using common words, personal information, or easily guessable patterns. Share the password with intended recipients through a separate communication channel — for example, send the protected PDF via email and share the password via text message or phone call.</p>
+
+          <h3>Related PDF Tools</h3>
+          <p>After protecting your PDF you may also want to <a href="/pt/compress-pdf/">compress</a> it to reduce file size for email attachments, <a href="/pt/merge-pdf/">merge</a> multiple documents before protecting them, or <a href="/pt/split-pdf/">split</a> a large document into smaller sections that can be individually protected.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad Placeholder -->
+    <div class="ad-placeholder container">
+      <div class="ad-box" aria-label="Advertisement">
+        <span data-i18n="ad.placeholder">Advertisement</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/pt/" class="logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/></svg>
+          <span class="logo-text">PDFSlick</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer.tagline">Ferramentas PDF gratuitas que respeitam sua privacidade.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-i18n="footer.tools">Ferramentas</h4>
+          <a href="/pt/merge-pdf/" data-i18n="tools.mergePdf.name">Unir PDF</a>
+          <a href="/pt/compress-pdf/" data-i18n="tools.compressPdf.name">Comprimir PDF</a>
+          <a href="/pt/split-pdf/" data-i18n="tools.splitPdf.name">Dividir PDF</a>
+          <a href="/pt/rotate-pdf/" data-i18n="tools.rotatePdf.name">Girar PDF</a>
+          <a href="/pt/add-watermark/" data-i18n="tools.addWatermark.name">Adicionar marca d'água</a>
+          <a href="/pt/unlock-pdf/" data-i18n="tools.unlockPdf.name">Desbloquear PDF</a>
+        </div>
+        <div class="footer-col">
+          <h4>Convert</h4>
+          <a href="/pt/pdf-to-jpg/" data-i18n="tools.pdfToJpg.name">PDF para JPG</a>
+          <a href="/pt/pdf-to-png/" data-i18n="tools.pdfToPng.name">PDF para PNG</a>
+          <a href="/pt/pdf-to-word/" data-i18n="tools.pdfToWord.name">PDF para Word</a>
+          <a href="/pt/jpg-to-pdf/" data-i18n="tools.jpgToPdf.name">JPG para PDF</a>
+          <a href="/pt/word-to-pdf/" data-i18n="tools.wordToPdf.name">Word para PDF</a>
+          <a href="/pt/protect-pdf/" data-i18n="tools.protectPdf.name">Proteger PDF</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legal">Legal</h4>
+          <a href="/pt/privacy.html" data-i18n="footer.privacy">Política de privacidade</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p data-i18n="footer.copyright">© 2024 PDFSlick. Todos os direitos reservados.</p></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/protect.js"></script>
+</body>
+</html>
