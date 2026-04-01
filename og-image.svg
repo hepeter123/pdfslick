@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4C1D95"/>
+      <stop offset="50%" stop-color="#6C5CE7"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Logo -->
+  <rect x="80" y="220" width="80" height="80" rx="18" fill="#E8573F"/>
+  <path d="M100 240h25a15 15 0 010 30H100V240z" fill="white"/>
+  <path d="M100 270h30" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <!-- Title -->
+  <text x="190" y="265" font-family="system-ui,-apple-system,sans-serif" font-size="56" font-weight="800" fill="white">PDFSlick</text>
+  <!-- Subtitle -->
+  <text x="82" y="360" font-family="system-ui,-apple-system,sans-serif" font-size="32" font-weight="500" fill="rgba(255,255,255,0.9)">Free PDF Tools &amp; AI Paper Reader</text>
+  <!-- Description -->
+  <text x="82" y="420" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="rgba(255,255,255,0.65)">Understand any research paper in plain language.</text>
+  <text x="82" y="455" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="rgba(255,255,255,0.65)">12 PDF tools. 8 languages. 100% free &amp; private.</text>
+  <!-- URL -->
+  <text x="82" y="540" font-family="system-ui,-apple-system,sans-serif" font-size="20" font-weight="600" fill="rgba(255,255,255,0.4)">pdf-slick.com</text>
+  <!-- Decorative dots -->
+  <circle cx="1050" cy="150" r="80" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1100" cy="450" r="120" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="900" cy="80" r="40" fill="rgba(255,255,255,0.06)"/>
+</svg>

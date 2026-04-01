@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5L3LS3MCY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K5L3LS3MCY');
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/pt/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girar PDF | PDFSlick</title>
+  <meta name="description" content="Gire páginas do PDF facilmente">
+  <meta name="keywords" content="rotate pdf online, rotate pdf pages, pdf rotator, rotate pdf free, fix pdf orientation">
+  <link rel="canonical" href="https://pdf-slick.com/pt/rotate-pdf/">
+  <meta property="og:title" content="Girar PDF | PDFSlick">
+  <meta property="og:description" content="Gire páginas do PDF facilmente">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pdf-slick.com/pt/rotate-pdf/">
+  <meta property="og:image" content="https://pdf-slick.com/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Girar PDF | PDFSlick">
+  <meta name="twitter:description" content="Gire páginas do PDF facilmente">
+  <meta name="twitter:image" content="https://pdf-slick.com/og-image.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Rotate PDF Online",
+    "url": "https://pdf-slick.com/pt/rotate-pdf/",
+    "description": "Free online PDF rotator. Rotate all pages or specific pages in a PDF by 90°, 180°, or 270°. Runs entirely in your browser — no files are uploaded to any server.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    },
+    "featureList": [
+        "Rotate all PDF pages",
+        "Rotate specific pages",
+        "Rotate by 90°, 180°, or 270°",
+        "100% browser-based, no server upload"
+    ]
+}
+  </script>
+  <link rel="alternate" hreflang="en" href="https://pdf-slick.com/rotate-pdf/">
+  <link rel="alternate" hreflang="zh" href="https://pdf-slick.com/zh/rotate-pdf/">
+  <link rel="alternate" hreflang="ja" href="https://pdf-slick.com/ja/rotate-pdf/">
+  <link rel="alternate" hreflang="ko" href="https://pdf-slick.com/ko/rotate-pdf/">
+  <link rel="alternate" hreflang="es" href="https://pdf-slick.com/es/rotate-pdf/">
+  <link rel="alternate" hreflang="pt" href="https://pdf-slick.com/pt/rotate-pdf/">
+  <link rel="alternate" hreflang="fr" href="https://pdf-slick.com/fr/rotate-pdf/">
+  <link rel="alternate" hreflang="de" href="https://pdf-slick.com/de/rotate-pdf/">
+  <link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/rotate-pdf/">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="/pt/" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/><path d="M8 20h12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="logo-text">PDFSlick</span>
+      </a>
+      <div class="nav-links">
+        <a href="/pt/" class="nav-link" data-i18n="nav.home">Início</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            <span id="currentLang">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/rotate-pdf/" class="lang-option" data-lang="en">🇺🇸 English</a>
+            <a href="/zh/rotate-pdf/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+            <a href="/ja/rotate-pdf/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+            <a href="/ko/rotate-pdf/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+            <a href="/es/rotate-pdf/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+            <a href="/pt/rotate-pdf/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+            <a href="/fr/rotate-pdf/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+            <a href="/de/rotate-pdf/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+          </div>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/pt/" class="mobile-menu-link" data-i18n="nav.home">Início</a>
+    <div class="mobile-menu-divider"></div>
+    <a href="/pt/merge-pdf/" class="mobile-menu-link">Merge PDF</a>
+    <a href="/pt/compress-pdf/" class="mobile-menu-link">Compress PDF</a>
+    <a href="/pt/split-pdf/" class="mobile-menu-link">Split PDF</a>
+    <a href="/pt/rotate-pdf/" class="mobile-menu-link">Rotate PDF</a>
+    <a href="/pt/pdf-to-jpg/" class="mobile-menu-link">PDF to JPG</a>
+    <a href="/pt/pdf-to-png/" class="mobile-menu-link">PDF to PNG</a>
+    <a href="/pt/jpg-to-pdf/" class="mobile-menu-link">JPG to PDF</a>
+    <a href="/pt/pdf-to-word/" class="mobile-menu-link">PDF to Word</a>
+    <a href="/pt/word-to-pdf/" class="mobile-menu-link">Word to PDF</a>
+    <a href="/pt/add-watermark/" class="mobile-menu-link">Add Watermark</a>
+    <a href="/pt/unlock-pdf/" class="mobile-menu-link">Unlock PDF</a>
+    <a href="/pt/protect-pdf/" class="mobile-menu-link">Protect PDF</a>
+    <div class="mobile-menu-divider"></div>
+    <div class="mobile-menu-langs">
+      <a href="/rotate-pdf/" class="lang-option" data-lang="en">🇺🇸 English</a>
+      <a href="/zh/rotate-pdf/" class="lang-option" data-lang="zh">🇨🇳 简体中文</a>
+      <a href="/ja/rotate-pdf/" class="lang-option" data-lang="ja">🇯🇵 日本語</a>
+      <a href="/ko/rotate-pdf/" class="lang-option" data-lang="ko">🇰🇷 한국어</a>
+      <a href="/es/rotate-pdf/" class="lang-option" data-lang="es">🇪🇸 Español</a>
+      <a href="/pt/rotate-pdf/" class="lang-option" data-lang="pt">🇧🇷 Português</a>
+      <a href="/fr/rotate-pdf/" class="lang-option" data-lang="fr">🇫🇷 Français</a>
+      <a href="/de/rotate-pdf/" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+    </div>
+  </div>
+
+  <!-- Hero / Tool Section -->
+  <section class="tool-hero">
+    <div class="container">
+      <div class="tool-hero-text">
+        <h1 data-i18n="rotate.title">Girar PDF</h1>
+        <p data-i18n="rotate.subtitle">Gire as páginas do PDF para a orientação correta</p>
+      </div>
+
+      <!-- Upload Zone -->
+      <div class="upload-zone" id="uploadZone" role="button" tabindex="0" aria-label="Upload a PDF file">
+        <input type="file" id="fileInput" accept=".pdf,application/pdf" hidden>
+        <div class="upload-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="1.5"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+        </div>
+        <p class="upload-title" data-i18n="rotate.upload.title">Drop your PDF here or click to browse</p>
+        <p class="upload-sub" data-i18n="rotate.upload.sub">PDF files only — processed entirely in your browser</p>
+        <button class="btn btn-outline" type="button" data-i18n="rotate.upload.btn">Choose PDF File</button>
+              <p class="upload-privacy"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Files are processed locally in your browser. Nothing is uploaded.</p>
+      </div>
+
+      <!-- File Info Bar -->
+      <div id="fileInfo" class="file-info-bar" hidden>
+        <div class="file-info-inner">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span id="fileName" class="file-name-label"></span>
+          <span id="pageCount" class="page-count-badge"></span>
+          <button id="clearFileBtn" class="icon-btn" type="button" aria-label="Remove file" title="Remove file">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Options Panel (hidden until file loaded) -->
+      <div id="optionsPanel" class="options-panel" hidden>
+        <h3 class="options-title" data-i18n="rotate.options.title">Rotation Settings</h3>
+
+        <!-- Rotation Angle Pills -->
+        <div class="option-group">
+          <label class="option-group-label" data-i18n="rotate.angle.label">Rotation Angle</label>
+          <div class="pill-group" id="angleGroup" role="radiogroup" aria-label="Rotation angle">
+            <button class="pill-btn active" data-angle="90" type="button" aria-pressed="true" data-i18n="rotate.angle.90cw">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+              90° CW
+            </button>
+            <button class="pill-btn" data-angle="180" type="button" aria-pressed="false" data-i18n="rotate.angle.180">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+              180°
+            </button>
+            <button class="pill-btn" data-angle="270" type="button" aria-pressed="false" data-i18n="rotate.angle.90ccw">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+              90° CCW
+            </button>
+            <button class="pill-btn" data-angle="270" data-angle-alt="true" type="button" aria-pressed="false" data-i18n="rotate.angle.270">
+              270°
+            </button>
+          </div>
+        </div>
+
+        <!-- Apply To -->
+        <div class="option-group">
+          <label class="option-group-label" data-i18n="rotate.applyto.label">Apply To</label>
+
+          <!-- All Pages Toggle -->
+          <div class="toggle-row">
+            <label class="toggle-switch" for="allPagesToggle">
+              <input type="checkbox" id="allPagesToggle" checked>
+              <span class="toggle-track"></span>
+            </label>
+            <span class="toggle-label" data-i18n="rotate.applyto.all">All Pages</span>
+          </div>
+
+          <!-- Specific Page Checkboxes (shown when "All Pages" is off) -->
+          <div id="pagePickerWrap" class="page-picker-wrap" hidden>
+            <p class="picker-hint" data-i18n="rotate.applyto.hint">Select the pages you want to rotate:</p>
+            <div id="pageCheckboxGrid" class="page-checkbox-grid" role="group" aria-label="Select pages to rotate"></div>
+            <div class="picker-actions">
+              <button class="btn btn-outline btn-xs" id="selectAllPages" type="button" data-i18n="rotate.applyto.selectAll">Select All</button>
+              <button class="btn btn-outline btn-xs" id="deselectAllPages" type="button" data-i18n="rotate.applyto.deselectAll">Deselect All</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <button class="btn btn-primary btn-lg" id="rotateBtn" type="button" data-i18n="rotate.btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+          <span data-i18n="rotate.btn">Rotate PDF</span>
+        </button>
+      </div>
+
+      <!-- Progress Bar -->
+      <div id="progressWrap" class="progress-wrap" hidden>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progressBar" style="width:0%"></div>
+        </div>
+        <p class="progress-label" id="progressLabel" data-i18n="rotate.rotating">Rotating pages…</p>
+      </div>
+
+      <!-- Result Section -->
+      <div id="resultSection" class="result-section" hidden>
+        <div class="result-icon">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h2 data-i18n="rotate.result.title">PDF Rotated!</h2>
+        <p id="resultInfo" class="result-info"></p>
+        <a id="downloadBtn" class="btn btn-primary btn-lg" download="rotated.pdf" data-i18n="rotate.result.download">Download Rotated PDF</a>
+        <button id="resetBtn" class="btn btn-outline btn-sm" type="button" data-i18n="rotate.result.reset">Rotate Another PDF</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Ad Placeholder -->
+  <div class="container">
+    <div class="ad-placeholder" aria-label="Advertisement">
+      <span>Advertisement</span>
+    </div>
+  </div>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title" data-i18n="rotate.how.title">How to Rotate a PDF</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <h3 data-i18n="rotate.step1.title">Upload PDF</h3>
+          <p data-i18n="rotate.step1.desc">Drag and drop your PDF onto the upload area or click to select it from your device. PDFSlick will instantly read the file and show you the total number of pages.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="1.5"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+          </div>
+          <h3 data-i18n="rotate.step2.title">Choose Rotation</h3>
+          <p data-i18n="rotate.step2.desc">Select the rotation angle — 90° clockwise, 180°, or 90° counter-clockwise. Choose to rotate all pages at once or pick specific pages using the page selector.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8573F" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h3 data-i18n="rotate.step3.title">Download</h3>
+          <p data-i18n="rotate.step3.desc">Click "Rotate PDF" and your corrected document will be ready instantly. Download the rotated PDF directly to your device with a single click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Content -->
+  <section class="seo-content">
+    <div class="container seo-inner">
+      <h2>Rotate PDF Pages Online — Free PDF Rotator</h2>
+      <p>Scanned documents often come out sideways or upside down depending on how the original paper was fed into a scanner. PDFs created from photos taken on a phone can have similar orientation issues. PDFSlick's free online PDF rotation tool fixes these problems in seconds — no software to install, no account needed, and no files ever sent to a remote server.</p>
+
+      <h3>Rotate All Pages or Just the Ones You Need</h3>
+      <p>Many rotation tools only let you rotate the entire document at once, but in practice, a single PDF often has a mix of correctly and incorrectly oriented pages. PDFSlick gives you granular control: use the "All Pages" toggle to rotate every page in the document with one click, or turn off that toggle to reveal a grid of individual page checkboxes. Select any combination of pages and apply rotation only to those pages, leaving the rest of the document untouched.</p>
+
+      <h3>Supported Rotation Angles</h3>
+      <p>PDFSlick supports four rotation angles to handle every orientation scenario:</p>
+      <p><strong>90° Clockwise (CW)</strong> — rotates pages a quarter turn to the right. Use this to fix pages that appear rotated 90° counter-clockwise from their correct orientation.</p>
+      <p><strong>180°</strong> — rotates pages a half turn, effectively flipping them upside down. Use this to correct pages that are printed or scanned in the wrong direction.</p>
+      <p><strong>90° Counter-Clockwise (CCW)</strong> — rotates pages a quarter turn to the left. Use this to fix pages that appear rotated 90° clockwise from their correct orientation.</p>
+      <p><strong>270°</strong> — equivalent to 90° counter-clockwise but expressed as a positive clockwise rotation. Useful in workflows that specify rotation in degrees clockwise.</p>
+
+      <h3>How PDF Rotation Works</h3>
+      <p>PDF pages have a built-in rotation property that viewers and printers respect. When PDFSlick rotates your PDF, it modifies this property for the selected pages using the <strong>pdf-lib</strong> open-source library. The rotation is stored in the PDF file itself, so the correct orientation will be preserved when the file is opened in Adobe Acrobat, Preview, web browsers, or printed. This is different from simply rotating an image — the text and vector elements in the PDF remain fully selectable and searchable after rotation.</p>
+
+      <h3>100% Private — No Server Upload</h3>
+      <p>PDFSlick processes your PDF entirely inside your web browser using JavaScript. Your file is never transmitted to any server. This makes PDFSlick safe to use with confidential documents — legal briefs, medical records, financial statements, and other sensitive PDFs can all be rotated without any data leaving your device.</p>
+
+      <h3>Related PDF Tools</h3>
+      <p>After rotating your PDF you may also want to <a href="/pt/split-pdf/">split</a> it into separate files, <a href="/pt/merge-pdf/">merge</a> it with another document, or <a href="/pt/compress-pdf/">compress</a> it to reduce file size for email attachments.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/pt/" class="logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#E8573F"/><path d="M8 8h10a6 6 0 010 12H8V8z" fill="white"/></svg>
+          <span class="logo-text">PDFSlick</span>
+        </a>
+        <p class="footer-tagline" data-i18n="footer.tagline">Ferramentas PDF gratuitas que respeitam sua privacidade.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-i18n="footer.tools">Ferramentas</h4>
+          <a href="/pt/merge-pdf/" data-i18n="tools.mergePdf.name">Unir PDF</a>
+          <a href="/pt/compress-pdf/" data-i18n="tools.compressPdf.name">Comprimir PDF</a>
+          <a href="/pt/split-pdf/" data-i18n="tools.splitPdf.name">Dividir PDF</a>
+          <a href="/pt/rotate-pdf/" data-i18n="tools.rotatePdf.name">Girar PDF</a>
+          <a href="/pt/add-watermark/" data-i18n="tools.addWatermark.name">Adicionar marca d'água</a>
+          <a href="/pt/unlock-pdf/" data-i18n="tools.unlockPdf.name">Desbloquear PDF</a>
+        </div>
+        <div class="footer-col">
+          <h4>Convert</h4>
+          <a href="/pt/pdf-to-jpg/" data-i18n="tools.pdfToJpg.name">PDF para JPG</a>
+          <a href="/pt/pdf-to-png/" data-i18n="tools.pdfToPng.name">PDF para PNG</a>
+          <a href="/pt/pdf-to-word/" data-i18n="tools.pdfToWord.name">PDF para Word</a>
+          <a href="/pt/jpg-to-pdf/" data-i18n="tools.jpgToPdf.name">JPG para PDF</a>
+          <a href="/pt/word-to-pdf/" data-i18n="tools.wordToPdf.name">Word para PDF</a>
+          <a href="/pt/protect-pdf/" data-i18n="tools.protectPdf.name">Proteger PDF</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.legal">Legal</h4>
+          <a href="/pt/privacy.html" data-i18n="footer.privacy">Política de privacidade</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p data-i18n="footer.copyright">© 2024 PDFSlick. Todos os direitos reservados.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/rotate.js"></script>
+</body>
+</html>

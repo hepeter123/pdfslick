@@ -1,0 +1,18 @@
+name = "pdfslick-ai-paper"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Route: bind to a custom domain or use workers.dev subdomain
+# Uncomment and set your route after deploying:
+# routes = [
+#   { pattern = "ai-api.pdf-slick.com/*", zone_name = "pdf-slick.com" }
+# ]
+
+[vars]
+# Non-secret variables go here
+ENVIRONMENT = "production"
+
+# Secret variables — set via CLI:
+#   wrangler secret put DEEPSEEK_API_KEY
+# Then paste your DeepSeek API key when prompted.
+# NEVER put the actual key in this file.
