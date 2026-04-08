@@ -257,4 +257,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pdf-slick.com/privacy.html"/>
   </url>
 
+  <!-- About -->
+  <url>
+    <loc>https://pdf-slick.com/about.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://pdf-slick.com/terms.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://pdf-slick.com/contact.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>

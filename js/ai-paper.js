@@ -1063,25 +1063,45 @@
     return paperText.substring(start, end);
   }
 
+  /** Clean text for API: remove null bytes and control characters that break JSON */
+  function cleanTextForAPI(str) {
+    if (!str) return '';
+    return str.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, ' ');
+  }
+
   async function callAI(task, text, lang, streamEl, extra) {
     if (USE_MOCK) return mockAI(task, text, lang, extra);
 
     // Optimize: send only relevant context, not full paper, for selection tasks
-    var sendText = text;
+    var sendText = cleanTextForAPI(text);
     var sendExtra = Object.assign({}, extra || {});
     if (task === 'explain' || task === 'translate' || task === 'rewrite') {
-      sendText = text.substring(0, 5000); // the selected text
-      sendExtra.paperContext = buildPaperContext(text);
+      sendText = sendText.substring(0, 5000); // the selected text
+      sendExtra.paperContext = cleanTextForAPI(buildPaperContext(text));
     } else if (task === 'summary' || task === 'terms' || task === 'chat') {
-      sendText = text.substring(0, 15000); // paper text (truncated)
+      sendText = sendText.substring(0, 15000); // paper text (truncated)
     }
 
     var body = { task: task, text: sendText, targetLang: lang };
     if (sendExtra.paperContext) body.paperContext = sendExtra.paperContext;
-    if (sendExtra.question) body.question = sendExtra.question;
+    if (sendExtra.question) body.question = cleanTextForAPI(sendExtra.question);
     if (sendExtra.chatHistory) body.chatHistory = sendExtra.chatHistory;
 
-    if (streamEl) return callWorkerStream(body, streamEl);
+    if (streamEl) {
+      try {
+        return await callWorkerStream(body, streamEl);
+      } catch (streamErr) {
+        // Fallback to non-streaming if streaming fails (e.g. network issues)
+        try {
+          streamEl.innerHTML = '';
+          var fallbackResult = await callWorker(body);
+          if (fallbackResult) streamEl.innerHTML = renderMarkdown(typeof fallbackResult === 'string' ? fallbackResult : '');
+          return fallbackResult;
+        } catch (fallbackErr) {
+          throw fallbackErr;
+        }
+      }
+    }
     return callWorker(body);
   }
 
@@ -1168,6 +1188,7 @@
     } catch (err) {
       el.classList.remove('aip-typing-cursor');
       if (err.name === 'AbortError') throw new Error('Request timed out. Please try again.');
+      if (err.message && err.message.includes('Failed to fetch')) throw new Error('Network error. Please check your connection and try again.');
       throw err;
     }
   }

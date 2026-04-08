@@ -140,27 +140,31 @@ const TEMPERATURE = {
 };
 
 // ─── CORS ─────────────────────────────────────────────────────
-const ALLOWED_ORIGINS = [
+const ALLOWED_ORIGINS = new Set([
   'https://pdf-slick.com',
   'https://www.pdf-slick.com',
-  'http://localhost:8080',  // local dev
+  'http://localhost:8080',
+  'http://localhost:5500',
   'http://localhost:3000',
-];
+  'http://127.0.0.1:8080',
+  'http://127.0.0.1:5500',
+  'http://127.0.0.1:3000',
+]);
 
-function getCorsOrigin(request) {
+function corsHeaders(request) {
   const origin = request.headers.get('Origin') || '';
-  return ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+  return {
+    'Access-Control-Allow-Origin': ALLOWED_ORIGINS.has(origin) ? origin : 'https://pdf-slick.com',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Max-Age': '86400',
+  };
 }
 
-// _currentRequest is set at the top of each handler invocation
-let _currentRequest = null;
-
-function corsResponse(body, init = {}) {
+function corsResponse(body, init = {}, request) {
   const headers = new Headers(init.headers || {});
-  headers.set('Access-Control-Allow-Origin', _currentRequest ? getCorsOrigin(_currentRequest) : ALLOWED_ORIGINS[0]);
-  headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  headers.set('Access-Control-Allow-Headers', 'Content-Type');
-  headers.set('Access-Control-Max-Age', '86400');
+  const cors = request ? corsHeaders(request) : { 'Access-Control-Allow-Origin': 'https://pdf-slick.com', 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type' };
+  for (const [k, v] of Object.entries(cors)) headers.set(k, v);
   return new Response(body, { ...init, headers });
 }
 
@@ -184,61 +188,56 @@ function checkRateLimit(ip) {
 // ─── Main Handler ──────────────────────────────────────────────
 export default {
   async fetch(request, env) {
-    _currentRequest = request;
-    if (request.method === 'OPTIONS') {
-      return corsResponse(null, { status: 204 });
+    const r = request; // short alias, passed to every corsResponse
+
+    if (r.method === 'OPTIONS') {
+      return corsResponse(null, { status: 204 }, r);
     }
 
-    const url = new URL(request.url);
-    if (request.method !== 'POST' || url.pathname !== '/api/ai-paper') {
+    const url = new URL(r.url);
+    if (r.method !== 'POST' || url.pathname !== '/api/ai-paper') {
       return corsResponse(JSON.stringify({ error: 'Not found' }), {
-        status: 404,
-        headers: { 'Content-Type': 'application/json' },
-      });
+        status: 404, headers: { 'Content-Type': 'application/json' },
+      }, r);
     }
 
     let body;
     try {
-      body = await request.json();
+      body = await r.json();
     } catch {
       return corsResponse(JSON.stringify({ error: 'Invalid JSON body' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      });
+        status: 400, headers: { 'Content-Type': 'application/json' },
+      }, r);
     }
 
     const { task, text, targetLang, paperContext, chatHistory } = body;
 
     // ── IP rate limiting ──
-    const clientIP = request.headers.get('CF-Connecting-IP') || request.headers.get('X-Forwarded-For') || 'unknown';
+    const clientIP = r.headers.get('CF-Connecting-IP') || r.headers.get('X-Forwarded-For') || 'unknown';
     if (!checkRateLimit(clientIP)) {
       return corsResponse(JSON.stringify({ error: 'Daily request limit reached. Please try again tomorrow.' }), {
-        status: 429,
-        headers: { 'Content-Type': 'application/json' },
-      });
+        status: 429, headers: { 'Content-Type': 'application/json' },
+      }, r);
     }
 
     if (!task || !text || !targetLang) {
       return corsResponse(JSON.stringify({ error: 'Missing required fields: task, text, targetLang' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      });
+        status: 400, headers: { 'Content-Type': 'application/json' },
+      }, r);
     }
 
     if (!SYSTEM_PROMPTS[task]) {
       return corsResponse(JSON.stringify({ error: 'Invalid task: ' + task }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      });
+        status: 400, headers: { 'Content-Type': 'application/json' },
+      }, r);
     }
 
     // ── API key check ──
     const apiKey = env.DEEPSEEK_API_KEY;
     if (!apiKey) {
-      return corsResponse(JSON.stringify({ error: 'API key not configured. Set DEEPSEEK_API_KEY via wrangler secret.' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      });
+      return corsResponse(JSON.stringify({ error: 'API key not configured.' }), {
+        status: 500, headers: { 'Content-Type': 'application/json' },
+      }, r);
     }
 
     const langName = LANG_MAP[targetLang] || 'English';
@@ -247,13 +246,10 @@ export default {
     let systemPrompt = SYSTEM_PROMPTS[task].replace(/\{TARGET_LANG\}/g, langName);
 
     if (task === 'explain' || task === 'rewrite') {
-      // Only send relevant context, not the full paper (saves tokens)
       const ctx = (paperContext || text).substring(0, 6000);
       systemPrompt = systemPrompt.replace('{PAPER_CONTEXT}', ctx);
     }
-
     if (task === 'chat') {
-      // For chat, send a trimmed version of the paper
       systemPrompt = systemPrompt.replace('{PAPER_TEXT}', text.substring(0, 15000));
     }
 
@@ -261,80 +257,63 @@ export default {
     let apiMessages = [{ role: 'system', content: systemPrompt }];
 
     if (task === 'chat') {
-      // Include conversation history
       if (chatHistory && Array.isArray(chatHistory)) {
-        for (const msg of chatHistory.slice(-10)) { // Keep last 10 turns to save tokens
+        for (const msg of chatHistory.slice(-10)) {
           apiMessages.push({ role: msg.role, content: msg.content });
         }
       }
-      const question = body.question || 'Please summarize the key points.';
-      apiMessages.push({ role: 'user', content: question });
+      apiMessages.push({ role: 'user', content: body.question || 'Please summarize the key points.' });
     } else {
-      // For explain/translate/rewrite/summary/terms: send the text as user message
       apiMessages.push({ role: 'user', content: text.substring(0, 15000) });
     }
 
     const wantStream = body.stream !== false;
 
     try {
-      const apiBody = {
-        model: MODEL,
-        max_tokens: MAX_TOKENS[task] || 1024,
-        temperature: TEMPERATURE[task] ?? 0.3,
-        messages: apiMessages,
-        stream: wantStream,
-      };
-
       const apiRes = await fetch(DEEPSEEK_API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + apiKey,
         },
-        body: JSON.stringify(apiBody),
+        body: JSON.stringify({
+          model: MODEL,
+          max_tokens: MAX_TOKENS[task] || 1024,
+          temperature: TEMPERATURE[task] ?? 0.3,
+          messages: apiMessages,
+          stream: wantStream,
+        }),
       });
 
       if (!apiRes.ok) {
         const errText = await apiRes.text();
         console.error('DeepSeek API error:', apiRes.status, errText); // Keep for wrangler tail debugging
-
-        // Map specific error codes to user-friendly messages
         let userError = 'AI processing failed';
         if (apiRes.status === 402) userError = 'API quota exhausted. Please try again later.';
         else if (apiRes.status === 429) userError = 'Too many requests. Please wait a moment.';
         else if (apiRes.status === 401) userError = 'API key invalid. Please check configuration.';
-
         return corsResponse(JSON.stringify({ error: userError, status: apiRes.status }), {
-          status: 502,
-          headers: { 'Content-Type': 'application/json' },
-        });
+          status: 502, headers: { 'Content-Type': 'application/json' },
+        }, r);
       }
 
       if (wantStream) {
-        // Forward the SSE stream directly to the client
         return corsResponse(apiRes.body, {
           status: 200,
-          headers: {
-            'Content-Type': 'text/event-stream',
-            'Cache-Control': 'no-cache',
-            'Connection': 'keep-alive',
-          },
-        });
+          headers: { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache' },
+        }, r);
       } else {
-        // Non-streaming: extract the response text
         const data = await apiRes.json();
         const content = data.choices?.[0]?.message?.content || '';
         return corsResponse(JSON.stringify({ result: content }), {
-          status: 200,
-          headers: { 'Content-Type': 'application/json' },
-        });
+          status: 200, headers: { 'Content-Type': 'application/json' },
+        }, r);
       }
     } catch (err) {
       console.error('Worker error:', err); // Keep for wrangler tail debugging
       return corsResponse(JSON.stringify({ error: 'Internal worker error: ' + (err.message || '') }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      });
+        status: 500, headers: { 'Content-Type': 'application/json' },
+      }, r);
     }
   },
 };
